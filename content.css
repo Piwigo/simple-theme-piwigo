@@ -41,10 +41,10 @@ h1 { font-size: 1.6em; }
   padding: 0;
 }
 
-#header h1 {
+#theHeader h1 {
   padding: 1em 0 0;
 }
-#header p {
+#theHeader p {
   padding: 0;
   margin: 0;
 }
@@ -170,7 +170,7 @@ div.property {
   float: left;
   width: 15%;
   display: none;
-/*  visibility: visible;*/ 
+/*  visibility: visible;*/
 }
 
 #menubar ul {
@@ -269,7 +269,7 @@ p#additional_info {
 
 /* pictures pages */
 
-#thePicturePage #header, #thePicturePage #copyright {
+#thePicturePage #theHeader, #thePicturePage #copyright {
   display: none;
 }
 #thePicturePage #content {

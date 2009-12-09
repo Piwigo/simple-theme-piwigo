@@ -22,7 +22,8 @@
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/content.css">
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/theme/{$themeconf.theme}/theme.css">
   {if not empty($head_elements)}
-  {foreach from=$head_elements item=elt}{$elt}{/foreach}
+    {foreach from=$head_elements item=elt}{$elt}
+    {/foreach}
   {/if}
 </head>
 <body id="{$BODY_ID}">
@@ -34,7 +35,7 @@
     {/foreach}
   </div>
   {/if}
-  <div id="header">{$PAGE_BANNER}</div>
+  <div id="theHeader">{$PAGE_BANNER}</div>
   {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
   {if not empty($header_notes)}
   <div class="header_notes">
