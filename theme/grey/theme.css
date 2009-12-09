@@ -1,0 +1,161 @@
+/*
+   GRUM: GRAPHITE
+   Graphite for template "Gally"
+   author:  grum at grum.dnsalias.com
+ */
+
+/* page */
+
+body {
+  background-color: #333;
+  color: #999;
+}
+
+#content {
+  background-color: #3F3F3F;
+  border: 2px #606060 solid;
+  border-width: 2px 0;
+}
+
+#menubar p.totalImages {
+  font-style: italic;
+  margin-top: 0;
+}
+
+a {
+  color: #999;
+}
+
+#titrePage, #titrePage a {
+  font-weight: bold;
+  text-transform: uppercase;
+}
+
+h2, h3 {
+    font-variant: small-caps;
+}
+
+/* page content :  thumbnails */
+
+#thumbnails {
+  font-weight: bold;
+}
+
+#thumbnails li a img {
+  border: 2px #707070 solid;
+}
+#thumbnails li a:hover img {
+  border: 2px #f0f0f0 solid;
+}
+#thumbnails li p {
+  margin: 0;
+}
+
+/* page content :  categories thumbnails */
+
+.illustration a img {
+  border: 1px #606060 solid;
+}
+
+.illustration a:hover img {
+  border: 1px #f0f0f0 solid;
+}
+
+p.thumbCatDesc {
+  border-top: 1px #606060 dotted;
+  text-align: justify;
+}
+
+/* inputs */
+
+input[type="text"], input[type="password"], select, textarea, file {
+ background:#f0f0f0;
+ color: #333;
+ border: 1px solid;
+ margin: 0;
+}
+
+fieldset {
+  border: 1px #606060 dotted;
+  margin: 0 0 1em;
+  padding: 1em;
+}
+
+fieldset legend {
+  background-color: #333;
+  padding: 0 3px;
+}
+
+/* picture page */
+
+.imageNumber {
+  border: 1px #999 solid;
+}
+
+#theImage img {
+  border: 8px #fff solid;
+}
+
+#navThumbPrev a img, #navThumbNext a img {
+  border: 2px #606060 solid;
+}
+#navThumbPrev a:hover img, #navThumbNext a:hover img {
+  border: 2px #f0f0f0 solid;
+}
+
+/* Comments */
+
+#theComments h3 {
+  border-top: 2px solid #606060;
+}
+
+.commentList .author, .commentList .date {
+  font-weight: bold;
+}
+
+/* tags */
+
+#fullTagCloud span a:hover {
+  background: #606060;
+}
+
+#menuTagCloud span {
+  margin: 0;
+}
+
+.nbEntries {
+  text-align: right;
+}
+
+.tagaddbutton {
+}
+
+.mandatorystar {
+  color: #e04040;
+}
+
+/* help */
+
+.errors div {
+  background: #FFB0B0;
+  border: 4px solid #A04040;
+  color: #A04040;
+}
+.errors div a {
+  color: #FF0000;
+  font-weight: bold;
+}
+
+.infos div {
+  background: #B0FFB0;
+  border: 4px solid #40A040;
+  color: #40A040;
+}
+.infos div a {
+  color: #00FF00;
+  font-weight: bold;
+}
+
+.errors ul, .infos ul {
+  text-align: justify;
+}

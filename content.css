@@ -1,0 +1,419 @@
+/*
+ CSS for all pages
+*/
+
+body {
+  font-family: Verdana,Arial,Helvetica,sans-serif;
+  font-size: 75%;
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  border: 0;
+}
+
+a {
+  text-decoration: none;
+}
+
+hr {
+  border: 1px #999999 solid;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+  font-size: 1em;
+}
+h1 { font-size: 1.6em; }
+
+#menuswitcher {
+  cursor: pointer;
+}
+
+/* Layout */
+
+#the_page {
+  width: 85%;
+  min-width: 900px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+#header h1 {
+  padding: 1em 0 0;
+}
+#header p {
+  padding: 0;
+  margin: 0;
+}
+
+#titrePage {
+  margin: 1em 0;
+}
+
+#titrePage h2 {
+  margin: 1em 0;
+  padding: 0;
+  display: inline;
+}
+
+#titrePage .categoryActions {
+  float: right;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  width: auto;
+}
+
+#titrePage img {
+  float: left;
+  margin-top: -5px;
+}
+
+.categoryActions li {
+  display: inline;
+}
+
+#content {
+  margin: 1em 0 0;
+  padding: 1em;
+}
+
+#subcontent {
+}
+
+/* tags */
+
+.tagLevel5 { font-size: 130%; }
+.tagLevel4 { font-size: 120%; }
+.tagLevel3 { font-size: 110%; }
+.tagLevel2 { font-size: 100%; }
+.tagLevel1 { font-size: 90%; }
+
+#fullTagCloud {
+  text-align: center;
+  margin: 1em 2em;
+}
+
+#fullTagCloud span {
+  white-space: nowrap;
+  margin: 0 0.5em;
+}
+
+#fullTagCloud span a {
+  padding: 2px;
+}
+
+.tagLetterContent {
+  width: 100%;
+}
+
+ul.tagSelection li {
+  display:  inline;
+}
+
+/* actions */
+
+ul.categoryActions {
+  list-style: none;
+  float: right;
+  margin: 0;
+  padding: 0;
+}
+
+ul.categoryActions li {
+  display: inline;
+}
+
+ul.categoryActions li.selector {
+  position: relative;
+  top: -10px;
+}
+
+/* Messages */
+
+.errors, .infos {
+  color: #e04040;
+  border: 1px dashed;
+}
+.errors div, .infos div {
+  margin: auto;
+  padding: 8px;
+  text-align: center;
+  width: 60%;
+}
+
+/* Forms */
+
+form {
+  margin: 0;
+}
+
+#content form li {
+  list-style: none;
+  margin: 0.2em 0;
+}
+
+div.property {
+  display: block;
+  min-width: 275px;
+  float: left;
+}
+
+/* Menubar */
+
+#menubar {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 15%;
+  display: none;
+/*  visibility: visible;*/ 
+}
+
+#menubar ul {
+ margin: 0;
+ padding: 1em 0 1em 2em;
+}
+#menubar ul ul {
+ margin: 0;
+ padding: 0 0 0 1em;
+}
+
+/* images thumbnails */
+
+#thumbnails {
+  width: auto;
+  text-align: center;
+  padding: 1em 0;
+}
+
+#thumbnails ul {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  list-style: none;
+}
+
+#thumbnails li {
+  margin: 0;
+  padding: 0;
+  float: left;
+  width: 200px;
+  height: 200px;
+}
+
+.nb-comments, .nb-hits {
+  font-weight: normal;
+  display: block;
+}
+.zero {
+  display: none;
+}
+
+/* categories thumbnails */
+
+ul.thumbnailCategories {
+  margin: 0;
+  padding: 1em;
+  overflow: hidden;
+  list-style: none;
+}
+
+ul.thumbnailCategories li {
+  float: left;
+  height: 160px;
+  overflow: hidden;
+  margin: 1em;
+  width: 45%;
+}
+
+.illustration {
+  float: left;
+  margin: 0.2em;
+  width: 150px;
+}
+
+.description {
+  overflow: auto;
+  padding-left: 1em;
+}
+
+.description h3 {
+  margin: 0;
+}
+
+p.thumbCatDescNfoDate, p.thumbCatDescNbImg {
+  margin: 0;
+  font-size: 80%;
+}
+
+p.thumbCatDesc {
+  margin: 0;
+  padding-top: 4px;
+}
+
+/* page : title bar */
+
+p#additional_info {
+    margin: 1em 5em;
+}
+
+.navigationBar {
+  padding: 0.5em;
+  text-align: right;
+  clear: both;
+}
+
+/* pictures pages */
+
+#thePicturePage #header, #thePicturePage #copyright {
+  display: none;
+}
+#thePicturePage #content {
+    margin-bottom: 1em;
+    padding: 1em 0 0;
+}
+
+.imageNumber {
+  float: right;
+  padding: 0 3px;
+  font-size: 0.9em;
+}
+
+.navButtons {
+  font-size: 1.5em;
+  text-align: center;
+}
+
+#navThumbPrev, #navThumbNext {
+  text-align: center;
+  margin: 1em auto;
+}
+
+#imageToolBar {
+  height: 25px;
+}
+
+#imageInfoBar {
+  float: right;
+  clear: right;
+  width: 20%;
+  margin: 0 1em 0;
+}
+
+#randomButtons ul {
+  padding: 0;
+  list-style-type: none;
+}
+
+#imageInfos dt.label, #imageMeta dt.label {
+  font-weight: bold;
+}
+#imageInfos dd.value, #imageMeta dd.value {
+  margin-left: 1em;
+  overflow: hidden;
+}
+
+#theImage {
+  text-align: center;
+  padding: 1em 0;
+}
+
+form#rateForm {
+  margin: 0;
+}
+#rateForm input, #rateForm input:active {
+  cursor: pointer;
+  border: none;
+  padding: 0;
+}
+#rateForm input.rateButtonStarFull  {
+  background:  url('icon/rating-stars.png') no-repeat scroll -16px center;
+  width: 16px;
+}
+#rateForm input.rateButtonStarEmpty {
+  background:  url('icon/rating-stars.png') no-repeat scroll 0 center;
+  width: 16px;
+}
+
+/* slideshow */
+
+#slideshow #titrePage {
+    width: 55%;
+    text-align: center;
+    margin: 0 auto;
+}
+
+#slideshow .navButtons {
+    display: inline;
+    font-size: 1em;
+    float: left;
+}
+
+/* comments */
+
+#theComments h3 {
+  height: 25px;
+  line-height: 25px;
+  padding-left: 1em;
+  cursor: pointer;
+}
+
+#theComments div {
+    display: none;
+}
+
+#commentAdd, #commentList {
+  width: 48%;
+  padding: 1%;
+}
+#commentAdd  { float: left; }
+#commentList { float: right; }
+
+#commentList ul {
+  list-style: none;
+  padding: 0;
+}
+#commentList li {
+  clear: both;
+  display: block;
+  border-top: 1px dotted #606060;
+  padding: 0.5em 0;
+}
+#commentList li ul {
+  list-style-type: none;
+  padding: 4px;
+}
+
+#commentList .description blockquote {
+  margin: 0;
+}
+#commentList ul.actions {
+    float: right;
+}
+#commentList ul.actions li {
+    border: 0;
+}
+
+#commentList .author {
+    font-weight: bold;
+    font-variant: small-caps;
+}
+#commentList .date {
+    font-style: italic;
+}
+
+#comments li {
+  clear: both;
+  list-style: none;
+}
+
+/* Footer */
+
+#copyright {
+  padding: 2px;
+  clear: both;
+}

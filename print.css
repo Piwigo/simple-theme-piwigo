@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    color: #000000;
+    background: #ffffff;
+}
+
+#content {
+    margin: 0;
+}
+
+#menubar, #content .navigationBar, ul.categoryActions,
+#content div.calendarViews, .calendarBar, #imageToolBar,
+.navThumb, #addComment {
+    display: none;
+}
+
+
