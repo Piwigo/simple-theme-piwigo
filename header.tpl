@@ -21,6 +21,7 @@
   {/if}
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/content.css">
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/theme/{$themeconf.theme}/theme.css">
+	<!--  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template-common/local-layout.css"> -->
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}
