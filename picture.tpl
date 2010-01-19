@@ -30,15 +30,15 @@
     </div>
     {if isset($previous) }
     <div id="navThumbPrev">
-      <a class="navThumb" href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">
+      <a href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">
         <img src="{$previous.THUMB_SRC}" alt="{$previous.TITLE}"></a>
-    </div> <!-- navThumbPrev -->
+    </div>
     {/if}
     {if isset($next) }
     <div id="navThumbNext">
-      <a class="navThumb" href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">
+      <a href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">
         <img src="{$next.THUMB_SRC}" alt="{$next.TITLE}"></a>
-    </div> <!-- navThumbNext -->
+    </div>
     {/if}
     <div id="randomButtons">
       <ul>
@@ -61,8 +61,8 @@
       <h3>{$meta.TITLE}</h3>
       <dl>
         {foreach from=$meta.lines item=value key=label}
-        <dt class="label">{$label}</dt>
-        <dd class="value">{$value}</dd>
+        <dt>{$label}</dt>
+        <dd>{$value}</dd>
         {/foreach}
       </dl>
       {/foreach}
@@ -71,33 +71,33 @@
     <div id="imageInfos">
       <dl>
         {if isset($INFO_AUTHOR)}
-        <dt class="label">{'Author'|@translate}</dt>
-        <dd class="value">{$INFO_AUTHOR}</dd>
+        <dt>{'Author'|@translate}</dt>
+        <dd>{$INFO_AUTHOR}</dd>
         {/if}
         {if isset($INFO_CREATION_DATE)}
-        <dt class="label">{'Created on'|@translate}</dt>
-        <dd class="value">{$INFO_CREATION_DATE}</dd>
+        <dt>{'Created on'|@translate}</dt>
+        <dd>{$INFO_CREATION_DATE}</dd>
         {/if}
-<!--    <dt class="label">{'Posted on'|@translate}</dt>
-        <dd class="value">{$INFO_POSTED_DATE}</dd>-->
+<!--    <dt>{'Posted on'|@translate}</dt>
+        <dd>{$INFO_POSTED_DATE}</dd>-->
         {if isset($related_tags)}
-        <dt class="label">{'Tags'|@translate}</dt>
-        <dd class="value">{foreach from=$related_tags item=tag name=tag_loop}
+        <dt>{'Tags'|@translate}</dt>
+        <dd>{foreach from=$related_tags item=tag name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if}
           <a href="{$tag.URL}">{$tag.name}</a>{/foreach}</dd>
         {/if}
         {if isset($related_categories)}
-        <dt class="label">{'Categories'|@translate}</dt>
-        <dd class="value">
+        <dt>{'Categories'|@translate}</dt>
+        <dd>
           {foreach from=$related_categories item=cat name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if} {'&nbsp;'|@str_ireplace:'&#32;':$cat}{/foreach}
         </dd>
         {/if}
-        <dt class="label">{'Visits'|@translate}</dt>
-        <dd class="value">{$INFO_VISITS}</dd>
+        <dt>{'Visits'|@translate}</dt>
+        <dd>{$INFO_VISITS}</dd>
         {if isset($rate_summary)}
-        <dt class="label">{'Average rate'|@translate}</dt>
-        <dd class="value" id="ratingSummary">
+        <dt>{'Average rate'|@translate}</dt>
+        <dd id="ratingSummary">
           {if $rate_summary.count}
           {assign var='rate_text' value='%.2f (rated %d times, standard deviation = %.2f)'|@translate }
           {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count, $rate_summary.std) }
@@ -107,8 +107,8 @@
         </dd>
         {/if}
         {if isset($rating)}
-        <dt class="label"><span id="updateRate">{if isset($rating.USER_RATE)}{'update_rate'|@translate}{else}{'new_rate'|@translate}{/if}</span></dt>
-        <dd class="value">
+        <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'update_rate'|@translate}{else}{'new_rate'|@translate}{/if}</span></dt>
+        <dd>
           <form action="{$rating.F_ACTION}" method="post" id="rateForm">
             <div>&nbsp;
               {foreach from=$rating.marks item=mark name=rate_loop}

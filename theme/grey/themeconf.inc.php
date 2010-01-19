@@ -9,4 +9,7 @@ $themeconf = array(
   'mime_icon_dir' => 'template/simple/icon/mimetypes/',
   'local_head' => '<!-- no theme specific head content -->',
 );
+
+global $user;
+$user['maxwidth'] = 680;
 ?>

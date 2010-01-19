@@ -3,17 +3,17 @@
   <a href="{$U_SLIDESHOW_STOP}" title="{'slideshow_stop'|@translate}">{'Stop'|@translate}</a>
 {/if}
 {if isset($slideshow.U_START_PLAY)}
-  <a class="navButton" href="{$slideshow.U_START_PLAY}" title="{'start_play'|@translate}">Play</a>
+  <a href="{$slideshow.U_START_PLAY}" title="{'start_play'|@translate}">Play</a>
 {/if}
 {if isset($slideshow)}
   {if isset($slideshow.U_STOP_PLAY)}
-    <a class="navButton" href="{$slideshow.U_STOP_PLAY}" title="{'stop_play'|@translate}">Pause</a>
+    <a href="{$slideshow.U_STOP_PLAY}" title="{'stop_play'|@translate}">Pause</a>
   {/if}
   {if isset($slideshow.U_DEC_PERIOD)}
-    <a class="navButton" href="{$slideshow.U_DEC_PERIOD}" title="{'dec_period'|@translate}">&nbsp;+&nbsp;</a>
+    <a href="{$slideshow.U_DEC_PERIOD}" title="{'dec_period'|@translate}">&nbsp;+&nbsp;</a>
   {/if}
   {if isset($slideshow.U_INC_PERIOD)}
-    <a class="navButton" href="{$slideshow.U_INC_PERIOD}" title="{'inc_period'|@translate}">&nbsp;-&nbsp;</a>
+    <a href="{$slideshow.U_INC_PERIOD}" title="{'inc_period'|@translate}">&nbsp;-&nbsp;</a>
   {/if}
 {/if}
 {if isset($first)}

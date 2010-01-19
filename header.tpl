@@ -12,7 +12,6 @@
   {if isset($next.U_IMG)    }<link rel="next" title="{'next_page'|@translate}" href="{$next.U_IMG}" >{/if}
   {if isset($last.U_IMG)    }<link rel="last" title="{'last_page'|@translate}" href="{$last.U_IMG}" >{/if}
   {if isset($U_UP)          }<link rel="up" title="{'thumbnails'|@translate}" href="{$U_UP}" >{/if}
-  {$themeconf.local_head}
   {if isset($U_PREFETCH)}<link rel="prefetch" href="{$U_PREFETCH}">{/if}
   {if not empty($page_refresh)}<meta http-equiv="refresh" content="{$page_refresh.TIME};url={$page_refresh.U_REFRESH}">{/if}
   {if isset($U_FEED)}
@@ -21,7 +20,11 @@
   {/if}
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/content.css">
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template/{$themeconf.template}/theme/{$themeconf.theme}/theme.css">
-	<!--  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template-common/local-layout.css"> -->
+  <!--  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}template-common/local-layout.css"> -->
+  <noscript><style type="text/css">
+      {literal}#menubar {display: block;} #theComments div {display: block;}{/literal}
+  </style></noscript>
+  {$themeconf.local_head}
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}

@@ -59,17 +59,17 @@ h1 { font-size: 1.6em; }
   display: inline;
 }
 
+#titrePage img {
+  float: left;
+  margin-top: -5px;
+}
+
 #titrePage .categoryActions {
   float: right;
   margin: 0;
   padding: 0;
   list-style: none;
   width: auto;
-}
-
-#titrePage img {
-  float: left;
-  margin-top: -5px;
 }
 
 .categoryActions li {
@@ -79,9 +79,6 @@ h1 { font-size: 1.6em; }
 #content {
   margin: 1em 0 0;
   padding: 1em;
-}
-
-#subcontent {
 }
 
 /* tags */
@@ -102,7 +99,7 @@ h1 { font-size: 1.6em; }
   margin: 0 0.5em;
 }
 
-#fullTagCloud span a {
+#fullTagCloud a {
   padding: 2px;
 }
 
@@ -110,26 +107,8 @@ h1 { font-size: 1.6em; }
   width: 100%;
 }
 
-ul.tagSelection li {
+.tagSelection li {
   display:  inline;
-}
-
-/* actions */
-
-ul.categoryActions {
-  list-style: none;
-  float: right;
-  margin: 0;
-  padding: 0;
-}
-
-ul.categoryActions li {
-  display: inline;
-}
-
-ul.categoryActions li.selector {
-  position: relative;
-  top: -10px;
 }
 
 /* Messages */
@@ -137,12 +116,7 @@ ul.categoryActions li.selector {
 .errors, .infos {
   color: #e04040;
   border: 1px dashed;
-}
-.errors div, .infos div {
-  margin: auto;
-  padding: 8px;
-  text-align: center;
-  width: 60%;
+  margin: 0 1em;
 }
 
 /* Forms */
@@ -215,14 +189,14 @@ div.property {
 
 /* categories thumbnails */
 
-ul.thumbnailCategories {
+.thumbnailCategories {
   margin: 0;
   padding: 1em;
   overflow: hidden;
   list-style: none;
 }
 
-ul.thumbnailCategories li {
+.thumbnailCategories li {
   float: left;
   height: 160px;
   overflow: hidden;
@@ -245,12 +219,12 @@ ul.thumbnailCategories li {
   margin: 0;
 }
 
-p.thumbCatDescNfoDate, p.thumbCatDescNbImg {
+.thumbCatDescNfoDate, .thumbCatDescNbImg {
   margin: 0;
   font-size: 80%;
 }
 
-p.thumbCatDesc {
+.thumbCatDesc {
   margin: 0;
   padding-top: 4px;
 }
@@ -309,10 +283,10 @@ p#additional_info {
   list-style-type: none;
 }
 
-#imageInfos dt.label, #imageMeta dt.label {
+#imageInfos dt, #imageMeta dt {
   font-weight: bold;
 }
-#imageInfos dd.value, #imageMeta dd.value {
+#imageInfos dd, #imageMeta dd {
   margin-left: 1em;
   overflow: hidden;
 }
@@ -320,6 +294,7 @@ p#additional_info {
 #theImage {
   text-align: center;
   padding: 1em 0;
+  margin: auto;
 }
 
 form#rateForm {
@@ -362,7 +337,7 @@ form#rateForm {
   cursor: pointer;
 }
 
-#theComments div {
+#theComments > div {
     display: none;
 }
 
@@ -388,14 +363,8 @@ form#rateForm {
   padding: 4px;
 }
 
-#commentList .description blockquote {
-  margin: 0;
-}
-#commentList ul.actions {
+ul.actions {
     float: right;
-}
-#commentList ul.actions li {
-    border: 0;
 }
 
 #commentList .author {
@@ -406,8 +375,8 @@ form#rateForm {
     font-style: italic;
 }
 
-#comments li {
-  clear: both;
+#theCommentsPage #comments li {
+  clear: left;
   list-style: none;
 }
 

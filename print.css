@@ -9,8 +9,7 @@ body {
 }
 
 #menubar, #content .navigationBar, ul.categoryActions,
-#content div.calendarViews, .calendarBar, #imageToolBar,
-.navThumb, #addComment {
+#content div.calendarViews, .calendarBar, #imageToolBar, #addComment {
     display: none;
 }
 

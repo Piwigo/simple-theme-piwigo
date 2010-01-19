@@ -1,10 +1,5 @@
-/*
-   GRUM: GRAPHITE
-   Graphite for template "Gally"
-   author:  grum at grum.dnsalias.com
- */
-
-/* page */
+/* Grey theme for the simple template
+   author: Saïmon <contact at saimon.org> */
 
 body {
   background-color: #333;
@@ -17,7 +12,7 @@ body {
   border-width: 2px 0;
 }
 
-#menubar p.totalImages {
+.totalImages {
   font-style: italic;
   margin-top: 0;
 }
@@ -45,28 +40,27 @@ h2, h3 {
 #thumbnails {
   font-weight: bold;
 }
-
-#thumbnails li a img {
+.thumbnail {
   border: 2px #707070 solid;
 }
-#thumbnails li a:hover img {
+.thumbnail:hover {
   border: 2px #f0f0f0 solid;
 }
-#thumbnails li p {
+#thumbnails p {
   margin: 0;
 }
 
 /* page content :  categories thumbnails */
 
-.illustration a img {
+.illustration img {
   border: 1px #606060 solid;
 }
 
-.illustration a:hover img {
+.illustration img:hover {
   border: 1px #f0f0f0 solid;
 }
 
-p.thumbCatDesc {
+.thumbCatDesc {
   border-top: 1px #606060 dotted;
   text-align: justify;
 }
@@ -101,10 +95,10 @@ fieldset legend {
   border: 8px #fff solid;
 }
 
-#navThumbPrev a img, #navThumbNext a img {
+#navThumbPrev img, #navThumbNext img {
   border: 2px #606060 solid;
 }
-#navThumbPrev a:hover img, #navThumbNext a:hover img {
+#navThumbPrev img:hover, #navThumbNext img:hover {
   border: 2px #f0f0f0 solid;
 }
 
@@ -120,7 +114,7 @@ fieldset legend {
 
 /* tags */
 
-#fullTagCloud span a:hover {
+#fullTagCloud a:hover {
   background: #606060;
 }
 
@@ -132,35 +126,26 @@ fieldset legend {
   text-align: right;
 }
 
-.tagaddbutton {
-}
-
 .mandatorystar {
   color: #e04040;
 }
 
 /* help */
 
-.errors div {
-  background: #FFB0B0;
-  border: 4px solid #A04040;
+.errors {
+  border: 2px solid #A04040;
   color: #A04040;
 }
-.errors div a {
+.errors a {
   color: #FF0000;
   font-weight: bold;
 }
 
-.infos div {
-  background: #B0FFB0;
-  border: 4px solid #40A040;
+.infos {
+  border: 2px solid #40A040;
   color: #40A040;
 }
-.infos div a {
+.infos a {
   color: #00FF00;
   font-weight: bold;
-}
-
-.errors ul, .infos ul {
-  text-align: justify;
 }

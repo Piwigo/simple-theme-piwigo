@@ -18,7 +18,7 @@
       </ul>
       {/if}
       <span class="author">{$comment.AUTHOR}</span> - <span class="date">{$comment.DATE}</span>
-      <blockquote>{$comment.CONTENT}</blockquote>
+      {$comment.CONTENT}
     </div>
   </li>
   {/foreach}
