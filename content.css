@@ -49,22 +49,22 @@ h1 { font-size: 1.6em; }
   margin: 0;
 }
 
-#titrePage {
+.titrePage {
   margin: 1em 0;
 }
 
-#titrePage h2 {
+.titrePage h2 {
   margin: 1em 0;
   padding: 0;
   display: inline;
 }
 
-#titrePage img {
+.titrePage img {
   float: left;
   margin-top: -5px;
 }
 
-#titrePage .categoryActions {
+.titrePage .categoryActions {
   float: right;
   margin: 0;
   padding: 0;
@@ -316,7 +316,7 @@ form#rateForm {
 
 /* slideshow */
 
-#slideshow #titrePage {
+#slideshow .titrePage {
     width: 55%;
     text-align: center;
     margin: 0 auto;

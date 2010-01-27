@@ -1,4 +1,4 @@
-<div id="titrePage">
+<div class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
   <a href="{$U_HOME}" rel="home">{'home'|@translate}</a>
   {if !$IS_HOME}{$LEVEL_SEPARATOR}{$SECTION_TITLE}{/if}

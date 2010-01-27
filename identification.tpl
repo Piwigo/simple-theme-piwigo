@@ -1,4 +1,4 @@
-<div id="titrePage">
+<div class="titrePage">
   <ul class="categoryActions">
     <li><a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a> «</li>
     {if isset($U_REGISTER) }

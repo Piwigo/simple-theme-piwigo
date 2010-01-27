@@ -21,7 +21,7 @@ a {
   color: #999;
 }
 
-#titrePage, #titrePage a {
+.titrePage, .titrePage a {
   font-weight: bold;
   text-transform: uppercase;
 }

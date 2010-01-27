@@ -1,4 +1,4 @@
-<div id="titrePage">
+<div class="titrePage">
   <ul class="categoryActions">
   {if $display_mode == 'letters'}
     <li><a href="{$U_CLOUD}" title="{'show tag cloud'|@translate}">{'show tag cloud'|@translate}</a></li> « 

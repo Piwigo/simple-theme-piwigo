@@ -1,4 +1,4 @@
-<div id="titrePage">
+<div class="titrePage">
   <ul class="categoryActions">
     <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'home'|@translate}</a></li>
   </ul>

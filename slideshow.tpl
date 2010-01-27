@@ -5,7 +5,7 @@
   {/if}
 </div>
 <div id="slideshow">
-  <div id="titrePage">
+  <div class="titrePage">
     {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
     <div class="imageNumber">{$PHOTO}</div>
     {if $SHOW_PICTURE_NAME_ON_TITLE }

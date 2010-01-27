@@ -1,4 +1,4 @@
-<div id="titrePage">
+<div class="titrePage">
   <ul class="categoryActions">
     <li><a class="button" href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
   </ul>
