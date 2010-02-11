@@ -50,6 +50,11 @@ h2, h3 {
   margin: 0;
 }
 
+#menubar dt {
+  font-variant: small-caps;
+  font-weight: bold;
+}
+
 /* page content :  categories thumbnails */
 
 .illustration img {

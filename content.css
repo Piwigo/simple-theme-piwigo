@@ -148,10 +148,15 @@ div.property {
 }
 
 #menubar ul {
- margin: 0;
- padding: 1em 0 1em 2em;
+  margin: 0;
+  padding: 1em 0 1em 2em;
 }
-#menubar ul ul {
+#menubar dd {
+  margin: 0;
+  padding: 0;
+}
+
+  #menubar ul ul {
  margin: 0;
  padding: 0 0 0 1em;
 }
