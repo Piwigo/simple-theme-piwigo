@@ -353,6 +353,10 @@ form#rateForm {
 #commentAdd  { float: left; }
 #commentList { float: right; }
 
+#commentAdd input[type="text"], #commentAdd textarea {
+  width: 400px;
+}
+
 #commentList ul {
   list-style: none;
   padding: 0;

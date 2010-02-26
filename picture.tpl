@@ -154,10 +154,10 @@
         <h4>{'comments_add'|@translate}</h4>
         <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
           {if $comment_add.SHOW_AUTHOR}
-          <p><label>{'upload_author'|@translate}</label>
-            <input type="text" name="author" /></p>
+          <p><label>{'upload_author'|@translate}&nbsp;:</label></p>
+          <p><input type="text" name="author" /></p>
           {/if}
-          <p><label>{'comment'|@translate}</label></p>
+          <p><label>{'comment'|@translate}&nbsp;:</label></p>
           <p><textarea name="content" id="contentid" rows="5" cols="50">{$comment_add.CONTENT}</textarea></p>
           <p><input type="hidden" name="key" value="{$comment_add.KEY}" />
             <input class="submit" type="submit" value="{'Submit'|@translate}"></p>
