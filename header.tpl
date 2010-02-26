@@ -39,7 +39,8 @@
     {/foreach}
   </div>
   {/if}
-  <div id="theHeader">{$PAGE_BANNER}</div>
+  <div id="theHeader">{$PAGE_BANNER|@regex_replace:'#<h1>(.*?)</h1>#is':"<h1><a href=\"$U_HOME\">\\1</a></h1>"}</div>
+  <!--  <div id="theHeader">{$PAGE_BANNER}</div>-->
   {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
   {if not empty($header_notes)}
   <div class="header_notes">

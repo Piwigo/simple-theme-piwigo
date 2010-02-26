@@ -1,6 +1,5 @@
 {if !empty($PLUGIN_INDEX_CONTENT_BEFORE)}{$PLUGIN_INDEX_CONTENT_BEFORE}{/if}
 <div class="titrePage">
-  <a href="{$U_HOME}" rel="home"><img src="{$ROOT_URL}template/{$themeconf.template}/icon/home.png" title="{'home'|@translate}" alt="{'home'|@translate}" /></a> » 
   <span id="menuswitcher" title="Afficher/cacher le menu">Menu</span> »
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
@@ -14,7 +13,7 @@
   </ul>
   {/if}
   <h2>{$TITLE}</h2>
-</div> <!-- titrePage -->
+</div>
 <div id="content">
   {$MENUBAR}
   <div id="subcontent">
