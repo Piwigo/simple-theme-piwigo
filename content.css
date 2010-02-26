@@ -326,16 +326,16 @@ form#rateForm {
 
 /* slideshow */
 
-#slideshow .titrePage {
-    width: 55%;
-    text-align: center;
-    margin: 0 auto;
+#slideshow {
+  width: 656px;
+  margin: 1em auto 0;
 }
 
 #slideshow .navButtons {
-    display: inline;
-    font-size: 1em;
-    float: left;
+  display: inline;
+  font-size: 1em;
+  float: right;
+  margin-right: 1em;
 }
 
 /* comments */
