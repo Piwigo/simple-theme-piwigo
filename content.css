@@ -3,23 +3,14 @@
 */
 
 body {
-  font-family: Verdana,Arial,Helvetica,sans-serif;
-  font-size: 75%;
+  font: 75% "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
   margin: 0;
   padding: 0;
 }
 
-img {
-  border: 0;
-}
-
-a {
-  text-decoration: none;
-}
-
-hr {
-  border: 1px #999999 solid;
-}
+img { border: 0; }
+a { text-decoration: none; }
+hr { border: 1px #999999 solid; }
 
 h1, h2, h3 {
   margin: 0;
@@ -144,7 +135,6 @@ div.property {
   float: left;
   width: 15%;
   display: none;
-/*  visibility: visible;*/
 }
 
 #menubar ul {
@@ -156,7 +146,7 @@ div.property {
   padding: 0;
 }
 
-  #menubar ul ul {
+#menubar ul ul {
  margin: 0;
  padding: 0 0 0 1em;
 }
@@ -241,8 +231,8 @@ div.property {
 
 /* page : title bar */
 
-p#additional_info {
-    margin: 1em 5em;
+#additional_info {
+  margin: 1em 5em;
 }
 
 .navigationBar {
@@ -257,8 +247,8 @@ p#additional_info {
   display: none;
 }
 #thePicturePage #content {
-    margin-bottom: 1em;
-    padding: 1em 0 0;
+  margin-bottom: 1em;
+  padding: 1em 0 0;
 }
 
 .imageNumber {
@@ -307,7 +297,7 @@ p#additional_info {
   margin: auto;
 }
 
-form#rateForm {
+#rateForm {
   margin: 0;
 }
 #rateForm input, #rateForm input:active {
@@ -348,7 +338,7 @@ form#rateForm {
 }
 
 #theComments > div {
-    display: none;
+  display: none;
 }
 
 #commentAdd, #commentList {
@@ -378,15 +368,15 @@ form#rateForm {
 }
 
 ul.actions {
-    float: right;
+  float: right;
 }
 
 #commentList .author {
-    font-weight: bold;
-    font-variant: small-caps;
+  font-weight: bold;
+  font-variant: small-caps;
 }
 #commentList .date {
-    font-style: italic;
+  font-style: italic;
 }
 
 #theCommentsPage #comments li {
@@ -400,3 +390,7 @@ ul.actions {
   padding: 2px;
   clear: both;
 }
+
+/* PWG stuff */
+
+.personal_block { padding: 0 !important; }
