@@ -24,6 +24,7 @@ a {
 .titrePage, .titrePage a {
   font-weight: bold;
   text-transform: uppercase;
+  font-variant: normal;
 }
 
 h2, h3 {
@@ -107,6 +108,9 @@ fieldset legend {
 
 #theImage img {
   border: 8px #fff solid;
+}
+#theImage p {
+  margin: 1em;
 }
 
 #navThumbPrev img, #navThumbNext img {
