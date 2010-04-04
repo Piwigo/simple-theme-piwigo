@@ -30,13 +30,13 @@
     </div>
     {if isset($previous) }
     <div id="navThumbPrev">
-      <a href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">
+      <a class="navThumb" href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">
         <img src="{$previous.THUMB_SRC}" alt="{$previous.TITLE}"></a>
     </div>
     {/if}
     {if isset($next) }
     <div id="navThumbNext">
-      <a href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">
+      <a class="navThumb" href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">
         <img src="{$next.THUMB_SRC}" alt="{$next.TITLE}"></a>
     </div>
     {/if}

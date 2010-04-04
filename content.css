@@ -182,11 +182,6 @@ div.property {
   display: none;
 }
 
-.pageNumberSelected {
-  font-weight: bold;
-  text-decoration: underline;
-}
-
 /* categories thumbnails */
 
 .thumbnailCategories {

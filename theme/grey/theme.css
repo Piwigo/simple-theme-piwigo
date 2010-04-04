@@ -70,6 +70,15 @@ h2, h3 {
   text-align: justify;
 }
 
+.pageNumberSelected {
+  font-weight: bold;
+  border-bottom: 1px solid;
+}
+
+.navigationBar a {
+  border-bottom: 1px dotted;
+}
+
 /* inputs */
 
 input[type="text"], input[type="password"], select, textarea, file {
