@@ -1,12 +1,18 @@
   <div id="copyright">
-    {if isset($debug.TIME) }
+    {if isset($debug.TIME)}
     {'generation_time'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'sql_queries_in'|@translate} {$debug.SQL_TIME}) -
     {/if}
-    {'powered_by'|@translate} <a href="http://piwigo.org/">Piwigo</a> - 
-    <a href="{$themeconf.url}">{$themeconf.template} {$themeconf.theme}</a>
+    {'powered_by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
+     - <a href="{$themeconf.url}">{$themeconf.template} {$themeconf.theme}</a>
+    {if isset($CONTACT_MAIL)}
+    - {'send_mail'|@translate}
+    <a href="mailto:{$CONTACT_MAIL}?subject={'title_send_mail'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
+    {/if}
   </div> <!-- copyright -->
   {if isset($footer_elements)}
-  {foreach from=$footer_elements item=v}{$v}{/foreach}
+  {foreach from=$footer_elements item=v}
+  {$v}
+  {/foreach}
   {/if}
 </div> <!-- the_page -->
 <script type="text/javascript" src="{$ROOT_URL}template-common/scripts.js"></script>
