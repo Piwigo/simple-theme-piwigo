@@ -1,4 +1,4 @@
-<h3>{'title_menu'|@translate}</h3>
+<h3>{'Menu'|@translate}</h3>
 <ul>
 {foreach from=$block->data item=link}
   {if is_array($link)}

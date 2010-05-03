@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Registration'|@translate}</h2>
 </div>
@@ -50,7 +50,7 @@
       <input class="submit" type="reset" value="{'Reset'|@translate}">
     </p>
   </form>
-  <p><span class="mandatorystar">*</span> : {'mandatory'|@translate}</p>
+  <p><span class="mandatorystar">*</span> : {'obligatory'|@translate}</p>
   <script type="text/javascript">
     <!--
        document.register_form.login.focus();

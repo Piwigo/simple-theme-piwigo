@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}" rel="home">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}" rel="home">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Search'|@translate}</h2>
 </div>
@@ -17,18 +17,18 @@
   <form class="filter" method="post" name="search" action="{$F_SEARCH_ACTION}">
   <fieldset>
     <legend>{'Filter'|@translate}</legend>
-    <label>{'search_keywords'|@translate}
+    <label>{'Search for words'|@translate}
       <input type="text" style="width: 300px" name="search_allwords" size="30"  />
     </label>
     <ul>
       <li><label>
-        <input type="radio" name="mode" value="AND" checked="checked" />{'search_mode_and'|@translate}
+        <input type="radio" name="mode" value="AND" checked="checked" />{'Search for all terms'|@translate}
       </label></li>
       <li><label>
-        <input type="radio" name="mode" value="OR" />{'search_mode_or'|@translate}
+        <input type="radio" name="mode" value="OR" />{'Search for any terms'|@translate}
       </label></li>
     </ul>
-    <label>{'search_author'|@translate}
+    <label>{'Search for Author'|@translate}
       <input type="text" style="width: 300px" name="search_author" size="30"  />
     </label>
   </fieldset>
@@ -41,9 +41,9 @@
   </fieldset>
   {/if}
   <fieldset>
-    <legend>{'search_date'|@translate}</legend>
+    <legend>{'Search by Date'|@translate}</legend>
     <ul>
-      <li><label>{'search_date_type'|@translate}</label></li>
+      <li><label>{'Kind of date'|@translate}</label></li>
       <li><label>
         <input type="radio" name="date_type" value="date_creation" checked="checked" />{'Creation date'|@translate}
       </label></li>
@@ -53,7 +53,7 @@
     </ul>
     <ul>
       <li>
-        <label>{'search_date_from'|@translate}</label>
+        <label>{'Date'|@translate}</label>
         <select name="start_day">
           <option value="0">--</option>
           {section name=day start=1 loop=32}
@@ -69,7 +69,7 @@
     </ul>
     <ul>
       <li>
-        <label>{'search_date_to'|@translate}</label>
+        <label>{'End-Date'|@translate}</label>
         <select name="end_day">
             <option value="0">--</option>
           {section name=day start=1 loop=32}
@@ -85,14 +85,14 @@
     </ul>
   </fieldset>
   <fieldset>
-    <legend>{'search_options'|@translate}</legend>
-    <label>{'search_categories'|@translate}<br/>
+    <legend>{'Search Options'|@translate}</legend>
+    <label>{'Search in Categories'|@translate}<br/>
       <select class="categoryList" name="cat[]" multiple="multiple" >
         {html_options options=$category_options selected=$category_options_selected}
       </select>
     </label>
     <ul>
-      <li><label>{'search_subcats_included'|@translate}</label></li>
+      <li><label>{'Search in subcategories'|@translate}</label></li>
       <li><label>
         <input type="radio" name="subcats-included" value="1" checked="checked" />{'Yes'|@translate}
       </label></li>

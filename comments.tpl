@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a class="button" href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
+    <li><a class="button" href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'User comments'|@translate}</h2>
 </div>

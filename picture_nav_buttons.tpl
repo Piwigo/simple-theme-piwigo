@@ -1,32 +1,32 @@
 <div class="navButtons">
 {if isset($U_SLIDESHOW_STOP)}
-  <a href="{$U_SLIDESHOW_STOP}" title="{'slideshow_stop'|@translate}">{'Stop'|@translate}</a>
+  <a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}">{'Stop'|@translate}</a>
 {/if}
 {if isset($slideshow.U_START_PLAY)}
-  <a href="{$slideshow.U_START_PLAY}" title="{'start_play'|@translate}">Play</a>
+  <a href="{$slideshow.U_START_PLAY}" title="{'Play of slideshow'|@translate}">Play</a>
 {/if}
 {if isset($slideshow)}
   {if isset($slideshow.U_STOP_PLAY)}
-    <a href="{$slideshow.U_STOP_PLAY}" title="{'stop_play'|@translate}">Pause</a>
+    <a href="{$slideshow.U_STOP_PLAY}" title="{'Pause of slideshow'|@translate}">Pause</a>
   {/if}
   {if isset($slideshow.U_DEC_PERIOD)}
-    <a href="{$slideshow.U_DEC_PERIOD}" title="{'dec_period'|@translate}">&nbsp;+&nbsp;</a>
+    <a href="{$slideshow.U_DEC_PERIOD}" title="{'Accelerate diaporama speed'|@translate}">&nbsp;+&nbsp;</a>
   {/if}
   {if isset($slideshow.U_INC_PERIOD)}
-    <a href="{$slideshow.U_INC_PERIOD}" title="{'inc_period'|@translate}">&nbsp;-&nbsp;</a>
+    <a href="{$slideshow.U_INC_PERIOD}" title="{'Reduce diaporama speed'|@translate}">&nbsp;-&nbsp;</a>
   {/if}
 {/if}
 {if isset($first)}
-  <a href="{$first.U_IMG}" title="{'first_page'|@translate} : {$first.TITLE}" rel="first">&laquo;</a>
+  <a href="{$first.U_IMG}" title="{'First'|@translate} : {$first.TITLE}" rel="first">&laquo;</a>
 {/if}
 {if isset($previous)}
-  <a href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
+  <a href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
 {/if}
 {if isset($next)}
-  <a href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
+  <a href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
 {/if}
 {if isset($last)}
-  <a href="{$last.U_IMG}" title="{'last_page'|@translate} : {$last.TITLE}" rel="last">&raquo;</a>
+  <a href="{$last.U_IMG}" title="{'Last'|@translate} : {$last.TITLE}" rel="last">&raquo;</a>
 {/if}
 </div>
 

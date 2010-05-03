@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Profile'|@translate}</h2>
 </div>
@@ -40,7 +40,7 @@
 	{/if}
         <li>
           <div class="property">
-            <label for="use_new_pwd">{'new_password'|@translate}</label>
+            <label for="use_new_pwd">{'New password'|@translate}</label>
           </div>
           <input type="password" name="use_new_pwd" id="use_new_pwd" value="">
         </li>
@@ -54,59 +54,59 @@
       {/if}
     </fieldset>
     <fieldset>
-      <legend>{'preferences'|@translate}</legend>
+      <legend>{'Preferences'|@translate}</legend>
       <ul>
         <li>
           <div class="property">
-            <label for="nb_image_line">{'nb_image_per_row'|@translate}</label>
+            <label for="nb_image_line">{'Number of images per row'|@translate}</label>
           </div>
           <input type="text" size="3" maxlength="2" name="nb_image_line" id="nb_image_line" value="{$NB_IMAGE_LINE}">
         </li>
         <li>
           <div class="property">
-            <label for="nb_line_page">{'nb_row_per_page'|@translate}</label>
+            <label for="nb_line_page">{'Number of rows per page'|@translate}</label>
           </div>
           <input type="text" size="3" maxlength="2" name="nb_line_page" id="nb_line_page" value="{$NB_ROW_PAGE}" >
         </li>
         <li>
           <div class="property">
-            <label>{'theme'|@translate}</label>
+            <label>{'Interface theme'|@translate}</label>
           </div>
           {html_options name=template options=$template_options selected=$template_selection}
         </li>
         <li>
           <div class="property">
-            <label>{'language'|@translate}</label>
+            <label>{'Language'|@translate}</label>
           </div>
           {html_options name=language options=$language_options selected=$language_selection}
         </li>
         <li>
           <div class="property">
-            <label for="recent_period">{'recent_period'|@translate}</label>
+            <label for="recent_period">{'Recent period'|@translate}</label>
           </div>
           <input type="text" size="3" maxlength="2" name="recent_period" id="recent_period" value="{$RECENT_PERIOD}">
         </li>
         <li>
-          <div class="property">{'auto_expand'|@translate}</div>
+          <div class="property">{'Expand all categories'|@translate}</div>
           {html_radios name='expand' options=$radio_options selected=$EXPAND}
         </li>
         <li>
-          <div class="property">{'show_nb_comments'|@translate}</div>
+          <div class="property">{'Show number of comments'|@translate}</div>
           {html_radios name='show_nb_comments' options=$radio_options selected=$NB_COMMENTS}
         </li>
         <li>
-          <div class="property">{'show_nb_hits'|@translate}</div>
+          <div class="property">{'Show number of hits'|@translate}</div>
           {html_radios name='show_nb_hits' options=$radio_options selected=$NB_HITS}
         </li>
         <li>
           <div class="property">
-            <label for="maxwidth">{'maxwidth'|@translate}</label>
+            <label for="maxwidth">{'Maximum width of the pictures'|@translate}</label>
           </div>
           <input type="text" size="4" maxlength="4" name="maxwidth" id="maxwidth" value="{$MAXWIDTH}">
         </li>
         <li>
           <div class="property">
-            <label for="maxheight">{'maxheight'|@translate}</label>
+            <label for="maxheight">{'Maximum height of the pictures'|@translate}</label>
           </div>
           <input type="text" size="4" maxlength="4" name="maxheight" id="maxheight" value="{$MAXHEIGHT}">
         </li>

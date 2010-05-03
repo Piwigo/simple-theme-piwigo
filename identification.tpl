@@ -4,7 +4,7 @@
     {if isset($U_REGISTER) }
     <li><a href="{$U_REGISTER}" title="{'Create a new account'|@translate}">{'Register'|@translate}</a> «</li>
     {/if}
-    <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Identification'|@translate}</h2>
 </div>
@@ -38,7 +38,7 @@
         {if $authorize_remembering }
         <li>
           <div class="property">
-            <label for="remember_me">{'remember_me'|@translate}</label>
+            <label for="remember_me">{'Auto login'|@translate}</label>
           </div>
           <input tabindex="3" type="checkbox" name="remember_me" id="remember_me" value="1">
         </li>

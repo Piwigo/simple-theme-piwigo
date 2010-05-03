@@ -6,7 +6,7 @@
   {if $display_mode == 'cloud'}
     <li><a href="{$U_LETTERS}" title="{'group by letters'|@translate}">{'group by letters'|@translate}</a></li> « 
   {/if}
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Tags'|@translate}</h2>
 </div>

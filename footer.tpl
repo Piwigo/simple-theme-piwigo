@@ -1,12 +1,12 @@
   <div id="copyright">
     {if isset($debug.TIME)}
-    {'generation_time'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'sql_queries_in'|@translate} {$debug.SQL_TIME}) -
+    {'Page generated in'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'SQL queries in'|@translate} {$debug.SQL_TIME}) -
     {/if}
-    {'powered_by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
+    {'Powered by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
      - <a href="{$themeconf.url}">{$themeconf.template} {$themeconf.theme}</a>
     {if isset($CONTACT_MAIL)}
-    - {'send_mail'|@translate}
-    <a href="mailto:{$CONTACT_MAIL}?subject={'title_send_mail'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
+    - {'Contact'|@translate}
+    <a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
     {/if}
   </div> <!-- copyright -->
   {if isset($footer_elements)}

@@ -1,6 +1,6 @@
 <div class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
-  <a href="{$U_HOME}" rel="home">{'home'|@translate}</a>
+  <a href="{$U_HOME}" rel="home">{'Home'|@translate}</a>
   {if !$IS_HOME}{$LEVEL_SEPARATOR}{$SECTION_TITLE}{/if}
   » <h2>{$current.TITLE}</h2>
 </div> <!-- imageHeaderBar -->
@@ -30,13 +30,13 @@
     </div>
     {if isset($previous) }
     <div id="navThumbPrev">
-      <a class="navThumb" href="{$previous.U_IMG}" title="{'previous_page'|@translate} : {$previous.TITLE}" rel="prev">
+      <a class="navThumb" href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">
         <img src="{$previous.THUMB_SRC}" alt="{$previous.TITLE}"></a>
     </div>
     {/if}
     {if isset($next) }
     <div id="navThumbNext">
-      <a class="navThumb" href="{$next.U_IMG}" title="{'next_page'|@translate} : {$next.TITLE}" rel="next">
+      <a class="navThumb" href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">
         <img src="{$next.THUMB_SRC}" alt="{$next.TITLE}"></a>
     </div>
     {/if}
@@ -50,9 +50,9 @@
         <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as category representative'|@translate}">{'representative'|@translate}</a></li>
         {/if}
         {if isset($U_ADMIN) }
-        <li><a href="{$U_ADMIN}" title="{'link_info_image'|@translate}">{'link_info_image'|@translate}</a></li>
+        <li><a href="{$U_ADMIN}" title="{'Modify information'|@translate}">{'Modify information'|@translate}</a></li>
         {/if}
-        <li><a href="{$U_METADATA}" title="{'picture_show_metadata'|@translate}" rel="nofollow">{'picture_show_metadata'|@translate}</a></li>
+        <li><a href="{$U_METADATA}" title="{'Show file metadata'|@translate}" rel="nofollow">{'Show file metadata'|@translate}</a></li>
       </ul>
     </div>
     {if isset($metadata)}
@@ -102,12 +102,12 @@
           {assign var='rate_text' value='%.2f (rated %d times, standard deviation = %.2f)'|@translate }
           {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count, $rate_summary.std) }
           {else}
-          {'no_rate'|@translate}
+          {'no rate'|@translate}
           {/if}
         </dd>
         {/if}
         {if isset($rating)}
-        <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'update_rate'|@translate}{else}{'new_rate'|@translate}{/if}</span></dt>
+        <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'Update your rating'|@translate}{else}{'Rate this picture'|@translate}{/if}</span></dt>
         <dd>
           <form action="{$rating.F_ACTION}" method="post" id="rateForm">
             <div>&nbsp;
@@ -123,7 +123,7 @@
               <script type="text/javascript">
                 makeNiceRatingForm( {ldelim}rootUrl: '{$ROOT_URL|@escape:"javascript"}',
                 image_id: {$current.id},
-                updateRateText: "{'update_rate'|@translate|@escape:'javascript'}",
+                updateRateText: "{'Update your rating'|@translate|@escape:'javascript'}",
                 updateRateElement: document.getElementById("updateRate"),
                 ratingSummaryText: "{'%.2f (rated %d times, standard deviation = %.2f)'|@translate|@escape:'javascript'}",
                 ratingSummaryElement: document.getElementById("ratingSummary") {rdelim} );
@@ -145,19 +145,19 @@
 
   {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }
   <div id="theComments">
-    <h3 title="{'comments_add'|@translate}">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</h3>
+    <h3 title="{'Add a comment'|@translate}">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</h3>
       {if !empty($COMMENT_NAV_BAR)}
       <div class="navigationBar">{$COMMENT_NAV_BAR}</div>
       {/if}
       {if isset($comment_add)}
       <div id="commentAdd">
-        <h4>{'comments_add'|@translate}</h4>
+        <h4>{'Add a comment'|@translate}</h4>
         <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
           {if $comment_add.SHOW_AUTHOR}
-          <p><label>{'upload_author'|@translate}&nbsp;:</label></p>
+          <p><label>{'Author'|@translate}&nbsp;:</label></p>
           <p><input type="text" name="author" /></p>
           {/if}
-          <p><label>{'comment'|@translate}&nbsp;:</label></p>
+          <p><label>{'Comment'|@translate}&nbsp;:</label></p>
           <p><textarea name="content" id="contentid" rows="5" cols="50">{$comment_add.CONTENT}</textarea></p>
           <p><input type="hidden" name="key" value="{$comment_add.KEY}" />
             <input class="submit" type="submit" value="{'Submit'|@translate}"></p>

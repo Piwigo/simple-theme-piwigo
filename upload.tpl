@@ -1,8 +1,8 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
   </ul>
-  <h2>{'upload_title'|@translate}</h2>
+  <h2>{'Upload a picture'|@translate}</h2>
 </div>
 <div id="content">
   {if isset($errors) and count($errors)}
@@ -42,17 +42,17 @@
         </li>
         <!-- mail address -->
         <li>
-          <div class="property">{'mail_address'|@translate}</div>
+          <div class="property">{'E-mail address'|@translate}</div>
           <input name="mail_address" type="text" value="{$EMAIL}" size="35"/>&nbsp;<span class="mandatorystar">*</span>
         </li>
         <!-- name of the picture -->
         <li>
-          <div class="property">{'upload_name'|@translate}</div>
+          <div class="property">{'Name of the picture'|@translate}</div>
           <input name="name" type="text" value="{$NAME_IMG}" size="35"/>
         </li>
         <!-- author -->
         <li>
-          <div class="property">{'upload_author'|@translate}</div>
+          <div class="property">{'Author'|@translate}</div>
           <input name="author" type="text" value="{$AUTHOR_IMG}" size="35"/>
         </li>
         <!-- date of creation -->
@@ -62,7 +62,7 @@
         </li>
         <!-- comment -->
         <li>
-          <div class="property">{'comment'|@translate}</div>
+          <div class="property">{'Comment'|@translate}</div>
           <textarea name="comment" rows="6" cols="60" style="overflow:auto">{$COMMENT_IMG}</textarea>
         </li>
         {/if}
@@ -73,12 +73,12 @@
     </p>
   </form>
   {else}
-  {'upload_successful'|@translate}<br />
+  {'Picture uploaded with success, an administrator will validate it as soon as possible'|@translate}<br />
   <div style="text-align:center;">
-    <a href="{$U_RETURN}">[ {'home'|@translate} ]</a>
+    <a href="{$U_RETURN}">[ {'Home'|@translate} ]</a>
   </div>
   {/if}
   {if isset($SHOW_FORM_FIELDS) and $SHOW_FORM_FIELDS}
-  <p><span class="mandatorystar">*</span> : {'mandatory'|@translate}</p>
+  <p><span class="mandatorystar">*</span> : {'obligatory'|@translate}</p>
   {/if}
 </div> <!-- content -->

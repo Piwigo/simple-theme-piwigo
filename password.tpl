@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a class="button" href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'home'|@translate}</a></li>
+    <li><a class="button" href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Password forgotten'|@translate}</h2>
 </div>

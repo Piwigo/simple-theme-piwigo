@@ -1,8 +1,8 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'Home'|@translate}</a></li>
   </ul>
-  <h2>{'nbm_item_notification'|@translate}</h2>
+  <h2>{'Notification'|@translate}</h2>
 </div>
 <div id="content">
   {if not empty($errors)}
