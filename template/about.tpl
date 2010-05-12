@@ -5,10 +5,10 @@
   <h2>{'About'|@translate}</h2>
 </div>
 <div id="content">
-  <ul>
   {$ABOUT_MESSAGE}
   {if isset($THEME_ABOUT) }
-  <li>{$THEME_ABOUT}</li>
-  {/if}
+  <ul>
+   <li>{$THEME_ABOUT}</li>
   </ul>
+  {/if}
 </div>

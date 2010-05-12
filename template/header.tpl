@@ -3,8 +3,21 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset={$CONTENT_ENCODING}">
   <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
-  <title>{$PAGE_TITLE} :: {$GALLERY_TITLE}</title>
-  <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}template-common/favicon.ico">
+{if isset($meta_ref) } 
+{if isset($INFO_AUTHOR)}
+<meta name="author" content="{$INFO_AUTHOR|@replace:'"':' '}">
+{/if}
+{if isset($related_tags)}
+<meta name="keywords" content="{foreach from=$related_tags item=tag name=tag_loop}{if !$smarty.foreach.tag_loop.first}, {/if}{$tag.name}{/foreach}">
+{/if}
+{if isset($COMMENT_IMG)}
+<meta name="description" content="{$COMMENT_IMG|@strip_tags:false|@replace:'"':' '}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{else}
+<meta name="description" content="{$PAGE_TITLE}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
+{/if}
+{/if}
+  <title>{$PAGE_TITLE} - {$GALLERY_TITLE}</title>
+<link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}default/favicon.ico">
   <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}" >
   <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php" >
   {if isset($first.U_IMG)   }<link rel="first" title="{'First'|@translate}" href="{$first.U_IMG}" >{/if}
