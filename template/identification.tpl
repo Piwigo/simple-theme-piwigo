@@ -1,15 +1,11 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a> «</li>
-    {if isset($U_REGISTER) }
-    <li><a href="{$U_REGISTER}" title="{'Create a new account'|@translate}">{'Register'|@translate}</a> «</li>
-    {/if}
     <li><a href="{$U_HOME}" title="{'Go through the gallery as a visitor'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Identification'|@translate}</h2>
 </div>
 <div id="content">
-  {if isset($errors) and count($errors)}
+  {if isset($errors) }
   <div class="errors">
     <ul>
       {foreach from=$errors item=error}
@@ -21,35 +17,39 @@
   <form action="{$F_LOGIN_ACTION}" method="post" name="login_form">
     <fieldset>
       <legend>{'Connection settings'|@translate}</legend>
-      <input type="hidden" name="redirect" value="{$U_REDIRECT}">
+    <input type="hidden" name="redirect" value="{$U_REDIRECT|urlencode}">
       <ul>
         <li>
-          <div class="property">
+        <span class="property">
             <label for="username">{'Username'|@translate}</label>
-          </div>
-          <input tabindex="1" class="login" type="text" name="username" id="username" size="25" maxlength="40" />
+        </span>
+        <input tabindex="1" class="login" type="text" name="username" id="username" size="25" maxlength="40">
         </li>
         <li>
-          <div class="property">
+        <span class="property">
             <label for="password">{'Password'|@translate}</label>
-          </div>
-          <input tabindex="2" class="login" type="password" name="password" id="password" size="25" maxlength="25" />
+        </span>
+        <input tabindex="2" class="login" type="password" name="password" id="password" size="25" maxlength="25">
         </li>
         {if $authorize_remembering }
         <li>
-          <div class="property">
-            <label for="remember_me">{'Auto login'|@translate}</label>
-          </div>
+        <span class="property">
+          <label for="Auto login">{'Auto login'|@translate}</label>
+        </span>
           <input tabindex="3" type="checkbox" name="remember_me" id="remember_me" value="1">
         </li>
         {/if}
       </ul>
     </fieldset>
     <p><input class="submit" tabindex="4" type="submit" name="login" value="{'Submit'|@translate}"></p>
+  <p>
+    {if isset($U_REGISTER) }
+    <a href="{$U_REGISTER}" title="{'Register'|@translate}">{'Register'|@translate}</a>
+    {/if}
+    <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
+  </p>
   </form>
-  <script type="text/javascript">
-    <!--
+<script type="text/javascript"><!--
        document.login_form.username.focus();
-       //-->
-  </script>
+//--></script>
 </div> <!-- content -->

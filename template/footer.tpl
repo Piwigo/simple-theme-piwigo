@@ -16,8 +16,12 @@
   {/if}
 </div> <!-- the_page -->
 <script type="text/javascript" src="{$ROOT_URL}template-common/scripts.js"></script>
-<script type="text/javascript" src="{$ROOT_URL}template/{$themeconf.template}/js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="{$ROOT_URL}template/{$themeconf.template}/js/scripts.js"></script>
-{if isset($debug.QUERIES_LIST)}{$debug.QUERIES_LIST}{/if}
+<script type="text/javascript" src="{$ROOT_URL}themes/simple/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="{$ROOT_URL}themes/simple/js/scripts.js"></script>
+{if isset($debug.QUERIES_LIST)}
+<div id="debug">
+{$debug.QUERIES_LIST}
+</div>
+{/if}
 </body>
 </html>

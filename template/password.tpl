@@ -5,7 +5,7 @@
   <h2>{'Password forgotten'|@translate}</h2>
 </div>
 <div id="content">
-  {if isset($errors) and count($errors)}
+  {if count($errors)}
   <div class="errors">
     <ul>
       {foreach from=$errors item=error}
@@ -14,7 +14,7 @@
     </ul>
   </div>
   {/if}
-  {if count($infos) and count($infos)}
+  {if count($infos)}
   <div class="infos">
     <ul>
       {foreach from=$infos item=info}
@@ -28,15 +28,15 @@
       <legend>{'Retrieve password'|@translate}</legend>
       <ul>
         <li>
-          <div class="property">
+        <span class="property">
             <label for="mail_address">{'Email address'|@translate}</label>
-          </div>
-          <input class="login" type="text" name="mail_address" id="mail_address" size="35" maxlength="40" >
+        </span>
+        <input class="login" type="text" name="mail_address" id="mail_address" size="40" maxlength="40" >
         </li>
         <li>
-          <div class="property">
+        <span class="property">
             <label for="no_mail_address">{'No email address'|@translate}</label>
-          </div>
+        </span>
           <input type="checkbox" id="no_mail_address" name="no_mail_address" value="1">
         </li>
       </ul>

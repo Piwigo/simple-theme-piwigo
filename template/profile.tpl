@@ -5,7 +5,7 @@
   <h2>{'Profile'|@translate}</h2>
 </div>
 <div id="content">
-  {if isset($errors) and count($errors)}
+  {if isset($errors)}
   <div class="errors">
     <ul>
       {foreach from=$errors item=error}

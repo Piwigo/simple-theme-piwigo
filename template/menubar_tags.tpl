@@ -2,11 +2,16 @@
 <ul id="menuTagCloud">
   {foreach from=$block->data item=tag}
   <li>
-    <a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{'See images linked to this tag only'|@translate}">{$tag.name}</a>
-    {if !empty($tag.U_ADD) }
-    <a class="tagaddbutton" href="{$tag.U_ADD}"
-       title="{$pwg->l10n_dec('%d element are also linked to current tags', '%d elements are also linked to current tags', $tag.counter)}" rel="nofollow">+</a>
-    {/if}
+	<a class="tagLevel{$tag.level}"
+	{if isset($tag.U_ADD)}
+		href="{$tag.U_ADD}"
+		title="{$pwg->l10n_dec('%d image is also linked to current tags', '%d images are also linked to current tags', $tag.counter)}"
+		rel="nofollow">+
+	{else}
+		href="{$tag.URL}"
+		title="{'See elements linked to this tag only'|@translate}">
+	{/if}
+		{$tag.name}</a>
   </li>
   {/foreach}
 </ul>

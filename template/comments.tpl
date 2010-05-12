@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a class="button" href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
+    <li><a class="button" href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'User comments'|@translate}</h2>
 </div>
@@ -8,10 +8,12 @@
   <form class="filter" action="{$F_ACTION}" method="get">
     <fieldset>
       <legend>{'Filter'|@translate}</legend>
-      <ul>
-        <li><div class="property">{'Keyword'|@translate}</div><input type="text" name="keyword" value="{$F_KEYWORD}" /></li>
-        <li><div class="property">{'Author'|@translate}</div><input type="text" name="author" value="{$F_AUTHOR}" /></li>
-        <li><div class="property">{'Category'|@translate}</div>
+    <label>{'Keyword'|@translate}<input type="text" name="keyword" value="{$F_KEYWORD}"></label>
+
+    <label>{'Author'|@translate}<input type="text" name="author" value="{$F_AUTHOR}"></label>
+
+    <label>
+      {'Category'|@translate}
           <select name="cat">
             <option value="0">------------</option>
             {html_options options=$categories selected=$categories_selected}

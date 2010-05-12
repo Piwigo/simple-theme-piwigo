@@ -7,10 +7,14 @@
       </a>
     </div>
     <div class="description">
-      <h3><a href="{$cat.URL}">{$cat.NAME}</a>{$cat.ICON_TS}</h3>
+      <h3>
+		<a href="{$cat.URL}">{$cat.NAME}</a>
+		{$cat.ICON_TS}
+	  </h3>
       {if isset($cat.INFO_DATES) }
       <p class="thumbCatDescNfoDate">{$cat.INFO_DATES}</p>
       {/if}
+
       <p class="thumbCatDescNbImg">{$cat.CAPTION_NB_IMAGES}</p>
       {if not empty($cat.DESCRIPTION)}
       <p class="thumbCatDesc">{$cat.DESCRIPTION}</p>

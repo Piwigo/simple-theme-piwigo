@@ -6,7 +6,7 @@
 </div> <!-- imageHeaderBar -->
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 <div id="content">
-  {if isset($errors) and count($errors)}
+  {if isset($errors)}
   <div class="errors">
     <ul>
       {foreach from=$errors item=error}
@@ -15,7 +15,7 @@
     </ul>
   </div>
   {/if}
-  {if isset($infos) and count($infos)}
+  {if isset($infos)}
   <div class="infos">
     <ul>
       {foreach from=$infos item=info}
