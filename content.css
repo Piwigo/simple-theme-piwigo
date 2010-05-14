@@ -52,7 +52,8 @@ h1 { font-size: 1.6em; }
 
 .titrePage img {
   float: left;
-  margin-top: -5px;
+  max-height: 16px;
+  margin: 0 5px;
 }
 
 .titrePage .categoryActions {
