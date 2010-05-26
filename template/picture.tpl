@@ -1,7 +1,6 @@
 <div class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
-  <a href="{$U_HOME}" rel="home">{'Home'|@translate}</a>
-  {if !$IS_HOME}{$LEVEL_SEPARATOR}{$SECTION_TITLE}{/if}
+    {$SECTION_TITLE}
   » <h2>{$current.TITLE}</h2>
 </div> <!-- imageHeaderBar -->
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
@@ -28,6 +27,7 @@
     <div id="imageToolBar">
       {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
     </div>
+	{if $DISPLAY_NAV_THUMB}
     {if isset($previous) }
     <div id="navThumbPrev">
       <a class="navThumb" href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">
@@ -40,6 +40,7 @@
         <img src="{$next.THUMB_SRC}" alt="{$next.TITLE}"></a>
     </div>
     {/if}
+	{/if}
     <div id="randomButtons">
       <ul>
         {if isset($U_SLIDESHOW_START) }
@@ -70,31 +71,35 @@
     {/if}
     <div id="imageInfos">
       <dl>
-        {if isset($INFO_AUTHOR)}
+        {if $display_info.author}
         <dt>{'Author'|@translate}</dt>
         <dd>{$INFO_AUTHOR}</dd>
         {/if}
-        {if isset($INFO_CREATION_DATE)}
+         {if $display_info.created_on}
         <dt>{'Created on'|@translate}</dt>
         <dd>{$INFO_CREATION_DATE}</dd>
         {/if}
-<!--    <dt>{'Posted on'|@translate}</dt>
-        <dd>{$INFO_POSTED_DATE}</dd>-->
+		 {if $display_info.posted_on}
+        <dt>{'Posted on'|@translate}</dt>
+        <dd>{$INFO_POSTED_DATE}</dd>
+		{/if}
         {if isset($related_tags)}
         <dt>{'Tags'|@translate}</dt>
         <dd>{foreach from=$related_tags item=tag name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if}
           <a href="{$tag.URL}">{$tag.name}</a>{/foreach}</dd>
         {/if}
-        {if isset($related_categories)}
+         {if $display_info.tags}
         <dt>{'Categories'|@translate}</dt>
         <dd>
           {foreach from=$related_categories item=cat name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if} {'&nbsp;'|@str_ireplace:'&#32;':$cat}{/foreach}
         </dd>
         {/if}
+		 {if $display_info.visits}
         <dt>{'Visits'|@translate}</dt>
         <dd>{$INFO_VISITS}</dd>
+		 {/if}
         {if isset($rate_summary)}
         <dt>{'Average rate'|@translate}</dt>
         <dd id="ratingSummary">
@@ -119,7 +124,7 @@
               <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
               {/if}
               {/foreach}
-              <script type="text/javascript" src="{$ROOT_URL}template/{$themeconf.template}/js/rating.min.js"></script>
+              <script type="text/javascript" src="{$ROOT_URL}themes/simple/js/rating.min.js"></script>
               <script type="text/javascript">
                 makeNiceRatingForm( {ldelim}rootUrl: '{$ROOT_URL|@escape:"javascript"}',
                 image_id: {$current.id},
