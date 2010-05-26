@@ -11,7 +11,6 @@ Author URI: http://saimon.org/
 $themeconf = array(
   /* 'parent' => 'default', */
   'name' => 'simple-grey',
-  'theme_dir' => 'simple',
   'icon_dir' => 'themes/simple/icon',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',

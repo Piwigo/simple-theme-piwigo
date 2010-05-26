@@ -15,9 +15,9 @@
   {/foreach}
   {/if}
 </div> <!-- the_page -->
-<script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/scripts.js"></script>
-<script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/js/jquery-1.3.2.min.js"></script>
-<script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/js/scripts.js"></script>
+<script type="text/javascript" src="{$ROOT_URL}themes/{$theme.id}/scripts.js"></script>
+<script type="text/javascript" src="{$ROOT_URL}themes/{$theme.id}/js/jquery-1.3.2.min.js"></script>
+<script type="text/javascript" src="{$ROOT_URL}themes/{$theme.id}/js/scripts.js"></script>
 {if isset($debug.QUERIES_LIST)}
 <div id="debug">
 {$debug.QUERIES_LIST}
