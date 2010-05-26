@@ -3,7 +3,7 @@
     {'Page generated in'|@translate} {$debug.TIME} ({$debug.NB_QUERIES} {'SQL queries in'|@translate} {$debug.SQL_TIME}) -
     {/if}
     {'Powered by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
-     - <a href="{$themeconf.url}">{$themeconf.template} {$themeconf.theme}</a>
+     - <a href="{$themeconf.url}">{$themeconf.name}</a>
     {if isset($CONTACT_MAIL)}
     - {'Contact'|@translate}
     <a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
@@ -15,7 +15,7 @@
   {/foreach}
   {/if}
 </div> <!-- the_page -->
-<script type="text/javascript" src="{$ROOT_URL}template-common/scripts.js"></script>
+<script type="text/javascript" src="{$ROOT_URL}themes/simple/scripts.js"></script>
 <script type="text/javascript" src="{$ROOT_URL}themes/simple/js/jquery-1.3.2.min.js"></script>
 <script type="text/javascript" src="{$ROOT_URL}themes/simple/js/scripts.js"></script>
 {if isset($debug.QUERIES_LIST)}
