@@ -39,27 +39,9 @@
       {$CONTENT_DESCRIPTION}
     </p>
     {/if}
-    {if !empty($CATEGORIES) or !empty($THUMBNAILS)}
-    {* CONTENT_DESCRIPTION_TOP doesn't exists yet *}
-    {if !empty($CONTENT_DESCRIPTION_TOP) }
-    <div>
-      {$CONTENT_DESCRIPTION_TOP}
-    </div>
-    {/if}
     {if !empty($CATEGORIES) }<div id="categories">{$CATEGORIES}</div>{/if}
     {if !empty($THUMBNAILS) }<div id="thumbnails">{$THUMBNAILS}</div>{/if}
-    {* CONTENT_DESCRIPTION_BOTTOM doesn't exists yet *}
-    {if !empty($CONTENT_DESCRIPTION_BOTTOM) }
-    <div>
-      {$CONTENT_DESCRIPTION_BOTTOM}
-    </div>
-    {/if}
-    {/if}
-    {if !empty($NAV_BAR) }
-    <div class="navigationBar">
-      {$NAV_BAR}
-    </div>
-    {/if}
+    {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
     {if !empty($PLUGIN_INDEX_CONTENT_END) }{$PLUGIN_INDEX_CONTENT_END}{/if}
   </div> <!-- subContent -->
   <div style="clear: both;"></div>
