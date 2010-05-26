@@ -124,7 +124,7 @@
               <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
               {/if}
               {/foreach}
-              <script type="text/javascript" src="{$ROOT_URL}themes/{$theme.id}/js/rating.min.js"></script>
+              <script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/js/rating.min.js"></script>
               <script type="text/javascript">
                 makeNiceRatingForm( {ldelim}rootUrl: '{$ROOT_URL|@escape:"javascript"}',
                 image_id: {$current.id},
