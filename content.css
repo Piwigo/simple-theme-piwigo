@@ -50,6 +50,10 @@ h1 { font-size: 1.6em; }
   display: inline;
 }
 
+.titrePage .button {
+  float: none;
+}
+
 .titrePage img {
   float: left;
   max-height: 16px;
