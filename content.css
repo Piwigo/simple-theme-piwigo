@@ -174,7 +174,7 @@ form {
 #thumbnails li {
   margin: 0;
   padding: 0;
-  float: left;
+  float: right;
   width: 200px;
   height: 200px;
 }
@@ -239,7 +239,6 @@ form {
 .navigationBar {
   padding: 0.5em;
   text-align: right;
-  clear: both;
 }
 
 /* pictures pages */
