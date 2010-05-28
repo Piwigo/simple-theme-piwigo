@@ -48,7 +48,6 @@
       <blockquote><div>{$comment.CONTENT}</div></blockquote>
       {/if}
     </div>
-    </div>
   </li>
   {/foreach}
 </ul>
