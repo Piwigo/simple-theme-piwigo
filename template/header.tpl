@@ -3,7 +3,7 @@
 <head>
   <meta http-equiv="Content-Type" content="text/html; charset={$CONTENT_ENCODING}">
   <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
-{if isset($meta_ref) } 
+{if isset($meta_ref) }
 {if isset($INFO_AUTHOR)}
 <meta name="author" content="{$INFO_AUTHOR|@replace:'"':' '}">
 {/if}
@@ -26,9 +26,9 @@
   {if isset($last.U_IMG)    }<link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}" >{/if}
   {if isset($U_UP)          }<link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}" >{/if}
 
+  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/simple/content.css">
   {foreach from=$themes item=theme}
   {if $theme.load_css}
-  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/{$theme.id}/content.css">
   <link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/{$theme.id}/theme.css">
   {/if}
   {if isset($theme.local_head)}{include file=$theme.local_head}{/if}
