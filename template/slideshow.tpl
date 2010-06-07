@@ -1,3 +1,8 @@
+{html_head}
+{literal}
+<style>#copyright {display: none;}</style>
+{/literal}
+{/html_head}
 <div id="slideshow" class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
   {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}

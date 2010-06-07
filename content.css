@@ -174,7 +174,7 @@ form {
 #thumbnails li, .middle_block > ul li {
   margin: 0;
   padding: 0;
-  float: right;
+  float: left;
   width: 200px;
   height: 200px;
 }
@@ -243,11 +243,10 @@ form {
 
 /* pictures pages */
 
-#thePicturePage #theHeader, #thePicturePage #copyright {
+#thePicturePage #theHeader {
   display: none;
 }
 #thePicturePage #content {
-  margin-bottom: 1em;
   padding: 1em 0 0;
 }
 
