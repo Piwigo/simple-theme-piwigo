@@ -42,6 +42,7 @@ h1 { font-size: 1.6em; }
 
 .titrePage {
   margin: 1em 0;
+  line-height: 1.5em;
 }
 
 .titrePage h2 {
@@ -127,9 +128,18 @@ form {
 }
 
 .property {
-  display: block;
-  min-width: 275px;
-  float: left;
+  display: inline-block;
+  width: 180px;
+}
+
+#quicksearch {
+  margin: 1em 0 0;
+}
+#quicksearch p {
+  margin: 0;
+}
+#quicksearch #q {
+  width: 150px;
 }
 
 /* Menubar */

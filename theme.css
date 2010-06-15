@@ -82,11 +82,21 @@ h2, h3 {
 
 /* inputs */
 
-input[type="text"], input[type="password"], select, textarea, file {
- background:#f0f0f0;
- color: #333;
- border: 1px solid;
- margin: 0;
+input, select, textarea {
+  background-color: #666;
+  border: 1px solid #999;
+  color: #F0F0F0;
+}
+
+input[type="submit"], input[type="reset"] {
+  background-color: #3f3f3f;
+  border: 1px solid #606060;
+  color: #999;
+}
+input[type="submit"]:hover, input[type="reset"]:hover {
+  background-color: #666;
+  border: 1px solid #999;
+  color: #F0F0F0;
 }
 
 fieldset {
@@ -96,8 +106,17 @@ fieldset {
 }
 
 fieldset legend {
-  background-color: #333;
   padding: 0 3px;
+}
+
+fieldset li {
+  margin: 0.5em 0;
+}
+
+#quicksearch #q {
+  background-color: #3f3f3f;
+  border: 1px solid #606060;
+  color: #999;
 }
 
 /* picture page */
