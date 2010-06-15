@@ -1,7 +1,7 @@
-Simple theme for Piwigo
-=======================
+Simple grey theme for Piwigo
+============================
 
-*Simple* is a theme for *Piwigo* gallery software.
+*Simple grey* is a theme for *Piwigo* gallery software.
 
 This theme was inspired by *gally / Graphite* theme for Piwigo, and *Carbon*
 theme for Gallery, with the goal to simplify the design up to go to basics:
@@ -26,3 +26,21 @@ Install
 * for **Piwigo 2.0.x**, use **Simple 1.4.1** : download the archive and
   extract it in ``your-gallery/template/``.
 
+Changelog
+---------
+
+### version 2.1
+
+- bugfix for user's profile - use default `profile_content.tpl`
+- child themes do not need to have `content.css`
+- use `local_head.tpl`
+- correct order of thumbnails & show copyright on picture page
+- use default as parent theme & change theme URI
+- add quicksearch and style input, textarea, ...
+- add login link in the footer
+
+### version 2.0
+
+- adapt the theme for Piwigo 2.1
+- add Readme
+- tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
