@@ -104,7 +104,7 @@
         <dt>{'Average rate'|@translate}</dt>
         <dd id="ratingSummary">
           {if $rate_summary.count}
-          {assign var='rate_text' value='%.2f (rated %d times, standard deviation = %.2f)'|@translate }
+          {assign var='rate_text' value='%.2f (rated %d times)'|@translate }
           {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count, $rate_summary.std) }
           {else}
           {'no rate'|@translate}
