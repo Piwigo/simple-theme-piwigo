@@ -53,7 +53,9 @@
         {if isset($U_ADMIN) }
         <li><a href="{$U_ADMIN}" title="{'Modify information'|@translate}">{'Modify information'|@translate}</a></li>
         {/if}
+        {if isset($U_METADATA)}
         <li><a href="{$U_METADATA}" title="{'Show file metadata'|@translate}" rel="nofollow">{'Show file metadata'|@translate}</a></li>
+        {/if}
       </ul>
     </div>
     {if isset($metadata)}
