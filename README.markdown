@@ -33,6 +33,9 @@ Changelog
 
 * change the way to hide blocks in JS, without <noscript>, thanks to VDigital
   & nicolas
+* update jquery to 1.4.2
+* bugfix for the metadata display option
+* remove standard deviation for votes
 
 ### version 2.1
 
@@ -54,5 +57,6 @@ TODO
 ----
 
 * calendar
-* use known_script ?
-  {known_script id="jquery" src=$ROOT_URL|@cat:"themes/default/js/jquery.packed.js"}
+* use known_script : does not work in the footer ...
+  {known_script id="jquery" src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.2.min.js"}
+
