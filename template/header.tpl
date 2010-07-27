@@ -40,13 +40,13 @@
   <link rel="alternate" type="application/rss+xml" title="{'Image only RSS feed'|@translate}" href="{$U_FEED_IMAGE_ONLY}">
   <link rel="alternate" type="application/rss+xml" title="{'Complete RSS feed (images, comments)'|@translate}" href="{$U_FEED}">
   {/if}
-  <noscript><style type="text/css">
-      {literal}#menubar {display: block;} #theComments div {display: block;}{/literal}
-  </style></noscript>
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}
   {/if}
+  <script type="text/javascript">
+    document.documentElement.className = 'js';
+  </script>
 </head>
 <body id="{$BODY_ID}">
 <div id="the_page">

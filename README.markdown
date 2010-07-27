@@ -29,6 +29,11 @@ Install
 Changelog
 ---------
 
+### version 2.2-dev
+
+* change the way to hide blocks in JS, without <noscript>, thanks to VDigital
+  & nicolas
+
 ### version 2.1
 
 - bugfix for user's profile - use default `profile_content.tpl`
@@ -44,3 +49,10 @@ Changelog
 - adapt the theme for Piwigo 2.1
 - add Readme
 - tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
+
+TODO
+----
+
+* calendar
+* use known_script ?
+  {known_script id="jquery" src=$ROOT_URL|@cat:"themes/default/js/jquery.packed.js"}

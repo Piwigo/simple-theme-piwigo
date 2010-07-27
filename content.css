@@ -23,6 +23,12 @@ h1 { font-size: 1.6em; }
   cursor: pointer;
 }
 
+/* hide javascript stuff */
+
+.js #menubar, .js #theComments > div {
+  display: none;
+}
+
 /* Layout */
 
 #the_page {
@@ -149,7 +155,6 @@ form {
   padding: 0;
   float: left;
   width: 15%;
-  display: none;
 }
 
 #menubar ul {
@@ -344,10 +349,6 @@ form {
   line-height: 25px;
   padding-left: 1em;
   cursor: pointer;
-}
-
-#theComments > div {
-  display: none;
 }
 
 #commentAdd, #commentList {
