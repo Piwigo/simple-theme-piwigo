@@ -1,7 +1,7 @@
 <div class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
     {$SECTION_TITLE}
-  » <h2>{$current.TITLE}</h2>
+    {$LEVEL_SEPARATOR} <h2>{$current.TITLE}</h2>
 </div> <!-- imageHeaderBar -->
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 <div id="content">
@@ -46,15 +46,21 @@
         {if isset($U_SLIDESHOW_START) }
         <li><a href="{$U_SLIDESHOW_START}" title="{'slideshow'|@translate}" rel="nofollow">{'slideshow'|@translate}</a></li>
         {/if}
+        {if isset($U_METADATA) }
+        <li><a href="{$U_METADATA}" title="{'Show file metadata'|@translate}" rel="nofollow">{'Show file metadata'|@translate}</a></li>
+        {/if}
+        {if isset($current.U_DOWNLOAD) }
+        <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}">{'download'|@translate}</a></li>
+        {/if}
         {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
+        {if isset($favorite) }
+        <li><a href="{$favorite.U_FAVORITE}" title="{$favorite.FAVORITE_HINT}">{$favorite.FAVORITE_HINT}</a></li>
+        {/if}
         {if !empty($U_SET_AS_REPRESENTATIVE) }
         <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as category representative'|@translate}">{'representative'|@translate}</a></li>
         {/if}
         {if isset($U_ADMIN) }
         <li><a href="{$U_ADMIN}" title="{'Modify information'|@translate}">{'Modify information'|@translate}</a></li>
-        {/if}
-        {if isset($U_METADATA)}
-        <li><a href="{$U_METADATA}" title="{'Show file metadata'|@translate}" rel="nofollow">{'Show file metadata'|@translate}</a></li>
         {/if}
       </ul>
     </div>
@@ -102,12 +108,12 @@
         <dt>{'Visits'|@translate}</dt>
         <dd>{$INFO_VISITS}</dd>
 		 {/if}
-        {if isset($rate_summary)}
+        {if $display_info.average_rate and isset($rate_summary) }
         <dt>{'Average rate'|@translate}</dt>
         <dd id="ratingSummary">
           {if $rate_summary.count}
           {assign var='rate_text' value='%.2f (rated %d times)'|@translate }
-          {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count, $rate_summary.std) }
+          {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count) }
           {else}
           {'no rate'|@translate}
           {/if}
@@ -132,7 +138,7 @@
                 image_id: {$current.id},
                 updateRateText: "{'Update your rating'|@translate|@escape:'javascript'}",
                 updateRateElement: document.getElementById("updateRate"),
-                ratingSummaryText: "{'%.2f (rated %d times, standard deviation = %.2f)'|@translate|@escape:'javascript'}",
+                ratingSummaryText: "{'%.2f (rated %d times)'|@translate|@escape:'javascript'}",
                 ratingSummaryElement: document.getElementById("ratingSummary") {rdelim} );
               </script>
             </div>
