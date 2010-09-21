@@ -56,6 +56,9 @@ h1 { font-size: 1.6em; }
   padding: 0;
   display: inline;
 }
+#subcontent h2 {
+  margin: 0 0 1em;
+}
 
 .titrePage .button {
   float: none;
@@ -392,6 +395,22 @@ ul.actions {
 #theCommentsPage #comments li {
   clear: left;
   list-style: none;
+}
+
+/* calendar */
+
+.calendarViews, .calendarCalBar {
+  margin: 1em 0;
+}
+
+.calCalHead {
+  font-size: 1.1em;
+  font-weight: bold;
+}
+
+.calMonth {
+  width: 80%;
+  margin: 1em auto;
 }
 
 /* Footer */

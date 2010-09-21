@@ -17,6 +17,25 @@
 <div id="content">
   {$MENUBAR}
   <div id="subcontent">
+    {if isset($chronology.TITLE) }
+    <h2>{$chronology.TITLE}</h2>
+    {/if}
+    {if isset($chronology_views) }
+    {if isset($U_MODE_POSTED) }
+    <a href="{$U_MODE_POSTED}" rel="nofollow">{'display a calendar by posted date'|@translate}</a>
+    {/if}
+    {if isset($U_MODE_CREATED) }
+    <a href="{$U_MODE_CREATED}" rel="nofollow">{'display a calendar by creation date'|@translate}</a>
+    {/if}
+    <div class="calendarViews">{'View'|@translate}:
+    <select onchange="document.location = this.options[this.selectedIndex].value;">
+      {foreach from=$chronology_views item=view}
+      <option value="{$view.VALUE}"{if $view.SELECTED} selected="selected"{/if}>{$view.CONTENT}</option>
+      {/foreach}
+    </select>
+    </div>
+    {/if}
+
     {if !empty($PLUGIN_INDEX_CONTENT_BEGIN)}{$PLUGIN_INDEX_CONTENT_BEGIN}{/if}
     {if !empty($category_search_results) }
     <div>{'Category results for'|@translate} <strong>{$QUERY_SEARCH}</strong> :
@@ -39,6 +58,10 @@
       {$CONTENT_DESCRIPTION}
     </p>
     {/if}
+    {if isset($FILE_CHRONOLOGY_VIEW) }
+      {include file=$FILE_CHRONOLOGY_VIEW}
+    {/if}
+
     {if !empty($CATEGORIES) }{$CATEGORIES}{/if}
     {if !empty($THUMBNAILS) }<div id="thumbnails">{$THUMBNAILS}</div>{/if}
     {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
@@ -47,3 +70,4 @@
   <div style="clear: both;"></div>
   {if !empty($PLUGIN_INDEX_CONTENT_AFTER)}{$PLUGIN_INDEX_CONTENT_AFTER}{/if}
 </div> <!-- content -->
+
