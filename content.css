@@ -413,6 +413,13 @@ ul.actions {
   margin: 1em auto;
 }
 
+.calendarBar {
+  text-align: center;
+}
+.calendarBar span {
+  margin: 0 0.5em;
+}
+
 /* Footer */
 
 #copyright {

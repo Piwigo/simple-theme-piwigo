@@ -149,6 +149,25 @@ fieldset li {
   font-weight: bold;
 }
 
+
+/* calendar */
+
+.calMonth td {
+  background-color: #363636;
+  text-align: center;
+}
+
+.calImg {
+  text-align: center;
+}
+.calImg img {
+  height: 80px;
+}
+
+.calBackDate, .calForeDate {
+  display: none;
+}
+
 /* tags */
 
 #fullTagCloud a:hover {
