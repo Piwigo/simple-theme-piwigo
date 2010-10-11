@@ -11,23 +11,23 @@
       <ul class="actions">
 	{if isset($comment.U_DELETE)}
 	<li>
-		<a href="{$comment.U_DELETE}" title="{'delete this comment'|@translate}" onclick="return confirm('{'Are you sure?'|@translate|@escape:javascript}');">
-			[delete]
-		</a>
+          <a href="{$comment.U_DELETE}" title="{'delete this comment'|@translate}" onclick="return confirm('{'Are you sure?'|@translate|@escape:javascript}');">
+            [delete]
+          </a>
 	</li>
 	{/if}
-    {if isset($comment.U_EDIT) and !isset($comment.IN_EDIT)}
-    <li>
-      <a class="editComment" href="{$comment.U_EDIT}#edit_comment" title="{'edit this comment'|@translate}">
-        [edit]
-      </a>
-    </li>
-    {/if}
+        {if isset($comment.U_EDIT) and !isset($comment.IN_EDIT)}
+        <li>
+          <a class="editComment" href="{$comment.U_EDIT}#edit_comment" title="{'edit this comment'|@translate}">
+            [edit]
+          </a>
+        </li>
+        {/if}
 	{if isset($comment.U_VALIDATE)}
 	<li>
-		<a href="{$comment.U_VALIDATE}" title="{'validate this comment'|@translate}">
-			[validate]
-		</a>
+          <a href="{$comment.U_VALIDATE}" title="{'validate this comment'|@translate}">
+            [validate]
+          </a>
 	</li>
 	{/if}
       </ul>
@@ -36,13 +36,13 @@
       {if isset($comment.IN_EDIT)}
       <a name="edit_comment"></a>
       <form  method="post" action="{$comment.U_EDIT}" class="filter" id="editComment">
-	  <fieldset>
-		<legend>{'Edit a comment'|@translate}</legend>
-		<label>{'Comment'|@translate}<textarea name="content" id="contenteditid" rows="5" cols="80">{$comment.CONTENT|@escape}</textarea></label>
-		<input type="hidden" name="key" value="{$comment.KEY}">
-		<input type="hidden" name="image_id" value="{$comment.IMAGE_ID|@default:$current.id}">
-		<input class="submit" type="submit" value="{'Submit'|@translate}">
-	  </fieldset>
+        <fieldset>
+          <legend>{'Edit a comment'|@translate}</legend>
+          <label>{'Comment'|@translate}<textarea name="content" id="contenteditid" rows="5" cols="80">{$comment.CONTENT|@escape}</textarea></label>
+          <input type="hidden" name="key" value="{$comment.KEY}">
+          <input type="hidden" name="image_id" value="{$comment.IMAGE_ID|@default:$current.id}">
+          <input class="submit" type="submit" value="{'Submit'|@translate}">
+        </fieldset>
       </form>
       {else}
       <blockquote><div>{$comment.CONTENT}</div></blockquote>

@@ -20,11 +20,11 @@
 {/foreach}
 {'</li></ul>'|@str_repeat:$ref_level}
 
-	{if isset($block->data.U_UPLOAD)}
-	<ul>
-		<li>
-			<a href="{$block->data.U_UPLOAD}">{'Upload a picture'|@translate}</a>
-		</li>
-	</ul>
-	{/if}
-	<p class="totalImages">{$pwg->l10n_dec('%d image', '%d images', $block->data.NB_PICTURE)}</p>
+{if isset($block->data.U_UPLOAD)}
+<ul>
+  <li>
+    <a href="{$block->data.U_UPLOAD}">{'Upload a picture'|@translate}</a>
+  </li>
+</ul>
+{/if}
+<p class="totalImages">{$pwg->l10n_dec('%d image', '%d images', $block->data.NB_PICTURE)}</p>
