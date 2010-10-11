@@ -1,6 +1,6 @@
 {if !empty($PLUGIN_INDEX_CONTENT_BEFORE)}{$PLUGIN_INDEX_CONTENT_BEFORE}{/if}
 <div class="titrePage">
-  <span id="menuswitcher" title="Afficher/cacher le menu">Menu</span> »
+  <span id="menuswitcher" title="{'Show/hide menu'|@translate}">Menu</span> »
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
     {if isset($U_EDIT)}
