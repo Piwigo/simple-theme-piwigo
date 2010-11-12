@@ -42,6 +42,13 @@ Install
 Changelog
 ---------
 
+### version 2.3-dev
+
+* move jquery in the header, using known_script
+* translation for the menu title
+* add 1px icon start_filter.png to avoid loading error with rvtree plugin
+* margin for error & info divs
+
 ### version 2.2
 
 * fix the calendar's pages
@@ -66,9 +73,3 @@ Changelog
 - adapt the theme for Piwigo 2.1
 - add Readme
 - tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
-
-TODO
-----
-
-* use known_script : does not work in the footer ... {known_script id="jquery"
-  src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.2.min.js"}

@@ -16,7 +16,6 @@
   {/foreach}
   {/if}
 </div> <!-- the_page -->
-<script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/js/jquery-1.4.2.min.js"></script>
 <script type="text/javascript" src="{$ROOT_URL}themes/{$themeconf.theme_dir}/js/scripts.js"></script>
 {if isset($debug.QUERIES_LIST)}
 <div id="debug">

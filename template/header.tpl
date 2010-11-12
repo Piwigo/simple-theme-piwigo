@@ -56,6 +56,7 @@
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}
   {/if}
+  {known_script id="jquery" src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.2.min.js"}
   <script type="text/javascript">
     document.documentElement.className = 'js';
   </script>
