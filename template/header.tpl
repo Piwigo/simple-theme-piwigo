@@ -57,6 +57,7 @@
     {/foreach}
   {/if}
   {known_script id="jquery" src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.2.min.js"}
+  {known_script id="simplescripts" src=$ROOT_URL|@cat:"themes/simple/js/scripts.min.js"}
   <script type="text/javascript">
     document.documentElement.className = 'js';
   </script>
