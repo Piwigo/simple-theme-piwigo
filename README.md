@@ -44,6 +44,11 @@ Changelog
 
 ### version 2.3-dev
 
+* update jquery to 1.4.4
+* backport commit from piwigo: r6244, r6430 & r6438
+* add gitignore
+* update javascripts + add script to combine/minify
+* apply r6594 from piwigo's trunk
 * move jquery in the header, using known_script
 * translation for the menu title
 * add 1px icon start_filter.png to avoid loading error with rvtree plugin
@@ -73,3 +78,8 @@ Changelog
 - adapt the theme for Piwigo 2.1
 - add Readme
 - tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
+
+
+## TODO
+
+- put rss link in header.tpl (when ready)
