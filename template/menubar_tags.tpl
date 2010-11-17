@@ -9,7 +9,7 @@
          rel="nofollow">+
        {else}
          href="{$tag.URL}"
-         title="{'See elements linked to this tag only'|@translate}">
+         title="{'See images linked to this tag only'|@translate}">
        {/if}
        {$tag.name}</a>
   </li>

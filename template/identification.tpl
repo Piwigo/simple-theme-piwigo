@@ -17,7 +17,6 @@
   <form action="{$F_LOGIN_ACTION}" method="post" name="login_form">
     <fieldset>
       <legend>{'Connection settings'|@translate}</legend>
-    <input type="hidden" name="redirect" value="{$U_REDIRECT|urlencode}">
       <ul>
         <li>
         <span class="property">
@@ -34,20 +33,23 @@
         {if $authorize_remembering }
         <li>
         <span class="property">
-          <label for="Auto login">{'Auto login'|@translate}</label>
+          <label for="remember_me">{'Auto login'|@translate}</label>
         </span>
           <input tabindex="3" type="checkbox" name="remember_me" id="remember_me" value="1">
         </li>
         {/if}
       </ul>
     </fieldset>
-    <p><input class="submit" tabindex="4" type="submit" name="login" value="{'Submit'|@translate}"></p>
-  <p>
-    {if isset($U_REGISTER) }
-    <a href="{$U_REGISTER}" title="{'Register'|@translate}">{'Register'|@translate}</a>
-    {/if}
-    <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
-  </p>
+    <p>
+      <input type="hidden" name="redirect" value="{$U_REDIRECT|@urlencode}">
+      <input class="submit" tabindex="4" type="submit" name="login" value="{'Submit'|@translate}">
+    </p>
+    <p>
+      {if isset($U_REGISTER) }
+      <a href="{$U_REGISTER}" title="{'Register'|@translate}">{'Register'|@translate}</a>
+      {/if}
+      <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
+    </p>
   </form>
 <script type="text/javascript"><!--
        document.login_form.username.focus();
