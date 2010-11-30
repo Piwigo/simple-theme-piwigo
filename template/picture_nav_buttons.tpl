@@ -1,3 +1,4 @@
+{if $DISPLAY_NAV_BUTTONS}
 <div class="navButtons">
 {if isset($U_SLIDESHOW_STOP)}
   <a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}">{'Stop'|@translate}</a>
@@ -29,6 +30,7 @@
   <a href="{$last.U_IMG}" title="{'Last'|@translate} : {$last.TITLE}" rel="last">&raquo;</a>
 {/if}
 </div>
+{/if}
 
 <script type="text/javascript">// <![CDATA[
 {literal}

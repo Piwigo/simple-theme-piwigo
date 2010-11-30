@@ -79,36 +79,40 @@
     {/if}
     <div id="imageInfos">
       <dl>
-        {if $display_info.author}
+        {if $display_info.author and isset($INFO_AUTHOR)}
         <dt>{'Author'|@translate}</dt>
         <dd>{$INFO_AUTHOR}</dd>
         {/if}
-         {if $display_info.created_on}
+        {if $display_info.created_on and isset($INFO_CREATION_DATE)}
         <dt>{'Created on'|@translate}</dt>
         <dd>{$INFO_CREATION_DATE}</dd>
         {/if}
-		 {if $display_info.posted_on}
+        {if $display_info.posted_on}
         <dt>{'Posted on'|@translate}</dt>
         <dd>{$INFO_POSTED_DATE}</dd>
-		{/if}
-        {if isset($related_tags)}
-        <dt>{'Tags'|@translate}</dt>
-        <dd>{foreach from=$related_tags item=tag name=tag_loop}
-          {if !$smarty.foreach.tag_loop.first}, {/if}
-          <a href="{$tag.URL}">{$tag.name}</a>{/foreach}</dd>
         {/if}
-         {if $display_info.tags}
+        {if $display_info.tags and isset($related_tags)}
+        <dt>{'Tags'|@translate}</dt>
+        <dd>
+          {foreach from=$related_tags item=tag name=tag_loop}
+          {if !$smarty.foreach.tag_loop.first}, {/if}
+          <a href="{$tag.URL}">{$tag.name}</a>{/foreach}
+        </dd>
+        {/if}
+        {if $display_info.categories and isset($related_categories)}
         <dt>{'Categories'|@translate}</dt>
         <dd>
           {foreach from=$related_categories item=cat name=tag_loop}
-          {if !$smarty.foreach.tag_loop.first}, {/if} {'&nbsp;'|@str_ireplace:'&#32;':$cat}{/foreach}
+          {if !$smarty.foreach.tag_loop.first}, {/if}
+          {'&nbsp;'|@str_ireplace:'&#32;':$cat}{/foreach}
         </dd>
         {/if}
-		 {if $display_info.visits}
+        {if $display_info.visits}
         <dt>{'Visits'|@translate}</dt>
         <dd>{$INFO_VISITS}</dd>
-		 {/if}
-        {if $display_info.average_rate and isset($rate_summary) }
+        {/if}
+        {if $display_info.average_rate}
+        {if isset($rate_summary)}
         <dt>{'Average rate'|@translate}</dt>
         <dd id="ratingSummary">
           {if $rate_summary.count}
@@ -143,6 +147,7 @@
             </div>
           </form>
         </dd>
+        {/if}
         {/if}
       </dl>
     </div> <!-- imageInfos -->
