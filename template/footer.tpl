@@ -4,8 +4,13 @@
     {/if}
     {'Powered by'|@translate} <a href="{$PHPWG_URL}">Piwigo</a>
      - <a href="{$themeconf.url}">{$themeconf.name}</a>
-     - <a href="{$U_LOGIN}" rel="nofollow">{'Login'|@translate}</a>
-    {if isset($CONTACT_MAIL)}
+    {if isset($U_LOGIN)}
+    - <a href="{$U_LOGIN}" rel="nofollow">{'Login'|@translate}</a>
+    {/if}
+    {if isset($U_LOGOUT)}
+    - <a href="{$U_LOGOUT}">{'Logout'|@translate}</a>
+    {/if}
+     {if isset($CONTACT_MAIL)}
     - {'Contact'|@translate}
     <a href="mailto:{$CONTACT_MAIL}?subject={'A comment on your site'|@translate|@escape:url}">{'Webmaster'|@translate}</a>
     {/if}
