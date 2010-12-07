@@ -1,5 +1,6 @@
 /* Grey theme for the simple template
-   author: Saïmon <contact at saimon.org> */
+   author: Saïmon <contact at saimon org>
+*/
 
 body {
   background-color: #333;
@@ -20,6 +21,9 @@ body {
 a {
   color: #999;
 }
+a:hover, #menuswitcher:hover, #theComments h3:hover {
+  color: #f0f0f0;
+}
 
 .titrePage, .titrePage a {
   font-weight: bold;
@@ -27,8 +31,10 @@ a {
   font-variant: normal;
 }
 
-h2, h3 {
-  font-variant: small-caps;
+h2, h3, #menubar dt {
+  /* font-variant: small-caps; */
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 #copyright {
@@ -42,7 +48,7 @@ h2, h3 {
   font-weight: bold;
 }
 .thumbnail {
-  border: 2px #707070 solid;
+  border: 2px #606060 solid;
 }
 .thumbnail:hover {
   border: 2px #f0f0f0 solid;
@@ -51,23 +57,18 @@ h2, h3 {
   margin: 0;
 }
 
-#menubar dt {
-  font-variant: small-caps;
-  font-weight: bold;
-}
-
 /* page content :  categories thumbnails */
 
 .illustration img {
-  border: 1px #606060 solid;
+  border: 2px #606060 solid;
 }
 
 .illustration img:hover {
-  border: 1px #f0f0f0 solid;
+  border: 2px #f0f0f0 solid;
 }
 
 .thumbCatDesc {
-  border-top: 1px #606060 dotted;
+  border-top: 1px #606060 solid;
   text-align: justify;
 }
 
