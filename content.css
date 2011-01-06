@@ -33,7 +33,7 @@ h1 { font-size: 1.6em; }
 
 #the_page {
   width: 85%;
-  min-width: 900px;
+  min-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
@@ -291,8 +291,8 @@ form {
 #imageInfoBar {
   float: right;
   clear: right;
-  width: 20%;
-  margin: 0 1em 0;
+  width: 180px;
+  margin: 0 10px;
 }
 
 #randomButtons ul {

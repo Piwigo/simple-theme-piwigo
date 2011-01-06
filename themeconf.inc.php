@@ -22,7 +22,7 @@ $themeconf = array(
 );
 
 global $user;
-$user['maxwidth'] = 680;
+$user['maxwidth'] = 720;
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 
