@@ -397,6 +397,11 @@ ul.actions {
   list-style: none;
 }
 
+#theCommentsPage form label {
+  display: inline-block;
+  line-height: 25px;
+}
+
 /* calendar */
 
 .calendarViews, .calendarCalBar {
