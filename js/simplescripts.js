@@ -1,4 +1,6 @@
-jQuery.noConflict();
+// if cl_conflit is not used, use jQuery.noConflict to work with other libs
+if (typeof (Conflit) == "undefined")
+   jQuery.noConflict();
 
 jQuery(document).ready(function($){
   $("#theComments h3").click(function () {
