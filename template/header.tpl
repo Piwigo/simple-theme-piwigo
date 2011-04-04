@@ -52,12 +52,18 @@
   <link rel="alternate" type="application/rss+xml" title="{'Image only RSS feed'|@translate}" href="{$U_FEED_IMAGE_ONLY}">
   <link rel="alternate" type="application/rss+xml" title="{'Complete RSS feed (images, comments)'|@translate}" href="{$U_FEED}">
   {/if}
+
+  {get_combined_scripts load='header'}
+  {combine_script id='jquery' path='themes/default/js/jquery.min.js'}
+  {combine_script id='jquery.cookie' path='themes/simple/js/jquery.cookie.min.js'}
+  {combine_script id='rating' path='themes/simple/js/rating.js'}
+  {combine_script id='pwgscripts' path='themes/simple/js/pwgscripts.js'}
+  {combine_script id='simplescripts' path='themes/simple/js/simplescripts.js'}
+
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}
   {/if}
-  {known_script id="jquery" src=$ROOT_URL|@cat:"themes/simple/js/jquery-1.4.4.min.js"}
-  {known_script id="simplescripts" src=$ROOT_URL|@cat:"themes/simple/js/scripts.min.js"}
   <script type="text/javascript">
     document.documentElement.className = 'js';
   </script>
