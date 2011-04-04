@@ -57,9 +57,9 @@
   {get_combined_scripts load='header'}
   {combine_script id='jquery' path='themes/default/js/jquery.min.js'}
   {combine_script id='jquery.cookie' path='themes/simple/js/jquery.cookie.min.js'}
-  {combine_script id='rating' path='themes/simple/js/rating.js'}
-  {combine_script id='pwgscripts' path='themes/simple/js/pwgscripts.js'}
-  {combine_script id='simplescripts' path='themes/simple/js/simplescripts.js'}
+  {combine_script id='rating' path='themes/default/js/rating.js'}
+  {combine_script id='core.scripts' path='themes/default/js/scripts.js'}
+  {combine_script id='simple.scripts' path='themes/simple/js/scripts.js'}
 
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
