@@ -36,13 +36,14 @@
   <link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}" >
   {/if}
 
-  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/simple/content.css">
-  {foreach from=$themes item=theme}
-  {if $theme.load_css}
-  <link rel="stylesheet" type="text/css" href="{$ROOT_URL}themes/{$theme.id}/theme.css">
-  {/if}
-  {if !empty($theme.local_head)}{include file=$theme.local_head}{/if}
-  {/foreach}
+{get_combined_css}
+{combine_css path="themes/simple/content.css" order="-10"}
+{foreach from=$themes item=theme}
+{if $theme.load_css}
+{combine_css path="themes/`$theme.id`/theme.css" order=-10}
+{/if}
+{if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
+{/foreach}
 
   {if isset($U_PREFETCH)}<link rel="prefetch" href="{$U_PREFETCH}">{/if}
   {if not empty($page_refresh)}
