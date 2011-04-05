@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'About'|@translate}</h2>
 </div>
@@ -10,5 +10,10 @@
   <ul>
    <li>{$THEME_ABOUT}</li>
   </ul>
+  {/if}
+  {if not empty($about_msgs)}
+    {foreach from=$about_msgs item=elt}
+    {$elt}
+    {/foreach}
   {/if}
 </div>

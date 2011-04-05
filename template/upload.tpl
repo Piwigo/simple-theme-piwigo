@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Upload a picture'|@translate}</h2>
 </div>
@@ -32,7 +32,7 @@
         {if isset($SHOW_FORM_FIELDS) and $SHOW_FORM_FIELDS}
         <!-- category -->
         <li>
-          <div class="property">{'Category'|@translate}</div>
+          <div class="property">{'Album'|@translate}</div>
           {html_options name="category" options=$categories selected=$categories_selected}
         </li>
         <!-- username -->

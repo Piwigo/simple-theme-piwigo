@@ -100,7 +100,7 @@
         </dd>
         {/if}
         {if $display_info.categories and isset($related_categories)}
-        <dt>{'Categories'|@translate}</dt>
+        <dt>{'Albums'|@translate}</dt>
         <dd>
           {foreach from=$related_categories item=cat name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if}

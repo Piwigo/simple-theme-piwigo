@@ -3,7 +3,7 @@
   <li>
     <div class="illustration">
       <a href="{$cat.URL}">
-        <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" title="{'shows images at the root of this category'|@translate}">
+        <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" title="{$cat.NAME|@replace:'"':' '} - {'display this album'|@translate}">
       </a>
     </div>
     <div class="description">

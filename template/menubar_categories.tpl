@@ -1,4 +1,4 @@
-<h3><a href="{$block->data.U_CATEGORIES}">{'Categories'|@translate}</a></h3>
+<h3><a href="{$block->data.U_CATEGORIES}">{'Albums'|@translate}</a></h3>
 
 {assign var='ref_level' value=0}
 {foreach from=$block->data.MENU_CATEGORIES item=cat}
@@ -20,11 +20,4 @@
 {/foreach}
 {'</li></ul>'|@str_repeat:$ref_level}
 
-{if isset($block->data.U_UPLOAD)}
-<ul>
-  <li>
-    <a href="{$block->data.U_UPLOAD}">{'Upload a picture'|@translate}</a>
-  </li>
-</ul>
-{/if}
-<p class="totalImages">{$pwg->l10n_dec('%d image', '%d images', $block->data.NB_PICTURE)}</p>
+<p class="totalImages">{$pwg->l10n_dec('%d photo', '%d photos', $block->data.NB_PICTURE)}</p>

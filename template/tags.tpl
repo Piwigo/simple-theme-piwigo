@@ -1,10 +1,10 @@
 <div class="titrePage">
   <ul class="categoryActions">
   {if $display_mode == 'letters'}
-    <li><a href="{$U_CLOUD}" title="{'show tag cloud'|@translate}">{'show tag cloud'|@translate}</a></li> « 
+    <li><a href="{$U_CLOUD}" title="{'show tag cloud'|@translate}">{'show tag cloud'|@translate}</a></li> «
   {/if}
   {if $display_mode == 'cloud'}
-    <li><a href="{$U_LETTERS}" title="{'group by letters'|@translate}">{'group by letters'|@translate}</a></li> « 
+    <li><a href="{$U_LETTERS}" title="{'group by letters'|@translate}">{'group by letters'|@translate}</a></li> «
   {/if}
     <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
@@ -15,7 +15,7 @@
   {if $display_mode == 'cloud'}
   <div id="fullTagCloud">
     {foreach from=$tags item=tag}
-		<span><a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{$pwg->l10n_dec('%d image', '%d images', $tag.counter)}">{$tag.name}</a></span>
+		<span><a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}">{$tag.name}</a></span>
     {/foreach}
   </div>
   {/if}
@@ -30,7 +30,7 @@
           {foreach from=$letter.tags item=tag}
           <tr class="tagLine">
             <td><a href="{$tag.URL}">{$tag.name}</a></td>
-        <td class="nbEntries">{$pwg->l10n_dec('%d image', '%d images', $tag.counter)}</td>
+        <td class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</td>
           </tr>
           {/foreach}
         </table>

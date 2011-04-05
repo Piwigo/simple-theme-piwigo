@@ -10,7 +10,7 @@
       <legend>{'Filter'|@translate}</legend>
       <label>{'Keyword'|@translate} : <input type="text" name="keyword" value="{$F_KEYWORD}"></label>
       <label>{'Author'|@translate} : <input type="text" name="author" value="{$F_AUTHOR}"></label>
-      <label>{'Category'|@translate} :
+      <label>{'Album'|@translate} :
       <select name="cat">
         <option value="0">------------</option>
         {html_options options=$categories selected=$categories_selected}

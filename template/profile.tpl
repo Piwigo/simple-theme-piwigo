@@ -1,6 +1,6 @@
 <div class="titrePage">
   <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'return to homepage'|@translate}">{'Home'|@translate}</a></li>
+    <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Profile'|@translate}</h2>
 </div>
