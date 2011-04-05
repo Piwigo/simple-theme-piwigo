@@ -39,14 +39,17 @@ Install
 * for  **Piwigo 2.0.x**,  use  **Simple  1.4.1** :  download  the archive  and
   extract it in ``your-gallery/template/``.
 
-Notes for developpers
----------------------
-
-* `js/compress.sh` is a script which allows to compress and minify the
-  different javascript files, using `yuicompressor`.
-
 Changelog
 ---------
+
+### version 2.4 (05/04/2011)
+
+compatibility with piwigo 2.2:
+* update template, language strings + misc things
+* use rating and core.scripts from default theme
+* cleanup useless javascript stuff
+* use new combined_css feature - thanks to P@t
+* replace known_script with combine_script
 
 ### version 2.3 (07/01/2011)
 
