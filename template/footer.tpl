@@ -21,6 +21,9 @@
   {/foreach}
   {/if}
 </div> <!-- the_page -->
+
+{get_combined_scripts load='footer'}
+
 {if isset($debug.QUERIES_LIST)}
 <div id="debug">
 {$debug.QUERIES_LIST}
