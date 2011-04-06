@@ -56,7 +56,7 @@ h1 { font-size: 1.6em; }
   padding: 0;
   display: inline;
 }
-#subcontent h2 {
+.subcontent h2 {
   margin: 0 0 1em;
 }
 
@@ -131,7 +131,7 @@ form {
   margin: 0;
 }
 
-#content form li, #subcontent form li {
+#content form li, .subcontent form li {
   list-style: none;
   margin: 0.2em 0;
 }
@@ -154,7 +154,7 @@ form {
 /* Menubar */
 
 #menubar {
-  margin: 0;
+  margin: 0 2em 0 0;
   padding: 0;
   float: left;
   width: 15%;
