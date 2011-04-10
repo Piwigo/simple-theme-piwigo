@@ -42,6 +42,16 @@ Install
 Changelog
 ---------
 
+### version 2.4.2 (05/04/2011)
+
+* fix version in themeconf (needed for update manager)
+
+### version 2.4.1 (06/04/2011)
+
+* new tpl for PWG stuff - thanks to P@t
+* subcontent is now a class, to allow several subcontent block inside the content block
+* add get_combined_scripts in the footer
+
 ### version 2.4 (05/04/2011)
 
 compatibility with piwigo 2.2:
