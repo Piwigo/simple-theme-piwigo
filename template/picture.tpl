@@ -57,7 +57,7 @@
         <li><a href="{$favorite.U_FAVORITE}" title="{$favorite.FAVORITE_HINT}">{$favorite.FAVORITE_HINT}</a></li>
         {/if}
         {if !empty($U_SET_AS_REPRESENTATIVE) }
-        <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as category representative'|@translate}">{'representative'|@translate}</a></li>
+        <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></li>
         {/if}
         {if isset($U_ADMIN) }
         <li><a href="{$U_ADMIN}" title="{'Modify information'|@translate}">{'Modify information'|@translate}</a></li>
@@ -124,7 +124,7 @@
         </dd>
         {/if}
         {if isset($rating)}
-        <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'Update your rating'|@translate}{else}{'Rate this picture'|@translate}{/if}</span></dt>
+        <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'Update your rating'|@translate}{else}{'Rate this photo'|@translate}{/if}</span></dt>
         <dd>
           <form action="{$rating.F_ACTION}" method="post" id="rateForm">
             <div>&nbsp;
