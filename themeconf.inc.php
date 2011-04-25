@@ -26,4 +26,7 @@ $user['maxwidth'] = 720;
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 
+// debug - do not combine files
+// $conf['template_combine_files'] = false;
+
 ?>

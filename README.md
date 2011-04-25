@@ -42,7 +42,10 @@ Install
 Changelog
 ---------
 
-### version 2.4.2 (05/04/2011)
+* update language strings
+* new script to tag a new version and generate a zip archive
+
+### version 2.4.2 (10/04/2011)
 
 * fix version in themeconf (needed for update manager)
 
