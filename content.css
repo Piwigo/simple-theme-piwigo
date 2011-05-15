@@ -192,7 +192,7 @@ form {
 #thumbnails li, .middle_block > ul li {
   margin: 0;
   padding: 0;
-  float: left;
+  display: inline-block;
   width: 200px;
   height: 200px;
 }
@@ -215,7 +215,7 @@ form {
 }
 
 .thumbnailCategories li {
-  float: left;
+  display: inline-block;
   height: 160px;
   overflow: hidden;
   margin: 1em;
@@ -224,7 +224,6 @@ form {
 
 .illustration {
   float: left;
-  margin: 0.2em;
   width: 150px;
 }
 
