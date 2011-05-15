@@ -45,6 +45,8 @@
 {if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
 {/foreach}
 
+  <link rel="stylesheet" type="text/css" media="print" href="{$ROOT_URL}themes/simple/print.css">
+
   {if isset($U_PREFETCH)}<link rel="prefetch" href="{$U_PREFETCH}">{/if}
   {if not empty($page_refresh)}
   <meta http-equiv="refresh" content="{$page_refresh.TIME};url={$page_refresh.U_REFRESH}">
