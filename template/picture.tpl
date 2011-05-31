@@ -93,10 +93,11 @@
         {/if}
         {if $display_info.tags and isset($related_tags)}
         <dt>{'Tags'|@translate}</dt>
-        <dd>
+        <dd id="Tags">
           {foreach from=$related_tags item=tag name=tag_loop}
           {if !$smarty.foreach.tag_loop.first}, {/if}
-          <a href="{$tag.URL}">{$tag.name}</a>{/foreach}
+          <a href="{$tag.URL}">{$tag.name}</a>
+          {/foreach}
         </dd>
         {/if}
         {if $display_info.categories and isset($related_categories)}
