@@ -42,7 +42,13 @@ Install
 Changelog
 ---------
 
-* update language strings
+### version 2.4.3 (31/05/2011)
+
+* add a #Tags id for tags list, for the user tags plugin
+* use inline-block instead of float left for thumbnails ans categories
+* print css: re-enable it in the header + improve it
+* update README + add debugging mode in themeconf
+* language strings
 * new script to tag a new version and generate a zip archive
 
 ### version 2.4.2 (10/04/2011)
