@@ -18,7 +18,7 @@ $themeconf = array(
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
-  'url' => 'http://saimon.org/blog/pages/Theme-Simple-Grey-Piwigo'
+  'url' => 'http://saimon.org/log/theme-simple-grey-pour-piwigo.html'
 );
 
 global $user;
