@@ -73,7 +73,7 @@ compatibility with piwigo 2.2:
 ### version 2.3 (07/01/2011)
 
 * if cl_conflit is used, don't add jQuery.noConflict
-* fix the possibility to toggle visibility of image informations
+* fix the possibility to toggle visibility of image information 
 * show logout link when connected - thanks to gbo
 * update jquery to 1.4.4
 * backport commit from piwigo: r6244, r6430 & r6438
