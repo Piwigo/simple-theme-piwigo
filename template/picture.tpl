@@ -5,7 +5,8 @@
 </div> <!-- imageHeaderBar -->
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
+
   {if isset($errors)}
   <div class="errors">
     <ul>
@@ -15,6 +16,7 @@
     </ul>
   </div>
   {/if}
+
   {if isset($infos)}
   <div class="infos">
     <ul>
@@ -24,6 +26,14 @@
     </ul>
   </div>
   {/if}
+
+  <div id="theImage">
+    {$ELEMENT_CONTENT}
+    {if isset($COMMENT_IMG)}
+    <p>{$COMMENT_IMG}</p>
+    {/if}
+  </div> <!-- theImage -->
+
   <div id="imageInfoBar">
     <div id="imageToolBar">
       {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
@@ -137,21 +147,21 @@
               <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
               {/if}
               {/foreach}
-			{strip}{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
-			{combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
-			{footer_script}
-				var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
-				_pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
-					onSuccess : function(rating) {ldelim}
-						var e = document.getElementById("updateRate");
-						if (e) e.innerHTML = "{'Update your rating'|@translate|@escape:'javascript'}";
-						e = document.getElementById("ratingScore");
-						if (e) e.innerHTML = rating.score;
-						e = document.getElementById("ratingCount");
-						if (e) e.innerHTML = "({'%d rates'|@translate|@escape:'javascript'})".replace( "%d", rating.count);
-					{rdelim}{rdelim} );
-			{/footer_script}
-			{/strip}
+	      {strip}{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+	      {combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
+	      {footer_script}
+	      var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
+	      _pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
+	      onSuccess : function(rating) {ldelim}
+	      var e = document.getElementById("updateRate");
+	      if (e) e.innerHTML = "{'Update your rating'|@translate|@escape:'javascript'}";
+	      e = document.getElementById("ratingScore");
+	      if (e) e.innerHTML = rating.score;
+	      e = document.getElementById("ratingCount");
+	      if (e) e.innerHTML = "({'%d rates'|@translate|@escape:'javascript'})".replace( "%d", rating.count);
+	      {rdelim}{rdelim} );
+	      {/footer_script}
+	      {/strip}
             </div>
           </form>
         </dd>
@@ -159,13 +169,6 @@
       </dl>
     </div> <!-- imageInfos -->
   </div>
-
-  <div id="theImage">
-    {$ELEMENT_CONTENT}
-    {if isset($COMMENT_IMG)}
-    <p>{$COMMENT_IMG}</p>
-    {/if}
-  </div> <!-- theImage -->
   <div style="clear: both;"></div>
 
   {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }

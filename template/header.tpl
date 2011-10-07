@@ -17,6 +17,7 @@
   {/if}
 {/if}
   <title>{$PAGE_TITLE} - {$GALLERY_TITLE}</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
   <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}" >
   <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php" >
