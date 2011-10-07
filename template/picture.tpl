@@ -113,47 +113,53 @@
         <dt>{'Visits'|@translate}</dt>
         <dd>{$INFO_VISITS}</dd>
         {/if}
-        {if $display_info.average_rate}
-        {if isset($rate_summary)}
-        <dt>{'Average rate'|@translate}</dt>
-        <dd id="ratingSummary">
-          {if $rate_summary.count}
-          {assign var='rate_text' value='%.2f (rated %d times)'|@translate }
-          {$pwg->sprintf($rate_text, $rate_summary.average, $rate_summary.count) }
-          {else}
-          {'no rate'|@translate}
-          {/if}
-        </dd>
-        {/if}
+
+		{if $display_info.rating_score and isset($rate_summary)}
+		<dt id="Average">{'Rating score'|@translate}</dt>
+		<dd id="ratingSummary">
+		{if $rate_summary.count}
+			<span id="ratingScore">{$rate_summary.score}</span> <span id="ratingCount">({assign var='rate_text' value='%d rates'|@translate}{$pwg->sprintf($rate_text, $rate_summary.count)})</span>
+		{else}
+			<span id="ratingScore">{'no rate'|@translate}</span> <span id="ratingCount"></span>
+		{/if}
+		</dd>
+		{/if}
+
         {if isset($rating)}
         <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'Update your rating'|@translate}{else}{'Rate this photo'|@translate}{/if}</span></dt>
         <dd>
           <form action="{$rating.F_ACTION}" method="post" id="rateForm">
             <div>&nbsp;
               {foreach from=$rating.marks item=mark name=rate_loop}
-              {if !$smarty.foreach.rate_loop.first} | {/if}
               {if isset($rating.USER_RATE) && $mark==$rating.USER_RATE}
               <input type="button" name="rate" value="{$mark}" class="rateButtonSelected" title="{$mark}" />
               {else}
               <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
               {/if}
               {/foreach}
-              <script type="text/javascript">
-                makeNiceRatingForm( {ldelim}rootUrl: '{$ROOT_URL|@escape:"javascript"}',
-                image_id: {$current.id},
-                updateRateText: "{'Update your rating'|@translate|@escape:'javascript'}",
-                updateRateElement: document.getElementById("updateRate"),
-                ratingSummaryText: "{'%.2f (rated %d times)'|@translate|@escape:'javascript'}",
-                ratingSummaryElement: document.getElementById("ratingSummary") {rdelim} );
-              </script>
+			{strip}{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+			{combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
+			{footer_script}
+				var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
+				_pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
+					onSuccess : function(rating) {ldelim}
+						var e = document.getElementById("updateRate");
+						if (e) e.innerHTML = "{'Update your rating'|@translate|@escape:'javascript'}";
+						e = document.getElementById("ratingScore");
+						if (e) e.innerHTML = rating.score;
+						e = document.getElementById("ratingCount");
+						if (e) e.innerHTML = "({'%d rates'|@translate|@escape:'javascript'})".replace( "%d", rating.count);
+					{rdelim}{rdelim} );
+			{/footer_script}
+			{/strip}
             </div>
           </form>
         </dd>
         {/if}
-        {/if}
       </dl>
     </div> <!-- imageInfos -->
   </div>
+
   <div id="theImage">
     {$ELEMENT_CONTENT}
     {if isset($COMMENT_IMG)}
