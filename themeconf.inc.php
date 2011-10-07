@@ -21,8 +21,9 @@ $themeconf = array(
   'url' => 'http://saimon.org/log/theme-simple-grey-pour-piwigo.html'
 );
 
-global $user;
-$user['maxwidth'] = 720;
+// set this if you want to restrict the width of pictures to a specifc width
+// global $user;
+// $user['maxwidth'] = 800;
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 

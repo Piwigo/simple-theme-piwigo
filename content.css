@@ -33,7 +33,6 @@ h1 { font-size: 1.6em; }
 
 #the_page {
   width: 85%;
-  min-width: 960px;
   margin: 0 auto;
   padding: 0;
 }
@@ -311,6 +310,7 @@ form {
   text-align: center;
   padding: 1em 0 2em;
   margin: auto;
+  overflow: hidden;
 }
 
 #rateForm {
