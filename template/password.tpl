@@ -5,6 +5,7 @@
   <h2>{'Password forgotten'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if count($errors)}
   <div class="errors">
     <ul>

@@ -5,6 +5,7 @@
   <h2>{'About'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {$ABOUT_MESSAGE}
   {if isset($THEME_ABOUT) }
   <ul>

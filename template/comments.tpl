@@ -5,6 +5,7 @@
   <h2>{'User comments'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   <form class="filter" action="{$F_ACTION}" method="get">
     <fieldset>
       <legend>{'Filter'|@translate}</legend>

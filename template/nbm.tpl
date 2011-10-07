@@ -5,6 +5,7 @@
   <h2>{'Notification'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if not empty($errors)}
   <div class="errors">
     <ul>

@@ -5,6 +5,7 @@
   <h2>{'Registration'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors)}
   <div class="errors">
     <ul>

@@ -11,6 +11,7 @@
   <h2>{'Tags'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
 {if isset($tags)}
   {if $display_mode == 'cloud'}
   <div id="fullTagCloud">

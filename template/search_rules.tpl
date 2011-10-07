@@ -5,6 +5,7 @@
   <h2>{'Search rules'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($INTRODUCTION) }
   <p>{$INTRODUCTION}</p>
   {/if}

@@ -5,6 +5,7 @@
   <h2>{'Identification'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors) }
   <div class="errors">
     <ul>

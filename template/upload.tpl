@@ -5,6 +5,7 @@
   <h2>{'Upload a picture'|@translate}</h2>
 </div>
 <div id="content">
+{if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors) and count($errors)}
   <div class="errors">
     <ul>
