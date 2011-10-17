@@ -42,6 +42,22 @@ Install
 Changelog
 ---------
 
+### version 2.5.1 (18/10/2011)
+
+* refactor code for #titrePage and add the link to switch the menu
+* fixes for comments page
+* fixes for pages where the $MENUBAR is present
+
+### version 2.5 (08/10/2011)
+
+* use media queries to adapt layout for small screens
+* remove arbitrary limit on width: the picture will simply be partially hidden if too wide
+* update password.tpl
+* add MENUBAR on all pages
+* Spelling correction in README
+* update url
+* bugfix for the feature 'open external links in new window' for menubar links
+
 ### version 2.4.3 (31/05/2011)
 
 * add a #Tags id for tags list, for the user tags plugin
@@ -73,7 +89,7 @@ compatibility with piwigo 2.2:
 ### version 2.3 (07/01/2011)
 
 * if cl_conflit is used, don't add jQuery.noConflict
-* fix the possibility to toggle visibility of image information 
+* fix the possibility to toggle visibility of image information
 * show logout link when connected - thanks to gbo
 * update jquery to 1.4.4
 * backport commit from piwigo: r6244, r6430 & r6438
@@ -109,8 +125,3 @@ compatibility with piwigo 2.2:
 - adapt the theme for Piwigo 2.1
 - add Readme
 - tweak for plugins adding icons in .titrePage (piwishak, addthis, ...)
-
-
-## TODO
-
-- put rss link in header.tpl (when ready)
