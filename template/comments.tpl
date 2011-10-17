@@ -1,11 +1,8 @@
-<div class="titrePage">
-  <ul class="categoryActions">
-    <li><a class="button" href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
-  </ul>
-  <h2>{'User comments'|@translate}</h2>
-</div>
+{assign var='pagetitle' value='User comments'}
+{include file='pagetitle.tpl'}
+
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
   <form class="filter" action="{$F_ACTION}" method="get">
     <fieldset>
       <legend>{'Filter'|@translate}</legend>

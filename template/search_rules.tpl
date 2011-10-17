@@ -1,11 +1,8 @@
-<div class="titrePage">
-  <ul class="categoryActions">
-    <li><a href="#" onclick="window.close();" title="{'Close this window'|@translate}">{'Close this window'|@translate}</a></li>
-  </ul>
-  <h2>{'Search rules'|@translate}</h2>
-</div>
+{assign var='pagetitle' value='Search rules'}
+{include file='pagetitle.tpl'}
+
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($INTRODUCTION) }
   <p>{$INTRODUCTION}</p>
   {/if}

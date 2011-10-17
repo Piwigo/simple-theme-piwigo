@@ -1,11 +1,8 @@
-<div class="titrePage">
-  <ul class="categoryActions">
-    <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
-  </ul>
-  <h2>{'Upload a picture'|@translate}</h2>
-</div>
+{assign var='pagetitle' value='Upload a picture'}
+{include file='pagetitle.tpl'}
+
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors) and count($errors)}
   <div class="errors">
     <ul>
