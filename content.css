@@ -217,6 +217,7 @@ form {
   display: inline-block;
   height: 160px;
   overflow: hidden;
+  vertical-align: top;
   margin: 1em;
   width: 45%;
 }
@@ -393,13 +394,21 @@ ul.actions {
 }
 
 #theCommentsPage #comments li {
-  clear: left;
   list-style: none;
+  display: table-row;
 }
 
 #theCommentsPage form label {
   display: inline-block;
   line-height: 25px;
+}
+
+#comments .description {
+  vertical-align: top;
+  display: inline-block;
+}
+#comments .illustration {
+  width: auto;
 }
 
 /* calendar */
