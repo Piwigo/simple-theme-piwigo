@@ -11,4 +11,5 @@
     <li><a href="{$U_FEED_IMAGE_ONLY}">{'Photos only RSS feed'|@translate}</a></li>
     <li><a href="{$U_FEED}">{'Complete RSS feed (photos, comments)'|@translate}</a></li>
   </ul>
+  <div style="clear: both;"></div>
 </div>

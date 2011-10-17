@@ -52,7 +52,10 @@
       <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
     </p>
   </form>
-<script type="text/javascript"><!--
+  <script type="text/javascript">
+    <!--
        document.login_form.username.focus();
-//--></script>
+    //-->
+  </script>
+  <div style="clear: both;"></div>
 </div> <!-- content -->

@@ -5,7 +5,7 @@
   <h2>{'Profile'|@translate}</h2>
 </div>
 <div id="content">
-{if isset($MENUBAR)}{$MENUBAR}{/if}
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
   {if isset($errors)}
   <div class="errors">
     <ul>
@@ -15,5 +15,6 @@
     </ul>
   </div>
   {/if}
-{$PROFILE_CONTENT}
+  {$PROFILE_CONTENT}
+  <div style="clear: both;"></div>
 </div> <!-- content -->

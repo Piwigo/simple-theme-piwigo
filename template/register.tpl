@@ -58,4 +58,5 @@
        document.register_form.login.focus();
        //-->
   </script>
+  <div style="clear: both;"></div>
 </div> <!-- content -->

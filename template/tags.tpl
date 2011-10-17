@@ -46,4 +46,5 @@
   </table>
   {/if}
 {/if}
+<div style="clear: both;"></div>
 </div> <!-- content -->

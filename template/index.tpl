@@ -70,4 +70,3 @@
   {if !empty($PLUGIN_INDEX_CONTENT_AFTER)}{$PLUGIN_INDEX_CONTENT_AFTER}{/if}
   <div style="clear: both;"></div>
 </div> <!-- content -->
-
