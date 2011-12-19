@@ -33,7 +33,8 @@
 
   {get_combined_css}
   {combine_css path="themes/simple/css/base.css" order="1"}
-  {combine_css path="themes/simple/css/content.css" order="2"}
+  {combine_css path="themes/simple/css/skeleton.css" order="2"}
+  {combine_css path="themes/simple/css/content.css" order="3"}
   {foreach from=$themes item=theme}
   {if $theme.load_css}
   {combine_css path="themes/`$theme.id`/theme.css" order=10}
@@ -68,7 +69,7 @@
   </script>
 </head>
 <body id="{$BODY_ID}">
-<div id="the_page">
+<div id="the_page" class="container">
   {if not empty($header_msgs)}
   <div class="header_msgs">
     {foreach from=$header_msgs item=elt}

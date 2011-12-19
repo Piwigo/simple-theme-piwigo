@@ -40,15 +40,10 @@ h2, h3, #menubar dt {
 
 /* Layout */
 
-#the_page {
-  width: 85%;
-  margin: 0 auto;
-  padding: 0;
-}
-
 #content {
   margin: 1em 0;
 }
+.subcontent {}
 
 #theHeader {
   margin: 1em 0;
@@ -196,13 +191,6 @@ form li {
 }
 
 /* Menubar */
-
-#menubar {
-  margin: 0 2em 0 0;
-  padding: 0;
-  float: left;
-  width: 15%;
-}
 
 #menubar ul {
   margin: 0;
