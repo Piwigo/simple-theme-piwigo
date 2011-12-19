@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='Notification'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'Notification'|@translate}</h2>
+</header>
 
 <p>{'The RSS notification feed provides notification on news from this
 website : new photos, updated categories, new comments. Use a RSS feed

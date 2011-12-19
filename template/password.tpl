@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='Password forgotten'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'Password forgotten'|@translate}</h2>
+</header>
 
 {if count($errors)}
 <div class="errors">

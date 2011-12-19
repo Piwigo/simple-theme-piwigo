@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='Notification'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'Notification'|@translate}</h2>
+</header>
 
 {if not empty($errors)}
 <div class="errors">

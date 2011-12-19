@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='Search'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'Search'|@translate}</h2>
+</header>
 
 {if isset($errors) }
 <div class="errors">

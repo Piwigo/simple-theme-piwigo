@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='User comments'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'User comments'|@translate}</h2>
+</header>
 
 <form class="filter" action="{$F_ACTION}" method="get">
   <fieldset>

@@ -1,5 +1,6 @@
-{assign var='pagetitle' value='Upload a picture'}
-{include file='pagetitle.tpl'}
+<header class="titrePage">
+  <h2>{'Upload a picture'|@translate}</h2>
+</header>
 
 {if isset($errors) and count($errors)}
 <div class="errors">
