@@ -1,5 +1,5 @@
 <?php
 
-$lang['Show/hide menu'] = 'Show/hide menu';
+$lang['Show/hide menu'] = 'Go to menu';
 
 ?>

@@ -87,8 +87,7 @@
       {/foreach}
     </div>
     {/if}
+    <a id="menu-link" href="#menubar" title="{'Go to menu'|@translate}">Menu</a>
   </header>
-
-  {if isset($MENUBAR)}{$MENUBAR}{/if}
 
   <article id="content">

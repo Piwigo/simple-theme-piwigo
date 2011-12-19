@@ -1,5 +1,6 @@
-    <div style="clear: both;"></div>
   </article>  <!-- content -->
+
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
 
   <footer id="copyright">
     {if isset($debug.TIME)}

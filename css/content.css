@@ -28,10 +28,6 @@ h2, h3, #menubar dt {
   font-weight: bold;
 }
 
-#menuswitcher {
-  cursor: pointer;
-}
-
 /* hide javascript stuff */
 
 .js #menubar, .js #theComments > div {
@@ -47,6 +43,7 @@ h2, h3, #menubar dt {
 
 #theHeader {
   margin: 1em 0;
+  position: relative;
 }
 
 #copyright {
@@ -56,6 +53,14 @@ h2, h3, #menubar dt {
   text-transform: lowercase;
 }
 
+#menu-link {
+  cursor: pointer;
+  font-weight: bold;
+  position: absolute;
+  right: 0;
+  text-transform: uppercase;
+  top: 0;
+}
 
 .titrePage {
   margin: 1em 0;
@@ -192,19 +197,12 @@ form li {
 
 /* Menubar */
 
-#menubar ul {
-  margin: 0;
-  padding: 1em 0 1em 2em;
+#menubar {
+  border-top: 1px solid #666666;
+  padding: 1em 0;
 }
-#menubar dd {
-  margin: 0;
-  padding: 0;
-}
-
-#menubar ul ul {
- margin: 0;
- padding: 0 0 0 1em;
-}
+#menubar ul { padding: 1em 0; }
+#menubar ul ul { padding: 0 0 0 1em; }
 
 .totalImages {
   font-style: italic;
