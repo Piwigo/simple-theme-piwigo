@@ -10,7 +10,7 @@
   </ul>
   <h2>{'Tags'|@translate}</h2>
 </div>
-<div id="content">
+
 {if isset($MENUBAR)}{$MENUBAR}{/if}
 {if isset($tags)}
   {if $display_mode == 'cloud'}
@@ -26,15 +26,15 @@
       <td valign="top">
       {foreach from=$letters item=letter}
       <fieldset class="tagLetter">
-        <legend class="tagLetterLegend">{$letter.TITLE}</legend>
-        <table class="tagLetterContent">
-          {foreach from=$letter.tags item=tag}
-          <tr class="tagLine">
-            <td><a href="{$tag.URL}">{$tag.name}</a></td>
-        <td class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</td>
-          </tr>
-          {/foreach}
-        </table>
+	<legend class="tagLetterLegend">{$letter.TITLE}</legend>
+	<table class="tagLetterContent">
+	  {foreach from=$letter.tags item=tag}
+	  <tr class="tagLine">
+	    <td><a href="{$tag.URL}">{$tag.name}</a></td>
+	<td class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</td>
+	  </tr>
+	  {/foreach}
+	</table>
       </fieldset>
       {if isset($letter.CHANGE_COLUMN) }
       </td>
@@ -46,5 +46,3 @@
   </table>
   {/if}
 {/if}
-<div style="clear: both;"></div>
-</div> <!-- content -->

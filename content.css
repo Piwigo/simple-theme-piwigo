@@ -52,13 +52,18 @@ h2, h3, #menubar dt {
   margin: 1em 0;
 }
 
-#theHeader h1 {
-  padding: 1em 0;
-}
 #theHeader p {
   padding: 0;
   margin: 0;
 }
+
+#copyright {
+  margin: 1em 0;
+  clear: both;
+  font-variant: small-caps;
+  text-transform: lowercase;
+}
+
 
 .titrePage {
   margin: 1em 0;
@@ -575,15 +580,6 @@ ul.actions {
 
 .calBackDate, .calForeDate {
   display: none;
-}
-
-/* Footer */
-
-#copyright {
-  padding: 2px;
-  clear: both;
-  font-variant: small-caps;
-  text-transform: lowercase;
 }
 
 /* PWG stuff */

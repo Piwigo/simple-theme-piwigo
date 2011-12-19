@@ -1,7 +1,8 @@
-<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
-<html lang="{$lang_info.code}" dir="{$lang_info.direction}">
+<!doctype html>
+<html lang="{$lang_info.code}">
 <head>
-  <meta http-equiv="Content-Type" content="text/html; charset={$CONTENT_ENCODING}">
+  <meta charset="utf-8">
+  <title>{$PAGE_TITLE} - {$GALLERY_TITLE}</title>
   <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
 {if isset($meta_ref) }
   {if isset($INFO_AUTHOR)}
@@ -16,35 +17,28 @@
   <meta name="description" content="{$PAGE_TITLE}{if isset($INFO_FILE)} - {$INFO_FILE}{/if}">
   {/if}
 {/if}
-  <title>{$PAGE_TITLE} - {$GALLERY_TITLE}</title>
+
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
   <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}" >
   <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php" >
-  {if isset($first.U_IMG)}
-  <link rel="first" title="{'First'|@translate}" href="{$first.U_IMG}" >
-  {/if}
-  {if isset($previous.U_IMG)}
-  <link rel="prev" title="{'Previous'|@translate}" href="{$previous.U_IMG}" >
-  {/if}
-  {if isset($next.U_IMG)}
-  <link rel="next" title="{'Next'|@translate}" href="{$next.U_IMG}" >
-  {/if}
-  {if isset($last.U_IMG)}
-  <link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}" >
-  {/if}
-  {if isset($U_UP)}
-  <link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}" >
-  {/if}
+  {if isset($first.U_IMG)   } <link rel="first" title="{'First'|@translate}" href="{$first.U_IMG}" > {/if}
+  {if isset($previous.U_IMG)} <link rel="prev" title="{'Previous'|@translate}" href="{$previous.U_IMG}" > {/if}
+  {if isset($next.U_IMG)    } <link rel="next" title="{'Next'|@translate}" href="{$next.U_IMG}" > {/if}
+  {if isset($last.U_IMG)    } <link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}" > {/if}
+  {if isset($U_UP)}          <link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}" > {/if}
 
-{get_combined_css}
-{combine_css path="themes/simple/content.css" order="-10"}
-{foreach from=$themes item=theme}
-{if $theme.load_css}
-{combine_css path="themes/`$theme.id`/theme.css" order=-10}
-{/if}
-{if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
-{/foreach}
+  {get_combined_css}
+  {combine_css path="themes/simple/content.css" order="-10"}
+  {foreach from=$themes item=theme}
+  {if $theme.load_css}
+  {combine_css path="themes/`$theme.id`/theme.css" order=-10}
+  {/if}
+  {if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
+  {/foreach}
 
   <link rel="stylesheet" type="text/css" media="print" href="{$ROOT_URL}themes/simple/print.css">
 
@@ -81,12 +75,16 @@
     {/foreach}
   </div>
   {/if}
-  <div id="theHeader"><h1><a href="{$U_HOME}">{$PAGE_BANNER}</a></h1></div>
-  {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
-  {if not empty($header_notes)}
-  <div class="header_notes">
-    {foreach from=$header_notes item=elt}
-    <p>{$elt}</p>
-    {/foreach}
-  </div>
-  {/if}
+  <header id="theHeader">
+    <h1><a href="{$U_HOME}">{$PAGE_BANNER}</a></h1>
+    {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
+    {if not empty($header_notes)}
+    <div class="header_notes">
+      {foreach from=$header_notes item=elt}
+      <p>{$elt}</p>
+      {/foreach}
+    </div>
+    {/if}
+  </header>
+
+  <article id="content">
