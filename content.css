@@ -311,7 +311,7 @@ form {
   width: 75%;
   text-align: center;
   padding: 1em 0 2em;
-  margin: auto;
+  margin: 0 auto;
   overflow: hidden;
 }
 
@@ -335,8 +335,11 @@ form {
 /* slideshow */
 
 #slideshow {
-  width: 656px;
-  margin: 1em auto 0;
+  margin: 1em auto;
+}
+#slideshow .titrePage {
+  width: 600px;
+  margin: 0 auto;
 }
 
 #slideshow .navButtons {
@@ -344,6 +347,10 @@ form {
   font-size: 1em;
   float: right;
   margin-right: 1em;
+}
+#slideshow #theImage {
+  float: none;
+  width: 100%;
 }
 
 /* comments */
