@@ -189,16 +189,14 @@ form {
 }
 
 #thumbnails li, .middle_block > ul li {
-  margin: 0;
+  margin: 1em;
   padding: 0;
   display: inline-block;
-  width: 200px;
-  height: 200px;
+  vertical-align: middle;
 }
 
 .nb-comments, .nb-hits {
   font-weight: normal;
-  display: block;
 }
 .zero {
   display: none;
