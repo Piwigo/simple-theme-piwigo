@@ -18,13 +18,13 @@ jQuery(document).ready(function($){
     }
   });
 
-  // creates a variable with the contents of the cookie side-menu
-  var sidemenu = $.cookie('side-menu');
-  // if cookie says the menu is hiding, keep it hidden!
-  if (sidemenu == 'hiding') {
-    $("#menubar").hide();
-  }
-  if (sidemenu == 'showing') {
-    $("#menubar").show();
-  };
+  // // creates a variable with the contents of the cookie side-menu
+  // var sidemenu = $.cookie('side-menu');
+  // // if cookie says the menu is hiding, keep it hidden!
+  // if (sidemenu == 'hiding') {
+  //   $("#menubar").hide();
+  // }
+  // if (sidemenu == 'showing') {
+  //   $("#menubar").show();
+  // };
 });

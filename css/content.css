@@ -30,7 +30,7 @@ h2, h3, #menubar dt {
 
 /* hide javascript stuff */
 
-.js #menubar, .js #theComments > div {
+.js #theComments > div {
   display: none;
 }
 
