@@ -171,29 +171,29 @@
 <div style="clear: both;"></div>
 
 {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }
-<div id="theComments">
+<div id="theComments" class="clearfix">
   <h3 title="{'Add a comment'|@translate}">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</h3>
     {if !empty($COMMENT_NAV_BAR)}
     <div class="navigationBar">{$COMMENT_NAV_BAR}</div>
     {/if}
     {if isset($comment_add)}
-    <div id="commentAdd">
+    <div id="commentAdd" class="eight columns">
       <h4>{'Add a comment'|@translate}</h4>
       <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
 	{if $comment_add.SHOW_AUTHOR}
-	<p><label>{'Author'|@translate}&nbsp;:</label></p>
-	<p><input type="text" name="author" /></p>
+	<label>{'Author'|@translate}&nbsp;:</label>
+	<input type="text" name="author" />
 	{/if}
-	<p><label>{'Comment'|@translate}&nbsp;:</label></p>
-	<p><textarea name="content" id="contentid" rows="5" cols="50">{$comment_add.CONTENT}</textarea></p>
-	<p><input type="hidden" name="key" value="{$comment_add.KEY}" />
-	  <input class="submit" type="submit" value="{'Submit'|@translate}"></p>
+	<label>{'Comment'|@translate}&nbsp;:</label>
+	<textarea name="content" id="contentid">{$comment_add.CONTENT}</textarea>
+	<input type="hidden" name="key" value="{$comment_add.KEY}" />
+	<input class="submit" type="submit" value="{'Submit'|@translate}">
       </form>
     </div>
     {/if}
     {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
     {if isset($comments)}
-    <div id="commentList">
+    <div id="commentList" class="eight columns">
       {include file='comment_list.tpl'}
     </div>
     {/if}

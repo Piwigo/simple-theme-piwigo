@@ -145,9 +145,8 @@ h2, h3, #menubar dt {
 /* Messages */
 
 .errors, .infos {
-  color: #e04040;
-  border: 1px dashed;
   margin: 1em;
+  padding: 1em;
 }
 
 .errors {
@@ -327,13 +326,6 @@ form li {
 
 /* pictures pages */
 
-#thePicturePage #theHeader {
-  display: none;
-}
-#thePicturePage #content {
-  padding: 1em 0 0;
-}
-
 .imageNumber {
   float: right;
   padding: 0 3px;
@@ -432,31 +424,16 @@ form li {
 #theComments h3 {
   height: 25px;
   line-height: 25px;
-  padding-left: 1em;
   cursor: pointer;
   border-top: 2px solid #606060;
 }
 
-#commentAdd, #commentList {
-  width: 48%;
-  padding: 1%;
-}
-#commentAdd  { float: left; }
-#commentList { float: right; }
-
 #commentAdd input[type="text"], #commentAdd textarea {
-  width: 400px;
+  width: 95%;
 }
 
-#commentList ul {
-  list-style: none;
-  padding: 0;
-}
 #commentList li {
-  clear: both;
-  display: block;
-  border-top: 1px dotted #606060;
-  padding: 0.5em 0;
+  padding: 0 0 1em;
 }
 #commentList li ul {
   list-style-type: none;
