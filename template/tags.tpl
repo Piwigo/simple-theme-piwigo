@@ -1,4 +1,4 @@
-<div class="titrePage">
+<header class="titrePage">
   <ul class="categoryActions">
   {if $display_mode == 'letters'}
     <li><a href="{$U_CLOUD}" title="{'show tag cloud'|@translate}">{'show tag cloud'|@translate}</a></li> «
@@ -9,7 +9,7 @@
     <li><a href="{$U_HOME}" title="{'Home'|@translate}">{'Home'|@translate}</a></li>
   </ul>
   <h2>{'Tags'|@translate}</h2>
-</div>
+</header>
 
 {if isset($MENUBAR)}{$MENUBAR}{/if}
 {if isset($tags)}

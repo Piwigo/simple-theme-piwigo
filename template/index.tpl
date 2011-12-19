@@ -1,5 +1,5 @@
 {if !empty($PLUGIN_INDEX_CONTENT_BEFORE)}{$PLUGIN_INDEX_CONTENT_BEFORE}{/if}
-<div class="titrePage">
+<header class="titrePage">
   <span id="menuswitcher" title="{'Show/hide menu'|@translate}">Menu</span> »
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
@@ -13,7 +13,7 @@
   </ul>
   {/if}
   <h2>{$TITLE}</h2>
-</div>
+</header>
 
 {if isset($MENUBAR)}{$MENUBAR}{/if}
 <div class="subcontent">

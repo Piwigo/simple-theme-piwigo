@@ -1,8 +1,9 @@
-<div class="titrePage">
+<header class="titrePage">
   <div class="imageNumber">{$PHOTO}</div>
     {$SECTION_TITLE}
     {$LEVEL_SEPARATOR} <h2>{$current.TITLE}</h2>
-</div> <!-- imageHeaderBar -->
+</header>
+
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 {* {if isset($MENUBAR)}{$MENUBAR}{/if} *}
 
