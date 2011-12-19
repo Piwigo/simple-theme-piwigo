@@ -1,7 +1,6 @@
 {assign var='pagetitle' value='Notification'}
 {include file='pagetitle.tpl'}
 
-{if isset($MENUBAR)}{$MENUBAR}{/if}
 <p>{'The RSS notification feed provides notification on news from this
 website : new photos, updated categories, new comments. Use a RSS feed
 reader.'|@translate}</p>

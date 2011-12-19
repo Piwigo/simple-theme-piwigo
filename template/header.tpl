@@ -89,4 +89,6 @@
     {/if}
   </header>
 
+  {if isset($MENUBAR)}{$MENUBAR}{/if}
+
   <article id="content">

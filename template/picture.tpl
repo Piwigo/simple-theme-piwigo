@@ -5,7 +5,6 @@
 </header>
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
-{* {if isset($MENUBAR)}{$MENUBAR}{/if} *}
 
 {if isset($errors)}
 <div class="errors">

@@ -15,7 +15,6 @@
   <h2>{$TITLE}</h2>
 </header>
 
-{if isset($MENUBAR)}{$MENUBAR}{/if}
 <div class="subcontent">
   {if isset($chronology.TITLE) }
   <h2>{$chronology.TITLE}</h2>

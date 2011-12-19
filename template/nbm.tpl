@@ -1,7 +1,6 @@
 {assign var='pagetitle' value='Notification'}
 {include file='pagetitle.tpl'}
 
-{if isset($MENUBAR)}{$MENUBAR}{/if}
 {if not empty($errors)}
 <div class="errors">
   <ul>

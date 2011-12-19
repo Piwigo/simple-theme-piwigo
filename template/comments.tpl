@@ -1,7 +1,6 @@
 {assign var='pagetitle' value='User comments'}
 {include file='pagetitle.tpl'}
 
-{if isset($MENUBAR)}{$MENUBAR}{/if}
 <form class="filter" action="{$F_ACTION}" method="get">
   <fieldset>
     <legend>{'Filter'|@translate}</legend>

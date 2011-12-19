@@ -1,7 +1,6 @@
 {assign var='pagetitle' value='Search rules'}
 {include file='pagetitle.tpl'}
 
-{if isset($MENUBAR)}{$MENUBAR}{/if}
 {if isset($INTRODUCTION) }
 <p>{$INTRODUCTION}</p>
 {/if}

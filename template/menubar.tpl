@@ -1,5 +1,5 @@
 {if !empty($blocks) }
-<div id="menubar" class="three columns alpha">
+<nav id="menubar" class="three columns alpha">
   {foreach from=$blocks key=id item=block}
   <div id="{$id}">
     {if not empty($block->template)}
@@ -9,5 +9,5 @@
     {/if}
   </div>
   {/foreach}
-</div>
+</nav>
 {/if}
