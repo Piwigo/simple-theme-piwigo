@@ -1,16 +1,14 @@
 /*
- CSS for all pages
+ Simple Grey theme for Piwigo
 */
 
 body {
   font: 75% "Bitstream Vera Sans", "DejaVu Sans", "Trebuchet MS", Verdana, sans-serif;
-  margin: 0;
-  padding: 0;
   background-color: #333;
   color: #999;
 }
 
-img { border: 0; max-width: 100%; }
+img { max-width: 100%; }
 hr { border: 1px #999 solid; }
 
 a {
@@ -52,9 +50,8 @@ h2, h3, #menubar dt {
   margin: 1em 0;
 }
 
-#theHeader p {
-  padding: 0;
-  margin: 0;
+#theHeader {
+  margin: 1em 0;
 }
 
 #copyright {
@@ -177,40 +174,11 @@ h2, h3, #menubar dt {
   color: #e04040;
 }
 
-input, select, textarea {
-  background-color: #666;
-  border: 1px solid #999;
-  color: #F0F0F0;
-}
-
-input[type="submit"], input[type="reset"] {
-  background-color: #3f3f3f;
-  border: 1px solid #606060;
-  color: #999;
-}
-input[type="submit"]:hover, input[type="reset"]:hover {
-  background-color: #666;
-  border: 1px solid #999;
-  color: #F0F0F0;
-}
-
-form {
-  margin: 0;
-}
-
-fieldset {
-  border: 1px #606060 dotted;
-  margin: 0 0 1em;
-  padding: 1em;
-}
-fieldset legend {
-  padding: 0 3px;
-}
 fieldset li {
   margin: 0.5em 0;
 }
 
-#content form li, .subcontent form li {
+form li {
   list-style: none;
   margin: 0.2em 0;
 }
@@ -221,16 +189,10 @@ fieldset li {
 }
 
 #quicksearch {
-  margin: 1em 0 0;
-}
-#quicksearch p {
-  margin: 0;
+  margin: 1em 0;
 }
 #quicksearch #q {
-  width: 150px;
-  background-color: #3f3f3f;
-  border: 1px solid #606060;
-  color: #999;
+  margin-bottom: 0;
 }
 
 /* Menubar */
