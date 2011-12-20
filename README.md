@@ -42,6 +42,13 @@ Install
 Changelog
 ---------
 
+### version 2.5.2 (20/12/2011)
+
+* more flexible layout for thumbnails
+* more flexible layout for categories
+* restore the possibility to hide thumbnails caption.
+* center image in slideshow
+
 ### version 2.5.1 (18/10/2011)
 
 * refactor code for #titrePage and add the link to switch the menu
