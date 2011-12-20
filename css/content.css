@@ -64,8 +64,6 @@ h2, h3, #menubar dt {
 .titrePage {
   margin: 1em 0;
   line-height: 1.5em;
-}
-.titrePage, .titrePage a {
   font-weight: bold;
   text-transform: uppercase;
   font-variant: normal;
@@ -83,16 +81,12 @@ h2, h3, #menubar dt {
 }
 
 .titrePage img {
-  float: left;
   max-height: 16px;
   margin: 0 5px;
 }
 
 .titrePage .categoryActions {
   float: right;
-  margin: 0;
-  padding: 0;
-  list-style: none;
   width: auto;
 }
 
@@ -127,17 +121,16 @@ h2, h3, #menubar dt {
 #fullTagCloud a { padding: 2px; }
 #fullTagCloud a:hover { background: #606060; }
 
-.tagLetterContent {
+.tagLetter table {
   width: 100%;
 }
-
-.tagSelection li {
-  display:  inline;
+.tagLetter td {
+  padding: 0.1em 1em 0.1em 0;
 }
 
-#menuTagCloud span {
-  margin: 0;
-}
+/* .tagSelection li { */
+/*   display: inline; */
+/* } */
 
 .nbEntries {
   text-align: right;
@@ -170,26 +163,17 @@ h2, h3, #menubar dt {
 
 /* Forms */
 
-.mandatorystar {
-  color: #e04040;
-}
+.mandatorystar { color: #e04040; }
+fieldset li { margin: 0.5em 0; }
+form li { margin: 0.2em 0; }
 
-fieldset li {
-  margin: 0.5em 0;
-}
-
-form li {
-  list-style: none;
-  margin: 0.2em 0;
-}
+#quicksearch { margin: 1em 0; }
+#quicksearch #q { margin-bottom: 0; }
 
 .property {
   display: inline-block;
   width: 180px;
 }
-
-#quicksearch { margin: 1em 0; }
-#quicksearch #q { margin-bottom: 0; }
 
 /* Menubar */
 
@@ -198,11 +182,10 @@ form li {
   padding: 1em 0;
 }
 #menubar ul { padding: 1em 0; }
-#menubar ul ul { padding: 0 0 0 1em; }
+#menubar ul ul { padding-left: 1em; }
 
 .totalImages {
   font-style: italic;
-  margin-top: 0;
 }
 
 /* images thumbnails */
@@ -213,34 +196,19 @@ form li {
   padding: 1em 0;
   font-weight: bold;
 }
-#thumbnails p {
-  margin: 0;
-}
 #thumbnails ul, .middle_block > ul {
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  list-style: none;
 }
 #thumbnails li, .middle_block > ul li {
   margin: 1em;
-  padding: 0;
   display: inline-block;
   vertical-align: middle;
 }
 
-.nb-comments, .nb-hits {
-  font-weight: normal;
-}
-.zero {
-  display: none;
-}
+.nb-comments, .nb-hits { font-weight: normal; }
+.zero { display: none; }
 
 /* image styles */
-
-/* #theImage img { */
-/*   border: 8px #fff solid; */
-/* } */
 
 #theImage img, .illustration img, .thumbnail,
 #navThumbPrev img, #navThumbNext img {
@@ -258,10 +226,7 @@ form li {
 /* categories thumbnails */
 
 .thumbnailCategories {
-  margin: 0;
-  padding: 0;
   overflow: hidden;
-  list-style: none;
 }
 
 .thumbnailCategories li {
@@ -274,13 +239,7 @@ form li {
 }
 
 .illustration {}
-
-.description {
-  overflow: auto;
-}
-.description h3 {
-  margin: 0;
-}
+.description  { overflow: auto; }
 
 .thumbCatDesc {
   padding-top: 4px;
@@ -298,18 +257,9 @@ form li {
   margin: 1em 0;
 }
 
-.navigationBar {
-  padding: 0.5em;
-  text-align: right;
-}
-.navigationBar a {
-  border-bottom: 1px dotted;
-}
-
-.pageNumberSelected {
-  font-weight: bold;
-  border-bottom: 1px solid;
-}
+.navigationBar { text-align: center; }
+.navigationBar a { border-bottom: 1px dotted; }
+.pageNumberSelected { font-weight: bold; }
 
 /* pictures pages */
 
@@ -340,11 +290,6 @@ form li {
   width: 25%;
 }
 
-#randomButtons ul {
-  padding: 0;
-  list-style-type: none;
-}
-
 #imageInfos dt, #imageMeta dt {
   font-weight: bold;
 }
@@ -365,20 +310,16 @@ form li {
   margin: 1em;
 }
 
-#rateForm {
-  margin: 0;
-}
 #rateForm input, #rateForm input:active {
-  cursor: pointer;
   border: none;
   padding: 0;
 }
 #rateForm input.rateButtonStarFull  {
-  background:  url('icon/rating-stars.png') no-repeat scroll -16px center;
+  background:  url('../icon/rating-stars.png') no-repeat scroll -16px center;
   width: 16px;
 }
 #rateForm input.rateButtonStarEmpty {
-  background:  url('icon/rating-stars.png') no-repeat scroll 0 center;
+  background:  url('../icon/rating-stars.png') no-repeat scroll 0 center;
   width: 16px;
 }
 
@@ -421,7 +362,6 @@ ul.actions {
   padding: 0 0 1em;
 }
 #commentList li ul {
-  list-style-type: none;
   padding: 4px;
 }
 #commentList .author {
@@ -433,7 +373,6 @@ ul.actions {
 }
 
 #theCommentsPage #comments li {
-  list-style: none;
   display: table-row;
 }
 #theCommentsPage form label {
@@ -516,4 +455,3 @@ ul.actions {
     margin: 1em;
   }
 }
-

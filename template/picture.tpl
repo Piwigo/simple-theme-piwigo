@@ -138,30 +138,30 @@
       <dt><span id="updateRate">{if isset($rating.USER_RATE)}{'Update your rating'|@translate}{else}{'Rate this photo'|@translate}{/if}</span></dt>
       <dd>
 	<form action="{$rating.F_ACTION}" method="post" id="rateForm">
-	  <div>&nbsp;
-	    {foreach from=$rating.marks item=mark name=rate_loop}
-	    {if isset($rating.USER_RATE) && $mark==$rating.USER_RATE}
-	    <input type="button" name="rate" value="{$mark}" class="rateButtonSelected" title="{$mark}" />
-	    {else}
-	    <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
-	    {/if}
-	    {/foreach}
-      {strip}{combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
-      {combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
-      {footer_script}
-      var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
-      _pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
-      onSuccess : function(rating) {ldelim}
-      var e = document.getElementById("updateRate");
-      if (e) e.innerHTML = "{'Update your rating'|@translate|@escape:'javascript'}";
-      e = document.getElementById("ratingScore");
-      if (e) e.innerHTML = rating.score;
-      e = document.getElementById("ratingCount");
-      if (e) e.innerHTML = "({'%d rates'|@translate|@escape:'javascript'})".replace( "%d", rating.count);
-      {rdelim}{rdelim} );
-      {/footer_script}
-      {/strip}
-	  </div>
+	  {foreach from=$rating.marks item=mark name=rate_loop}
+	  {if isset($rating.USER_RATE) && $mark==$rating.USER_RATE}
+	  <input type="button" name="rate" value="{$mark}" class="rateButtonSelected" title="{$mark}" />
+	  {else}
+	  <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
+	  {/if}
+	  {/foreach}
+          {combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
+          {combine_script id='rating' load='async' require='core.scripts' path='themes/default/js/rating.js'}
+
+          {strip}
+          {footer_script}
+            var _pwgRatingAutoQueue = _pwgRatingAutoQueue||[];
+            _pwgRatingAutoQueue.push( {ldelim}rootUrl: '{$ROOT_URL}', image_id: {$current.id},
+            onSuccess : function(rating) {ldelim}
+            var e = document.getElementById("updateRate");
+            if (e) e.innerHTML = "{'Update your rating'|@translate|@escape:'javascript'}";
+            e = document.getElementById("ratingScore");
+            if (e) e.innerHTML = rating.score;
+            e = document.getElementById("ratingCount");
+            if (e) e.innerHTML = "({'%d rates'|@translate|@escape:'javascript'})".replace( "%d", rating.count);
+            {rdelim}{rdelim} );
+          {/footer_script}
+          {/strip}
 	</form>
       </dd>
       {/if}
