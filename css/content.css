@@ -58,7 +58,7 @@ h2, h3, #menubar dt {
   position: absolute;
   right: 0;
   text-transform: uppercase;
-  top: 0;
+  top: 1em;
 }
 
 .titrePage {
@@ -194,7 +194,7 @@ form li {
 /* Menubar */
 
 #menubar {
-  border-top: 1px solid #666666;
+  position: relative;
   padding: 1em 0;
 }
 #menubar ul { padding: 1em 0; }

@@ -87,7 +87,7 @@
       {/foreach}
     </div>
     {/if}
-    <a id="menu-link" href="#menubar" title="{'Go to menu'|@translate}">Menu</a>
+    <a id="menu-link" href="#menubar" title="{'Go to menu'|@translate}">↓ Menu</a>
   </header>
 
   <article id="content">
