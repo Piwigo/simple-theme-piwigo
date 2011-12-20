@@ -39,7 +39,6 @@ h2, h3, #menubar dt {
 #content {
   margin: 1em 0;
 }
-.subcontent {}
 
 #theHeader {
   margin: 1em 0;
@@ -48,7 +47,6 @@ h2, h3, #menubar dt {
 
 #copyright {
   margin: 1em 0;
-  clear: both;
   font-variant: small-caps;
   text-transform: lowercase;
 }
@@ -118,13 +116,8 @@ h2, h3, #menubar dt {
   white-space: nowrap;
   margin: 0 0.5em;
 }
-
-#fullTagCloud a {
-  padding: 2px;
-}
-#fullTagCloud a:hover {
-  background: #606060;
-}
+#fullTagCloud a { padding: 2px; }
+#fullTagCloud a:hover { background: #606060; }
 
 .tagLetterContent {
   width: 100%;
@@ -187,12 +180,8 @@ form li {
   width: 180px;
 }
 
-#quicksearch {
-  margin: 1em 0;
-}
-#quicksearch #q {
-  margin-bottom: 0;
-}
+#quicksearch { margin: 1em 0; }
+#quicksearch #q { margin-bottom: 0; }
 
 /* Menubar */
 
@@ -281,28 +270,23 @@ form li {
   text-align: center;
 }
 
-.illustration {
-}
+.illustration {}
 
 .description {
   overflow: auto;
 }
-
 .description h3 {
   margin: 0;
 }
 
-.thumbCatDescNfoDate, .thumbCatDescNbImg {
-  margin: 0;
-  font-size: 80%;
-}
-
 .thumbCatDesc {
-  margin: 0;
   padding-top: 4px;
   word-wrap: break-word;
   border-top: 1px #606060 solid;
   text-align: justify;
+}
+.thumbCatDescNfoDate, .thumbCatDescNbImg {
+  font-size: 80%;
 }
 
 /* page : title bar */
@@ -432,6 +416,10 @@ form li {
   width: 95%;
 }
 
+ul.actions {
+  float: right;
+}
+
 #commentList li {
   padding: 0 0 1em;
 }
@@ -439,11 +427,6 @@ form li {
   list-style-type: none;
   padding: 4px;
 }
-
-ul.actions {
-  float: right;
-}
-
 #commentList .author {
   font-weight: bold;
   font-variant: small-caps;
@@ -456,7 +439,6 @@ ul.actions {
   list-style: none;
   display: table-row;
 }
-
 #theCommentsPage form label {
   display: inline-block;
   line-height: 25px;
@@ -516,17 +498,10 @@ ul.actions {
 /*  */
 
 @media only screen and (max-width: 957px) {
-  #the_page {
-    width: 100%;
-    margin: 0;
-  }
 
   #thePicturePage #content {
     position: relative;
   }
-
-  #theHeader { margin: 0 1em; }
-  .titrePage { margin: 1em; }
 
   #theImage {
     width: 100%;
