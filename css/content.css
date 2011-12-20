@@ -37,7 +37,8 @@ h2, h3, #menubar dt {
 /* Layout */
 
 #content {
-  margin: 1em 0;
+  margin: 2em 0;
+  min-height: 25em;
 }
 
 #theHeader {
@@ -97,6 +98,13 @@ h2, h3, #menubar dt {
 
 .categoryActions li {
   display: inline;
+}
+
+#content {
+  background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
+  border-radius: 6px;
+  padding: 1em 2em;
+  margin: 1em 0;
 }
 
 /* tags */
@@ -287,7 +295,7 @@ form li {
 /* page : title bar */
 
 #additional_info {
-  margin: 1em 5em;
+  margin: 1em 0;
 }
 
 .navigationBar {
@@ -398,10 +406,7 @@ form li {
 /* comments */
 
 #theComments h3 {
-  height: 25px;
-  line-height: 25px;
   cursor: pointer;
-  border-top: 2px solid #606060;
 }
 
 #commentAdd input[type="text"], #commentAdd textarea {
