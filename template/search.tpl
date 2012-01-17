@@ -11,43 +11,43 @@
   </ul>
 </div>
 {/if}
+
 <form class="filter" method="post" name="search" action="{$F_SEARCH_ACTION}">
 <fieldset>
   <legend>{'Filter'|@translate}</legend>
   <label>{'Search for words'|@translate}
-    <input type="text" style="width: 300px" name="search_allwords" size="30"  />
-  </label>
-  <ul>
-    <li><label>
-      <input type="radio" name="mode" value="AND" checked="checked" />{'Search for all terms'|@translate}
-    </label></li>
-    <li><label>
-      <input type="radio" name="mode" value="OR" />{'Search for any terms'|@translate}
-    </label></li>
-  </ul>
+    <input type="text" name="search_allwords"></label>
+  <label><input type="radio" name="mode" value="AND" checked="checked">
+    {'Search for all terms'|@translate}</label>
+  <label><input type="radio" name="mode" value="OR">
+    {'Search for any terms'|@translate}</label>
   <label>{'Search for Author'|@translate}
-    <input type="text" style="width: 300px" name="search_author" size="30"  />
-  </label>
+  <input type="text" name="search_author"></label>
 </fieldset>
+
 {if isset($TAG_SELECTION)}
 <fieldset>
   <legend>{'Search tags'|@translate}</legend>
   {$TAG_SELECTION}
-  <label><span><input type="radio" name="tag_mode" value="AND" checked="checked" /> {'All tags'|@translate}</span></label>
-  <label><span><input type="radio" name="tag_mode" value="OR" /> {'Any tag'|@translate}</span></label>
+  <label><input type="radio" name="tag_mode" value="AND" checked="checked">
+    {'All tags'|@translate}</label>
+  <label><input type="radio" name="tag_mode" value="OR">
+    {'Any tag'|@translate}</label>
 </fieldset>
 {/if}
+
 <fieldset>
   <legend>{'Search by Date'|@translate}</legend>
   <ul>
     <li><label>{'Kind of date'|@translate}</label></li>
     <li><label>
-      <input type="radio" name="date_type" value="date_creation" checked="checked" />{'Creation date'|@translate}
+      <input type="radio" name="date_type" value="date_creation" checked="checked">{'Creation date'|@translate}
     </label></li>
     <li><label>
-      <input type="radio" name="date_type" value="date_available" />{'Post date'|@translate}
+      <input type="radio" name="date_type" value="date_available">{'Post date'|@translate}
     </label></li>
   </ul>
+
   <ul>
   <li><label>{'Date'|@translate}</label></li>
     <li>
@@ -60,13 +60,14 @@
     <select id="start_month" name="start_month">
         {html_options options=$month_list selected=$START_MONTH_SELECTED}
       </select>
-    <input id="start_year" name="start_year" type="text" size="4" maxlength="4" >
-    <input id="start_linked_date" name="start_linked_date" type="hidden" size="10" disabled="disabled">
+    <input id="start_year" name="start_year" type="text">
+    <input id="start_linked_date" name="start_linked_date" type="hidden" disabled="disabled">
   </li>
   <li>
     <a class="date_today" href="#" onClick="document.search.start_day.value={$smarty.now|date_format:"%d"};document.search.start_month.value={$smarty.now|date_format:"%m"};document.search.start_year.value={$smarty.now|date_format:"%Y"};return false;">{'today'|@translate}</a>
-    </li>
+  </li>
   </ul>
+
   <ul>
   <li><label>{'End-Date'|@translate}</label></li>
     <li>
@@ -79,17 +80,18 @@
     <select id="end_month" name="end_month">
         {html_options options=$month_list selected=$END_MONTH_SELECTED}
       </select>
-    <input id="end_year" name="end_year" type="text" size="4" maxlength="4" >
-    <input id="end_linked_date" name="end_linked_date" type="hidden" size="10" disabled="disabled">
+    <input id="end_year" name="end_year" type="text">
+    <input id="end_linked_date" name="end_linked_date" type="hidden" disabled="disabled">
   </li>
   <li>
     <a class="date_today" href="#" onClick="document.search.end_day.value={$smarty.now|date_format:"%d"};document.search.end_month.value={$smarty.now|date_format:"%m"};document.search.end_year.value={$smarty.now|date_format:"%Y"};return false;">{'today'|@translate}</a>
     </li>
   </ul>
 </fieldset>
+
 <fieldset>
   <legend>{'Search Options'|@translate}</legend>
-<label>{'Search in albums'|@translate}
+  <label>{'Search in albums'|@translate}
     <select class="categoryList" name="cat[]" multiple="multiple" >
       {html_options options=$category_options selected=$category_options_selected}
     </select>
@@ -97,18 +99,21 @@
   <ul>
     <li><label>{'Search in sub-albums'|@translate}</label></li>
     <li><label>
-      <input type="radio" name="subcats-included" value="1" checked="checked" />{'Yes'|@translate}
+      <input type="radio" name="subcats-included" value="1" checked="checked">{'Yes'|@translate}
     </label></li>
     <li><label>
-      <input type="radio" name="subcats-included" value="0" />{'No'|@translate}
+      <input type="radio" name="subcats-included" value="0">{'No'|@translate}
     </label></li>
   </ul>
 </fieldset>
+
 <p>
-  <input class="submit" type="submit" name="submit" value="{'Submit'|@translate}" />
-  <input class="submit" type="reset" value="{'Reset'|@translate}" />
+  <input class="submit" type="submit" name="submit" value="{'Submit'|@translate}">
+  <input class="submit" type="reset" value="{'Reset'|@translate}">
 </p>
+
 </form>
+
 <script type="text/javascript"><!--
 document.search.search_allwords.focus();
 //--></script>

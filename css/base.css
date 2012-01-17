@@ -235,8 +235,8 @@ select {
   /* display: block; */
   margin-bottom: 20px;
   background: #3f3f3f; }
-select {
-  padding: 0; }
+/* select { */
+/*   padding: 0; } */
 input[type="text"]:focus,
 input[type="password"]:focus,
 input[type="email"]:focus,
@@ -255,7 +255,8 @@ legend {
 }
 select {
   width: 220px; }
-input[type="checkbox"] {
+input[type="checkbox"],
+input[type="radio"] {
   display: inline; }
 label span,
 legend span {
