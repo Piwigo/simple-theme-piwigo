@@ -44,7 +44,7 @@ h1 a, h2 a, h3 a, h4 a {
 
 #content {
   margin: 2em 0;
-  padding: 1em 2em;
+  padding: 1em 10px;
   min-height: 25em;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
 }
@@ -180,9 +180,8 @@ form li { margin: 0.2em 0; }
 #menubar ul { padding: 1em 0; }
 #menubar ul ul { padding-left: 1em; }
 
-.totalImages {
-  font-style: italic;
-}
+.totalImages {font-style: italic;}
+.selected {font-weight: bold;}
 
 /* images thumbnails */
 
@@ -206,16 +205,14 @@ form li { margin: 0.2em 0; }
 
 /* image styles */
 
-#theImage img, .illustration img, .thumbnail,
-#navThumbPrev img, #navThumbNext img {
+#theImage img, .illustration img, .thumbnail {
   -moz-transition-duration: 0.2s;
   -moz-transition-property: opacity;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
 
-.illustration a:hover img, .thumbnail:hover,
-#navThumbPrev img:hover, #navThumbNext img:hover {
+.illustration a:hover img, .thumbnail:hover {
   opacity: 0.5;
 }
 
@@ -269,11 +266,6 @@ form li { margin: 0.2em 0; }
 .navButtons {
   font-size: 1.5em;
   text-align: center;
-}
-
-#navThumbPrev, #navThumbNext {
-  text-align: center;
-  margin: 1em auto;
 }
 
 #imageToolBar {
@@ -445,9 +437,5 @@ ul.actions {
     clear: both;
     width: 100%;
     margin: 0 10px;
-  }
-  #navThumbPrev, #navThumbNext {
-    float: left;
-    margin: 1em;
   }
 }

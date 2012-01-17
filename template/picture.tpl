@@ -31,26 +31,13 @@
   {if isset($COMMENT_IMG)}
   <p>{$COMMENT_IMG}</p>
   {/if}
-</div> <!-- theImage -->
+</div>
 
 <div id="imageInfoBar">
   <div id="imageToolBar">
     {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
   </div>
-{if $DISPLAY_NAV_THUMB}
-  {if isset($previous) }
-  <div id="navThumbPrev">
-    <a class="navThumb" href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">
-      <img src="{$previous.THUMB_SRC}" alt="{$previous.TITLE}"></a>
-  </div>
-  {/if}
-  {if isset($next) }
-  <div id="navThumbNext">
-    <a class="navThumb" href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">
-      <img src="{$next.THUMB_SRC}" alt="{$next.TITLE}"></a>
-  </div>
-  {/if}
-{/if}
+
   <div id="randomButtons">
     <ul>
       {if isset($U_SLIDESHOW_START) }
@@ -74,6 +61,7 @@
       {/if}
     </ul>
   </div>
+
   {if isset($metadata)}
   <div id="imageMeta">
     {foreach from=$metadata item=meta}
@@ -87,6 +75,7 @@
     {/foreach}
   </div> <!-- imageMeta -->
   {/if}
+
   <div id="imageInfos">
     <dl>
       {if $display_info.author and isset($INFO_AUTHOR)}
@@ -127,9 +116,11 @@
 	<dt id="Average">{'Rating score'|@translate}</dt>
 	<dd id="ratingSummary">
 	{if $rate_summary.count}
-		<span id="ratingScore">{$rate_summary.score}</span> <span id="ratingCount">({assign var='rate_text' value='%d rates'|@translate}{$pwg->sprintf($rate_text, $rate_summary.count)})</span>
+          <span id="ratingScore">{$rate_summary.score}</span>
+          <span id="ratingCount">({assign var='rate_text' value='%d rates'|@translate}{$pwg->sprintf($rate_text, $rate_summary.count)})</span>
 	{else}
-		<span id="ratingScore">{'no rate'|@translate}</span> <span id="ratingCount"></span>
+       	  <span id="ratingScore">{'no rate'|@translate}</span>
+          <span id="ratingCount"></span>
 	{/if}
 	</dd>
 	{/if}
