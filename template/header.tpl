@@ -37,9 +37,13 @@
   {combine_css path="themes/simple/css/base.css" order="1"}
   {combine_css path="themes/simple/css/skeleton.css" order="2"}
   {combine_css path="themes/simple/css/content.css" order="3"}
+
   {foreach from=$themes item=theme}
   {if $theme.load_css}
-  {combine_css path="themes/`$theme.id`/theme.css" order=10}
+    {assign var="csstheme" value="themes/`$theme.id`/theme.css"}
+    { if file_exists($csstheme) }
+      {combine_css path="themes/`$theme.id`/theme.css" order=10}
+    {/if}
   {/if}
   {if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
   {/foreach}
