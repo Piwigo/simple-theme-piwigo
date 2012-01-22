@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: Simple Grey
-Version: 2.5.2
+Version: 2.5.3
 Description: Simple Grey
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon
@@ -28,7 +28,7 @@ $themeconf = array(
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 
 // debug - do not combine files
-// $conf['template_combine_files'] = false;
+$conf['template_combine_files'] = false;
 
 if (!isset($conf['simple']))
 {
