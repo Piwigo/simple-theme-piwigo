@@ -42,6 +42,11 @@ Install
 Changelog
 ---------
 
+### version 2.5.3 (22/01/2012)
+
+* add an option and admin page to choose the layout for albums (with description
+  under or next to the album thumbnail)
+
 ### version 2.5.2 (20/12/2011)
 
 * more flexible layout for thumbnails
