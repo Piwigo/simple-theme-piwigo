@@ -30,4 +30,18 @@ load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 // debug - do not combine files
 // $conf['template_combine_files'] = false;
 
+if (!isset($conf['simple']))
+{
+  $conf['simple'] = serialize(array('albumDisplay' => 'column'));
+}
+$conf['simple'] = unserialize($conf['simple']);
+
+add_event_handler('loc_begin_page_header', 'simple_set_config');
+function simple_set_config()
+{
+  global $template, $conf;
+  
+  $template->assign('simple_conf', $conf['simple']);
+}
+
 ?>

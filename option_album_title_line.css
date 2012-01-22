@@ -1,0 +1,18 @@
+.thumbnailCategories {
+  padding: 1em;
+}
+
+.thumbnailCategories li {
+  height: 160px;
+  width: 45%;
+  text-align:left;
+}
+
+.illustration {
+  float: left;
+  width: 150px;
+}
+
+.description {
+  padding-left: 1em;
+}
