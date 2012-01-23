@@ -478,5 +478,13 @@ ul.actions {
     float: left;
     margin: 1em;
   }
+  .thumbnailCategories li {
+    width: 45%;
+  }
 }
 
+@media only screen and (max-width: 520px) {
+  .thumbnailCategories li {
+    width: 95%;
+  }
+}
