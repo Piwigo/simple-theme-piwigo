@@ -54,7 +54,8 @@ h2, h3, #menubar dt {
   border: 2px #f0f0f0 solid;
 }
 #thumbnails p {
-  margin: 0;
+  margin: 0 auto;
+  max-width: 12em;
 }
 
 /* page content :  categories thumbnails */

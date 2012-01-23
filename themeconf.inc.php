@@ -28,7 +28,7 @@ $themeconf = array(
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 
 // debug - do not combine files
-$conf['template_combine_files'] = false;
+// $conf['template_combine_files'] = false;
 
 if (!isset($conf['simple']))
 {
