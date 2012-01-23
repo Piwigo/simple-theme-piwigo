@@ -199,6 +199,10 @@ form li { margin: 0.2em 0; }
   display: inline-block;
   vertical-align: middle;
 }
+#thumbnails p {
+  max-width: 12em;
+  margin: 0 auto;
+}
 
 .nb-comments, .nb-hits { font-weight: normal; }
 .zero { display: none; }
