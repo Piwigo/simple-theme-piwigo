@@ -2,7 +2,7 @@
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
 
 global $conf;
-if (!isset($conf['stripped']))
+if (!isset($conf['simple']))
 {
   $conf['simple'] = serialize(array('albumDisplay' => 'column'));
 }

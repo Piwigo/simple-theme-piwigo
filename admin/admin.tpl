@@ -10,7 +10,7 @@
           <li><label>
             <span class="property">{'Album title and description'|@translate}</span>&nbsp;
             <select name="albumDisplay" style="min-width:150px;">
-              <option value="column" {if ($options.albumDisplay=="line")}selected="selected"{/if}>{'under the album thumbnail'|@translate}</option>
+              <option value="column" {if ($options.albumDisplay=="column")}selected="selected"{/if}>{'under the album thumbnail'|@translate}</option>
               <option value="line" {if ($options.albumDisplay=="line")}selected="selected"{/if}>{'next to the album thumbnail'|@translate}</option>
             </select>
           </label></li>
