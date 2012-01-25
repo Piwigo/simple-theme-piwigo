@@ -2,15 +2,6 @@
   <h2>{'Identification'|@translate}</h2>
 </header>
 
-{if isset($errors) }
-<div class="errors">
-  <ul>
-    {foreach from=$errors item=error}
-    <li>{$error}</li>
-    {/foreach}
-  </ul>
-</div>
-{/if}
 <form action="{$F_LOGIN_ACTION}" method="post" name="login_form">
   <fieldset>
     <legend>{'Connection settings'|@translate}</legend>

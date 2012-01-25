@@ -2,15 +2,6 @@
   <h2>{'Registration'|@translate}</h2>
 </header>
 
-{if isset($errors)}
-<div class="errors">
-  <ul>
-    {foreach from=$errors item=error}
-    <li>{$error}</li>
-    {/foreach}
-  </ul>
-</div>
-{/if}
 <form method="post" action="{$F_ACTION}" class="properties" name="register_form">
   <fieldset>
     <legend>{'Enter your personnal informations'|@translate}</legend>

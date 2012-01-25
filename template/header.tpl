@@ -97,3 +97,24 @@
   </header>
 
   <article id="content">
+
+    {if isset($errors) and count($errors)}
+    <div class="errors">
+      <ul>
+        {foreach from=$errors item=error}
+        <li>{$error}</li>
+        {/foreach}
+      </ul>
+    </div>
+    {/if}
+
+    {if isset($infos) and count($infos)}
+    <div class="infos">
+      <ul>
+        {foreach from=$infos item=info}
+        <li>{$info}</li>
+        {/foreach}
+      </ul>
+    </div>
+    {/if}
+

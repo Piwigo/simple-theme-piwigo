@@ -2,15 +2,6 @@
   <h2>{'Upload a picture'|@translate}</h2>
 </header>
 
-{if isset($errors) and count($errors)}
-<div class="errors">
-  <ul>
-    {foreach from=$errors item=error}
-    <li>{$error}</li>
-    {/foreach}
-  </ul>
-</div>
-{/if}
 {if not $UPLOAD_SUCCESSFUL }
 <form enctype="multipart/form-data" method="post" action="{$F_ACTION}">
   <fieldset>

@@ -2,26 +2,6 @@
   <h2>{'Password forgotten'|@translate}</h2>
 </header>
 
-{if count($errors)}
-<div class="errors">
-  <ul>
-    {foreach from=$errors item=error}
-    <li>{$error}</li>
-    {/foreach}
-  </ul>
-</div>
-{/if}
-
-{if count($infos)}
-<div class="infos">
-  <ul>
-    {foreach from=$infos item=info}
-    <li>{$info}</li>
-    {/foreach}
-  </ul>
-</div>
-{/if}
-
 {if $action ne 'none'}
 <form id="lostPassword" action="{$form_action}?action={$action}{if isset($key)}&amp;key={$key}{/if}" method="post">
   <input type="hidden" name="pwg_token" value="{$PWG_TOKEN}">
