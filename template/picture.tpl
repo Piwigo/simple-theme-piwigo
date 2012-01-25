@@ -7,17 +7,22 @@
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 
 <div id="theImage">
+  {if isset($previous)}
+  <a href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
+  {/if}
+
   {$ELEMENT_CONTENT}
+
+  {if isset($next)}
+  <a href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
+  {/if}
+
   {if isset($COMMENT_IMG)}
   <p>{$COMMENT_IMG}</p>
   {/if}
 </div>
 
 <div id="imageInfoBar">
-  <div id="imageToolBar">
-    {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
-  </div>
-
   <div id="randomButtons">
     <ul>
       {if isset($U_SLIDESHOW_START) }
@@ -172,3 +177,5 @@
 {/if} {*comments*}
 
 {if !empty($PLUGIN_PICTURE_AFTER)}{$PLUGIN_PICTURE_AFTER}{/if}
+
+{include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}

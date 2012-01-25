@@ -276,10 +276,6 @@ form li { margin: 0.2em 0; }
   text-align: center;
 }
 
-#imageToolBar {
-  height: 25px;
-}
-
 #imageInfoBar {
   float: right;
   clear: right;
@@ -301,6 +297,11 @@ form li { margin: 0.2em 0; }
   padding: 1em 0 2em;
   margin: 0 auto;
   overflow: hidden;
+}
+#theImage a, #theImage img {
+  display: inline-block;
+  font-size: 3em;
+  vertical-align: middle;
 }
 #theImage p {
   margin: 1em;

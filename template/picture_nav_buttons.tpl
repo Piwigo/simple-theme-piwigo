@@ -1,31 +1,3 @@
-{if $DISPLAY_NAV_BUTTONS}
-<div class="navButtons">
-{if isset($U_SLIDESHOW_STOP)}
-  <a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}">{'Stop'|@translate}</a>
-{/if}
-{if isset($slideshow.U_START_PLAY)}
-  <a href="{$slideshow.U_START_PLAY}" title="{'Play of slideshow'|@translate}">Play</a>
-{/if}
-{if isset($slideshow)}
-  {if isset($slideshow.U_STOP_PLAY)}
-    <a href="{$slideshow.U_STOP_PLAY}" title="{'Pause of slideshow'|@translate}">Pause</a>
-  {/if}
-  {if isset($slideshow.U_DEC_PERIOD)}
-    <a href="{$slideshow.U_DEC_PERIOD}" title="{'Accelerate diaporama speed'|@translate}">&nbsp;+&nbsp;</a>
-  {/if}
-  {if isset($slideshow.U_INC_PERIOD)}
-    <a href="{$slideshow.U_INC_PERIOD}" title="{'Reduce diaporama speed'|@translate}">&nbsp;-&nbsp;</a>
-  {/if}
-{/if}
-{if isset($previous)}
-  <a href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
-{/if}
-{if isset($next)}
-  <a href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
-{/if}
-</div>
-{/if}
-
 <script type="text/javascript">// <![CDATA[
 {literal}
 function keyboardNavigation(e)
