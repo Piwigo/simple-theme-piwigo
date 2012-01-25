@@ -17,17 +17,11 @@
     <a href="{$slideshow.U_INC_PERIOD}" title="{'Reduce diaporama speed'|@translate}">&nbsp;-&nbsp;</a>
   {/if}
 {/if}
-{if isset($first)}
-  <a href="{$first.U_IMG}" title="{'First'|@translate} : {$first.TITLE}" rel="first">&laquo;</a>
-{/if}
 {if isset($previous)}
   <a href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
 {/if}
 {if isset($next)}
   <a href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
-{/if}
-{if isset($last)}
-  <a href="{$last.U_IMG}" title="{'Last'|@translate} : {$last.TITLE}" rel="last">&raquo;</a>
 {/if}
 </div>
 {/if}

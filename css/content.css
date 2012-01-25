@@ -260,6 +260,10 @@ form li { margin: 0.2em 0; }
 
 /* pictures pages */
 
+#thePicturePage #menubar, #thePicturePage #menu-link {
+  display: none;
+}
+
 .imageNumber {
   float: right;
   padding: 0 3px;
