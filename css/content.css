@@ -26,7 +26,7 @@ h1, h2, h3, h4 {
   color: #e0e0e0;
   text-shadow: 1px 1px 3px #000000;
 }
-h1 { font-size: 2em; }
+h1 { font-size: 2em; line-height: 1.5; }
 h2 { font-size: 1.5em; }
 h3 { font-size: 1.3em; }
 
@@ -43,15 +43,17 @@ h1 a, h2 a, h3 a, h4 a {
 /* Layout */
 
 #content {
-  margin: 2em 0;
-  padding: 1em 10px;
+  padding: 10px;
   min-height: 25em;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
+  -moz-border-radius: 6px;
+  -webkit-border-radius: 6px;
+  border-radius: 6px;
 }
 
 
 #theHeader {
-  margin: 1em 0;
+  margin-bottom: 1em;
   position: relative;
 }
 
@@ -69,7 +71,7 @@ h1 a, h2 a, h3 a, h4 a {
 }
 
 .titrePage {
-  margin: 1em 0;
+  /* margin: 1em 0; */
 }
 .titrePage h2 {
   display: inline;
@@ -180,6 +182,11 @@ form li { margin: 0.2em 0; }
 #menubar ul { padding: 1em 0; }
 #menubar ul ul { padding-left: 1em; }
 
+.menuInfoCat, .menuInfoCatByChild {
+  color: #888;
+  float: right;
+  font-style: italic;
+}
 .totalImages {font-style: italic;}
 .selected {font-weight: bold;}
 

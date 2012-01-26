@@ -1,6 +1,6 @@
 {php}remove_event_handler('loc_end_index', 'hide_main_block');{/php}
 {foreach from=$blocks item=block key=key}
-  <div class="subcontent" class="stuffs_block">
+  <div class="stuffs_block">
     {if isset($block.TITLE)}
     <header class="titrePage">
       {if !empty($block.U_EDIT)}
