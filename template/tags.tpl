@@ -1,10 +1,10 @@
 <header class="titrePage">
   <ul class="categoryActions">
   {if $display_mode == 'letters'}
-    <li><a href="{$U_CLOUD}" title="{'show tag cloud'|@translate}">{'show tag cloud'|@translate}</a></li>
+    <li><a href="{$U_CLOUD}">{'show tag cloud'|@translate}</a></li>
   {/if}
   {if $display_mode == 'cloud'}
-    <li><a href="{$U_LETTERS}" title="{'group by letters'|@translate}">{'group by letters'|@translate}</a></li>
+    <li><a href="{$U_LETTERS}">{'group by letters'|@translate}</a></li>
   {/if}
   </ul>
   <h2>{'Tags'|@translate}</h2>
@@ -18,6 +18,7 @@
     {/foreach}
   </div>
   {/if}
+
   {if $display_mode == 'letters'}
   <table>
     <tr>

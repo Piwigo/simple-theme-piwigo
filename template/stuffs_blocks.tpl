@@ -1,11 +1,12 @@
 {php}remove_event_handler('loc_end_index', 'hide_main_block');{/php}
+
 {foreach from=$blocks item=block key=key}
   <div class="stuffs_block">
     {if isset($block.TITLE)}
     <header class="titrePage">
       {if !empty($block.U_EDIT)}
         <ul class="categoryActions">
-          <li><a href="{$block.U_EDIT}" title="{'edit'|@translate}">{'edit'|@translate}</a></li>
+          <li><a href="{$block.U_EDIT}">{'edit'|@translate}</a></li>
         </ul>
       {/if}
       {if isset($block.TITLE_URL)}
