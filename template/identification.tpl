@@ -1,46 +1,24 @@
 <header class="titrePage">
-  <h2>{'Identification'|@translate}</h2>
+<h2>{'Identification'|@translate}</h2>
 </header>
 
 <form action="{$F_LOGIN_ACTION}" method="post" name="login_form">
-  <fieldset>
-    <legend>{'Connection settings'|@translate}</legend>
-    <ul>
-      <li>
-      <span class="property">
-          <label for="username">{'Username'|@translate}</label>
-      </span>
-      <input tabindex="1" class="login" type="text" name="username" id="username" size="25" maxlength="40">
-      </li>
-      <li>
-      <span class="property">
-          <label for="password">{'Password'|@translate}</label>
-      </span>
-      <input tabindex="2" class="login" type="password" name="password" id="password" size="25" maxlength="25">
-      </li>
-      {if $authorize_remembering }
-      <li>
-      <span class="property">
-        <label for="remember_me">{'Auto login'|@translate}</label>
-      </span>
-        <input tabindex="3" type="checkbox" name="remember_me" id="remember_me" value="1">
-      </li>
-      {/if}
-    </ul>
-  </fieldset>
-  <p>
-    <input type="hidden" name="redirect" value="{$U_REDIRECT|@urlencode}">
-    <input tabindex="4" type="submit" name="login" value="{'Submit'|@translate}">
-  </p>
-  <p>
-    {if isset($U_REGISTER) }
-    <a href="{$U_REGISTER}" title="{'Register'|@translate}">{'Register'|@translate}</a>
+    <label for="username">{'Username'|@translate}</label>
+    <input class="login" type="text" name="username" id="username" autofocus required >
+    <label for="password">{'Password'|@translate}</label>
+    <input class="login" type="password" name="password" id="password" required >
+
+    {if $authorize_remembering}
+    <label for="remember_me">{'Auto login'|@translate}</label>
+    <input type="checkbox" name="remember_me" id="remember_me" value="1">
     {/if}
-    <a href="{$U_LOST_PASSWORD}" title="{'Forgot your password?'|@translate}">{'Forgot your password?'|@translate}</a>
-  </p>
+    <br />
+    <input type="hidden" name="redirect" value="{$U_REDIRECT|@urlencode}">
+    <input type="submit" name="login" value="{'Submit'|@translate}">
 </form>
-<script type="text/javascript">
-  <!--
-     document.login_form.username.focus();
-  //-->
-</script>
+<p>
+{if isset($U_REGISTER)}
+<a href="{$U_REGISTER}">{'Register'|@translate}</a> • 
+{/if}
+<a href="{$U_LOST_PASSWORD}">{'Forgot your password?'|@translate}</a>
+</p>
