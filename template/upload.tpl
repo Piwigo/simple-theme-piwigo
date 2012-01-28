@@ -57,7 +57,7 @@
     </ul>
   </fieldset>
   <p class="bottomButtons">
-    <input class="submit" name="submit" type="submit" value="{'Submit'|@translate}" />
+    <input name="submit" type="submit" value="{'Submit'|@translate}" />
   </p>
 </form>
 {else}

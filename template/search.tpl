@@ -98,8 +98,8 @@
 </fieldset>
 
 <p>
-  <input class="submit" type="submit" name="submit" value="{'Submit'|@translate}">
-  <input class="submit" type="reset" value="{'Reset'|@translate}">
+  <input type="submit" name="submit" value="{'Submit'|@translate}">
+  <input type="reset" value="{'Reset'|@translate}">
 </p>
 
 </form>

@@ -17,7 +17,7 @@
     </label>
   </p>
 
-  <p class="bottomButtons"><input class="submit" type="submit" name="submit" value="{'Change my password'|@translate}"></p>
+  <p class="bottomButtons"><input type="submit" name="submit" value="{'Change my password'|@translate}"></p>
   {elseif $action eq 'reset'}
 
   <div class="message">{'Hello'|@translate} <em>{$username}</em>. {'Enter your new password below.'|@translate}</div>
@@ -38,7 +38,7 @@
     </label>
   </p>
 
-  <p class="bottomButtons"><input class="submit" type="submit" name="submit" value="{'Submit'|@translate}"></p>
+  <p class="bottomButtons"><input type="submit" name="submit" value="{'Submit'|@translate}"></p>
   {/if}
 
 </form>

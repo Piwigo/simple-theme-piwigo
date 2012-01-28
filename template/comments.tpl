@@ -37,7 +37,7 @@
     </select>
     </label>
   </fieldset>
-  <p><input class="submit" type="submit" value="{'Filter and display'|@translate}"></p>
+  <p><input type="submit" value="{'Filter and display'|@translate}"></p>
 </form>
 {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
 {if isset($comments)}

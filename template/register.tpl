@@ -35,8 +35,8 @@
   </fieldset>
   <p class="bottomButtons">
     <input type="hidden" name="key" value="{$F_KEY}" >
-    <input class="submit" type="submit" name="submit" value="{'Register'|@translate}">
-    <input class="submit" type="reset" value="{'Reset'|@translate}">
+    <input type="submit" name="submit" value="{'Register'|@translate}">
+    <input type="reset" value="{'Reset'|@translate}">
   </p>
 </form>
 <p><span class="mandatorystar">*</span> : {'obligatory'|@translate}</p>
