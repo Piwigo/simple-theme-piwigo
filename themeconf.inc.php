@@ -1,8 +1,8 @@
 <?php
 /*
-Theme Name: Simple Grey
-Version: 2.5.2
-Description: Simple Grey
+Theme Name: Simple3
+Version: 3.0-dev
+Description: Simple theme for Piwigo
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon
 Author URI: http://saimon.org/
@@ -12,9 +12,9 @@ $themeconf = array(
   'parent' => 'default',
   'load_parent_css' => false,
   'load_parent_local_head' => false,
-  'name' => 'simple-grey',
-  'theme_dir' => 'simple',
-  'icon_dir' => 'themes/simple/icon',
+  'name' => 'simple3',
+  'theme_dir' => 'simple3',
+  'icon_dir' => 'themes/simple3/icon',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
@@ -25,7 +25,7 @@ $themeconf = array(
 // global $user;
 // $user['maxwidth'] = 800;
 
-load_language('theme.lang', PHPWG_THEMES_PATH.'simple/');
+load_language('theme.lang', PHPWG_THEMES_PATH.'simple3/');
 
 // debug - do not combine files
 // $conf['template_combine_files'] = false;
