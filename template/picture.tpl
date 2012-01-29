@@ -25,13 +25,13 @@
 
 <div id="theImage">
   {if isset($previous)}
-  <a href="{$previous.U_IMG}" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
+  <a href="{$previous.U_IMG}" class="imgPrev" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
   {/if}
 
   {$ELEMENT_CONTENT}
 
   {if isset($next)}
-  <a href="{$next.U_IMG}" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
+  <a href="{$next.U_IMG}" class="imgNext" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
   {/if}
 
   {if isset($COMMENT_IMG)}

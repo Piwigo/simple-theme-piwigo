@@ -289,6 +289,8 @@ form li { margin: 0.2em 0; }
   font-size: 3em;
   vertical-align: middle;
 }
+#theImage .imgNext { margin-left: 1em; }
+#theImage .imgPrev { margin-right: 1em; }
 #theImage p {
   margin: 1em;
 }
