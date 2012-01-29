@@ -26,6 +26,7 @@ $themeconf = array(
 // $user['maxwidth'] = 800;
 
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple3/');
+pwg_set_session_var('show_metadata', true);
 
 // debug - do not combine files
 // $conf['template_combine_files'] = false;

@@ -2,7 +2,4 @@
 // jQuery.noConflict();
 
 jQuery(document).ready(function($){
-  $("#theComments h3").click(function () {
-    $("#theComments > div").toggle("slow");
-  });
 });

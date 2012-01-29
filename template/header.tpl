@@ -60,9 +60,8 @@
   {/if}
 
   {get_combined_scripts load='header'}
-  {combine_script id='jquery' path='themes/default/js/jquery.min.js'}
-  {combine_script id='rating' path='themes/default/js/rating.js'}
-  {combine_script id='core.scripts' path='themes/default/js/scripts.js'}
+  {combine_script id='jquery.hashchange' path='themes/simple3/js/jquery.hashchange.min.js'}
+  {combine_script id='jquery.tabs' path='themes/simple3/js/jquery.easytabs.min.js'}
   {combine_script id='simple3.scripts' path='themes/simple3/js/scripts.js'}
 
   {if not empty($head_elements)}

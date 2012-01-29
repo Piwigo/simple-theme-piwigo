@@ -34,12 +34,6 @@ h1 a, h2 a, h3 a, h4 a {
   color: #e0e0e0;
 }
 
-/* hide javascript stuff */
-
-.js #theComments > div {
-  display: none;
-}
-
 /* Layout */
 
 #content {
@@ -75,6 +69,10 @@ h1 a, h2 a, h3 a, h4 a {
 }
 .titrePage h2 {
   display: inline;
+}
+.titrePage .headerActions {
+  float: right;
+  margin-left: 1em;
 }
 
 .subcontent h2 {
@@ -264,7 +262,6 @@ form li { margin: 0.2em 0; }
 }
 
 .imageNumber {
-  float: right;
   padding: 0 3px;
   font-size: 0.9em;
   border: 1px #bbb solid;
@@ -273,12 +270,6 @@ form li { margin: 0.2em 0; }
 .navButtons {
   font-size: 1.5em;
   text-align: center;
-}
-
-#imageInfoBar {
-  float: right;
-  clear: right;
-  width: 25%;
 }
 
 #imageInfos dt, #imageMeta dt {
@@ -290,12 +281,8 @@ form li { margin: 0.2em 0; }
 }
 
 #theImage {
-  float: left;
-  width: 75%;
   text-align: center;
-  padding-bottom: 2em;
-  margin: 0 auto;
-  overflow: hidden;
+  margin: 2em 0;
 }
 #theImage a, #theImage img {
   display: inline-block;
@@ -306,9 +293,14 @@ form li { margin: 0.2em 0; }
   margin: 1em;
 }
 
+/* rating */
+#rating {
+  float: right;
+}
 #rateForm input, #rateForm input:active {
   border: none;
   padding: 0;
+  margin: 0;
 }
 #rateForm input.rateButtonStarFull  {
   background:  url('../icon/rating-stars.png') no-repeat scroll -16px center;
@@ -318,6 +310,24 @@ form li { margin: 0.2em 0; }
   background:  url('../icon/rating-stars.png') no-repeat scroll 0 center;
   width: 16px;
 }
+#updateRate {
+}
+#rateForm {
+  display: inline-block;
+  margin-bottom: 0;
+}
+
+/* Tabs */
+
+/* .etabs { margin: 0; padding: 0; } */
+.tab {
+  display: inline-block;
+  zoom:1;
+}
+.tab a { line-height: 2em; display: block; padding: 0 10px; outline: none; }
+.tab a:hover { }
+.tab.active { text-decoration: underline; }
+.tab a.active { font-weight: bold; }
 
 /* slideshow */
 
@@ -341,10 +351,6 @@ form li { margin: 0.2em 0; }
 }
 
 /* comments */
-
-#theComments h3 {
-  cursor: pointer;
-}
 
 #commentAdd input[type="text"], #commentAdd textarea {
   width: 95%;
@@ -443,13 +449,6 @@ ul.actions {
   #theImage {
     width: 100%;
     float: none;
-  }
-
-  #imageInfoBar {
-    float: none;
-    clear: both;
-    width: 100%;
-    margin: 0 10px;
   }
 }
 
