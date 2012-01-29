@@ -8,9 +8,9 @@
   <label>{'Search for words'|@translate}
     <input type="text" name="search_allwords"></label>
   <label><input type="radio" name="mode" value="AND" checked="checked">
-    {'Search for all terms'|@translate}</label>
+    <span>{'Search for all terms'|@translate}</span></label>
   <label><input type="radio" name="mode" value="OR">
-    {'Search for any terms'|@translate}</label>
+    <span>{'Search for any terms'|@translate}</span></label>
   <label>{'Search for Author'|@translate}
   <input type="text" name="search_author"></label>
 </fieldset>
@@ -20,23 +20,19 @@
   <legend>{'Search tags'|@translate}</legend>
   {$TAG_SELECTION}
   <label><input type="radio" name="tag_mode" value="AND" checked="checked">
-    {'All tags'|@translate}</label>
+    <span>{'All tags'|@translate}</span></label>
   <label><input type="radio" name="tag_mode" value="OR">
-    {'Any tag'|@translate}</label>
+    <span>{'Any tag'|@translate}</span></label>
 </fieldset>
 {/if}
 
 <fieldset>
   <legend>{'Search by Date'|@translate}</legend>
-  <ul>
-    <li><label>{'Kind of date'|@translate}</label></li>
-    <li><label>
-      <input type="radio" name="date_type" value="date_creation" checked="checked">{'Creation date'|@translate}
-    </label></li>
-    <li><label>
-      <input type="radio" name="date_type" value="date_available">{'Post date'|@translate}
-    </label></li>
-  </ul>
+    <p>{'Kind of date'|@translate}</p>
+    <label><input type="radio" name="date_type" value="date_creation" checked="checked">
+    {'Creation date'|@translate}</label>
+    <label><input type="radio" name="date_type" value="date_available">
+    {'Post date'|@translate}</label>
 
   <ul>
   <li><label>{'Date'|@translate}</label></li>
@@ -97,13 +93,6 @@
   </ul>
 </fieldset>
 
-<p>
-  <input type="submit" name="submit" value="{'Submit'|@translate}">
-  <input type="reset" value="{'Reset'|@translate}">
-</p>
-
+<input type="submit" name="submit" value="{'Submit'|@translate}">
+<input type="reset" value="{'Reset'|@translate}">
 </form>
-
-<script type="text/javascript"><!--
-document.search.search_allwords.focus();
-//--></script>
