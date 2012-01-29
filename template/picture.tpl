@@ -153,7 +153,7 @@
     <div class="navigationBar">{$COMMENT_NAV_BAR}</div>
     {/if}
     {if isset($comment_add)}
-    <div id="commentAdd" class="eight columns">
+    <div id="commentAdd" class="seven columns">
       <h4>{'Add a comment'|@translate}</h4>
       <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
 	{if $comment_add.SHOW_AUTHOR}
@@ -169,7 +169,7 @@
     {/if}
     {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
     {if isset($comments)}
-    <div id="commentList" class="eight columns">
+    <div id="commentList" class="seven columns offset-by-one">
       {include file='comment_list.tpl'}
     </div>
     {/if}
