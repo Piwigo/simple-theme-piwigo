@@ -455,10 +455,17 @@ ul.actions {
 }
 
 /* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {}
+@media only screen and (min-width: 768px) and (max-width: 959px) {
+  .container { width: 95%; margin: 0 auto; }
+}
 
 /* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {}
+@media only screen and (max-width: 767px) {
+  img { max-width: 100%; height: auto !important; }
+  .container { width: 95%; margin: 0 auto; }
+  .container .column,
+  .container .columns { float: left; display: inline; margin-left: 10px; margin-right: 10px; width: 300px; }
+}
 
 /* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
 @media only screen and (min-width: 480px) and (max-width: 767px) {}
