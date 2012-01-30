@@ -8,7 +8,8 @@
   {/if}
   {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
   {if isset($favorite)}
-  <span class="headerActions"><a href="{$favorite.U_FAVORITE}" title="{$favorite.FAVORITE_HINT}">{$favorite.FAVORITE_HINT}</a></span>
+  <span class="headerActions"><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}
+    {else}{'add this photo to your favorites'|@translate}{/if}</a></span>
   {/if}
   {if !empty($U_SET_AS_REPRESENTATIVE)}
   <span class="headerActions"><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></span>
