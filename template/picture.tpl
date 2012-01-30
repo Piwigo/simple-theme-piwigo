@@ -64,8 +64,8 @@
         <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}">{'download'|@translate}</a></li>
         {/if}
         {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
-        {if isset($favorite) }
-        <li><a href="{$favorite.U_FAVORITE}" title="{$favorite.FAVORITE_HINT}">{$favorite.FAVORITE_HINT}</a></li>
+        {if isset($favorite)}
+        <li><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}{else}{'add this photo to your favorites'|@translate}{/if}</a></li>
         {/if}
         {if !empty($U_SET_AS_REPRESENTATIVE) }
         <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></li>
