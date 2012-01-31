@@ -261,11 +261,7 @@ form li { margin: 0.2em 0; }
   display: none;
 }
 
-.imageNumber {
-  padding: 0 3px;
-  font-size: 0.9em;
-  border: 1px #bbb solid;
-}
+.imageNumber {}
 
 .navButtons {
   font-size: 1.5em;
@@ -289,8 +285,11 @@ form li { margin: 0.2em 0; }
   font-size: 3em;
   vertical-align: middle;
 }
-#theImage .imgNext { margin-left: 1em; }
-#theImage .imgPrev { margin-right: 1em; }
+#theImage .imgNext, #theImage .imgPrev {
+  padding: 0.5em;
+}
+#theImage .imgNext { padding-right: 0.1em; }
+#theImage .imgPrev { padding-left: 0.1em; }
 #theImage p {
   margin: 1em;
 }

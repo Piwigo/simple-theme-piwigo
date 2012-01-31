@@ -18,8 +18,8 @@
   <span class="headerActions"><a href="{$U_ADMIN}">{'Modify information'|@translate}</a></span>
   {/if}
 
-  {$SECTION_TITLE}
-  {$LEVEL_SEPARATOR} <h2>{$current.TITLE}</h2>
+  {$SECTION_TITLE} {$LEVEL_SEPARATOR}
+  <h2>{$current.TITLE}</h2>
 </header>
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
