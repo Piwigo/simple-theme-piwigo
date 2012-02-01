@@ -42,6 +42,17 @@ Install
 Changelog
 ---------
 
+### version 2.5.4 (23/01/2012)
+
+* improve media-queries for small resolutions
+* limit with of descriptions - combine files
+* bugfix for the admin option
+
+### version 2.5.3 (22/01/2012)
+
+* add an option and admin page to choose the layout for albums (with description
+  under or next to the album thumbnail)
+
 ### version 2.5.2 (20/12/2011)
 
 * more flexible layout for thumbnails
