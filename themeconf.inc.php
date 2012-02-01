@@ -18,7 +18,7 @@ $themeconf = array(
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
-  'url' => 'http://saimon.org/log/theme-simple-grey-pour-piwigo.html'
+  'url' => 'http://saimon.org/simple-theme-piwigo/'
 );
 
 // set this if you want to restrict the width of pictures to a specifc width
