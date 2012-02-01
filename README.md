@@ -1,43 +1,53 @@
-Simple grey theme for Piwigo
-============================
+Simple3 theme for Piwigo
+========================
 
-*Simple  grey*  is a  theme  for *Piwigo*  gallery  software.  This theme  was
-inspired  by *gally  /  Graphite* theme  for  Piwigo, and  *Carbon* theme  for
-Gallery, with the goal to simplify the design up to go to basics: the photos !
-You can also find some variants (Sunset, Black, White) in Piwigo extensions.
+The *Simple3* theme is the third version of the theme *Simple Grey* for
+[Piwigo](http://piwigo.org/). It was renamed to avoid forcing users to upgrade
+to the new version which is a complete redesign, taking advantage of the new
+features of the web: HTML5, CSS3, ...
 
-Licence
--------
-
-Copyright(C) 2009-2011 Simon C. <contact at saimon dot org>
-
-The "Simple grey"  theme for Piwigo is free software:  you can redistribute it
-and/or  modify  it under  the  terms  of the  GNU  General  Public License  as
-published by the Free Software Foundation.
-
-This program  is distributed in the hope  that it will be  useful, but WITHOUT
-ANY WARRANTY; without even the  implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have  received a copy of the GNU General  Public License along with
-this program. If not,  see <http://www.gnu.org/licenses/>.
+The *Simple Grey* theme was inspired by *gally / Graphite* theme for Piwigo,
+and *Carbon* theme for Gallery, with the goal to simplify the design up to go
+to basics: the photos !
 
 Links
 -----
 
-* [Piwigo](http://piwigo.org/)
-* [Simple page](http://saimon.org/blog/pages/Theme-Simple-Grey-Piwigo)
-* [Development](http://github.com/saimn/simple-grey)
+* [Simple3's page](http://saimon.org/simple-theme-piwigo/)
+* [Development (github)](http://github.com/saimn/simple-grey)
 * [Download](http://fr.piwigo.org/ext/extension_view.php?eid=308)
+
+Variants
+--------
+
+You can also find some variants (Sunset, Black, White) in Piwigo extensions,
+currently compatible only with *Simple Grey 2.5.x*.
+
+* [Simple White](http://piwigo.org/ext/extension_view.php?eid=346)
+* [Simple Black](http://piwigo.org/ext/extension_view.php?eid=347)
+* [Simple Sunset](http://piwigo.org/ext/extension_view.php?eid=349)
 
 Install
 -------
 
-* for **Piwigo  > 2.1.x**,  use **Simple  > 2.x** :  download the  archive and
-  extract it in  ``your-gallery/theme/``. You can also use  directly the theme
-  installer for the admin interface.
-* for  **Piwigo 2.0.x**,  use  **Simple  1.4.1** :  download  the archive  and
-  extract it in ``your-gallery/template/``.
+* use the builtin theme manager in Piwigo's admin interface,
+* or download the archive and extract it in ``your-gallery/theme/``.
+
+Licence
+-------
+
+Copyright(C) 2009-2012 Simon C. <contact at saimon dot org>
+
+The "Simple3" theme for Piwigo is free software: you can redistribute it
+and/or modify it under the terms of the GNU General Public License as
+published by the Free Software Foundation.
+
+This program is distributed in the hope that it will be useful, but WITHOUT
+ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
+FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
+
+You should have received a copy of the GNU General Public License along with
+this program. If not, see <http://www.gnu.org/licenses/>.
 
 Changelog
 ---------
@@ -98,6 +108,7 @@ Changelog
 ### version 2.4 (05/04/2011)
 
 compatibility with piwigo 2.2:
+
 * update template, language strings + misc things
 * use rating and core.scripts from default theme
 * cleanup useless javascript stuff
