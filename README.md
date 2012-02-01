@@ -10,6 +10,11 @@ The *Simple Grey* theme was inspired by *gally / Graphite* theme for Piwigo,
 and *Carbon* theme for Gallery, with the goal to simplify the design up to go
 to basics: the photos !
 
+[![screenshot][2]][1]
+
+[1]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
+[2]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.png
+
 Links
 -----
 
