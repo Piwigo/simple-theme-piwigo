@@ -251,8 +251,12 @@ form li { margin: 0.2em 0; }
   margin: 1em 0;
 }
 
-.navigationBar { text-align: center; }
-.navigationBar a { border-bottom: 1px dotted; }
+.navigationBar {
+  text-align: center;
+  color: #888;
+  margin: 1em 0;
+}
+
 .pageNumberSelected { font-weight: bold; }
 
 /* pictures pages */
@@ -357,73 +361,37 @@ form li { margin: 0.2em 0; }
   width: 95%;
 }
 
-ul.actions {
-  float: right;
-}
+ul.actions {float: right;}
 
-#commentList li {
-  padding: 0 0 1em;
-}
-#commentList li ul {
-  padding: 4px;
-}
-#commentList .author {
-  font-weight: bold;
-  font-variant: small-caps;
-}
-#commentList .date {
-  font-style: italic;
-}
+#commentList li {padding: 0 0 1em;}
+#commentList li ul {padding: 4px;}
 
-#theCommentsPage #comments li {
-  display: table-row;
-}
-#theCommentsPage form label {
-  display: inline-block;
-  line-height: 25px;
-}
+.author {font-weight: bold; font-variant: small-caps;}
+.date {font-style: italic;}
 
-#comments .description {
-  vertical-align: top;
+#theCommentsPage form.filter label {
   display: inline-block;
 }
-#comments .illustration {
-  display: inline-block;
-}
+
+#comments .description {}
+#comments .illustration {text-align: right;}
 
 /* calendar */
 
-.calendarViews, .calendarCalBar {
-  margin: 1em 0;
-}
+.calendarViews, .calendarCalBar {margin: 1em 0;}
+.calendarBar {text-align: center;}
+.calendarBar span {margin: 0 0.5em;}
 
 .calCalHead {
   font-size: 1.1em;
   font-weight: bold;
 }
 
-.calMonth {
-  width: 80%;
-  margin: 1em auto;
-}
-.calMonth td {
-  background-color: #363636;
-  text-align: center;
-}
+.calMonth {margin: 1em auto;}
+.calMonth td {text-align: center;}
 
-.calImg {
-  text-align: center;
-}
-.calImg img {
-  height: 80px;
-}
-
-.calendarBar {
-  text-align: center;
-}
-.calendarBar span {
-  margin: 0 0.5em;
-}
+.calImg {text-align: center;}
+.calImg img {height: 80px;}
 
 .calBackDate, .calForeDate {
   display: none;

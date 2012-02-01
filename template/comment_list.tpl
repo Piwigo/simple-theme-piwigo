@@ -1,46 +1,35 @@
 <ul>
   {foreach from=$comments item=comment name=comment_loop}
-  <li>
+  <li class="row">
     {if isset($comment.TN_SRC)}
-    <div class="illustration">
+    <div class="illustration six columns">
       <a href="{$comment.U_PICTURE}"><img src="{$comment.TN_SRC}" alt="{$comment.ALT}" /></a>
     </div>
     {/if}
-    <div class="description">
+    <div class="description eight columns offset-by-one">
       {if isset($comment.U_DELETE) or isset($comment.U_VALIDATE) or isset($comment.U_EDIT) }
       <ul class="actions">
 	{if isset($comment.U_DELETE)}
-	<li>
-          <a href="{$comment.U_DELETE}" title="{'delete this comment'|@translate}" onclick="return confirm('{'Are you sure?'|@translate|@escape:javascript}');">
-            [delete]
-          </a>
-	</li>
+	<li><a href="{$comment.U_DELETE}" title="{'delete this comment'|@translate}" onclick="return confirm('{'Are you sure?'|@translate|@escape:javascript}');">[delete]</a></li>
 	{/if}
         {if isset($comment.U_EDIT) and !isset($comment.IN_EDIT)}
-        <li>
-          <a class="editComment" href="{$comment.U_EDIT}#edit_comment" title="{'edit this comment'|@translate}">
-            [edit]
-          </a>
-        </li>
+        <li><a class="editComment" href="{$comment.U_EDIT}#edit_comment" title="{'edit this comment'|@translate}">[edit]</a></li>
         {/if}
 	{if isset($comment.U_VALIDATE)}
-	<li>
-          <a href="{$comment.U_VALIDATE}" title="{'validate this comment'|@translate}">
-            [validate]
-          </a>
-	</li>
+	<li><a href="{$comment.U_VALIDATE}" title="{'validate this comment'|@translate}">[validate]</a></li>
 	{/if}
       </ul>
       {/if}
       <span class="author">{$comment.AUTHOR}</span> - <span class="date">{$comment.DATE}</span>
       {if isset($comment.IN_EDIT)}
       <a name="edit_comment"></a>
-      <form  method="post" action="{$comment.U_EDIT}" class="filter" id="editComment">
+      <form  method="post" action="{$comment.U_EDIT}" id="editComment">
         <fieldset>
           <legend>{'Edit a comment'|@translate}</legend>
-          <label>{'Comment'|@translate}<textarea name="content" id="contenteditid" rows="5" cols="80">{$comment.CONTENT|@escape}</textarea></label>
+          <textarea name="content" id="contenteditid">{$comment.CONTENT|@escape}</textarea>
           <input type="hidden" name="key" value="{$comment.KEY}">
           <input type="hidden" name="image_id" value="{$comment.IMAGE_ID|@default:$current.id}">
+          <br />
           <input type="submit" value="{'Submit'|@translate}">
         </fieldset>
       </form>
@@ -51,4 +40,3 @@
   </li>
   {/foreach}
 </ul>
-<div style="clear: both;"></div>
