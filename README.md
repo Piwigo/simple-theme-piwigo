@@ -13,14 +13,16 @@ to basics: the photos !
 [![screenshot][2]][1]
 
 [1]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
-[2]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.png
+[2]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
 
-Links
------
+Download
+--------
 
-* [Simple3's page](http://saimon.org/simple-theme-piwigo/)
-* [Development (github)](http://github.com/saimn/simple-grey)
-* [Download](http://fr.piwigo.org/ext/extension_view.php?eid=308)
+* [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308)
+* [Source code (github)](http://github.com/saimn/simple-grey)
+
+* use the builtin theme manager in Piwigo's admin interface,
+* or download the archive and extract it in ``your-gallery/theme/``.
 
 Variants
 --------
@@ -31,12 +33,6 @@ currently compatible only with *Simple Grey 2.5.x*.
 * [Simple White](http://piwigo.org/ext/extension_view.php?eid=346)
 * [Simple Black](http://piwigo.org/ext/extension_view.php?eid=347)
 * [Simple Sunset](http://piwigo.org/ext/extension_view.php?eid=349)
-
-Install
--------
-
-* use the builtin theme manager in Piwigo's admin interface,
-* or download the archive and extract it in ``your-gallery/theme/``.
 
 Licence
 -------
