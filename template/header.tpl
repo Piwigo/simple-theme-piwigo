@@ -23,15 +23,17 @@
   <![endif]-->
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
   <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
-  <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}" >
-  <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php" >
-  {if isset($first.U_IMG)   } <link rel="first" title="{'First'|@translate}" href="{$first.U_IMG}" > {/if}
-  {if isset($previous.U_IMG)} <link rel="prev" title="{'Previous'|@translate}" href="{$previous.U_IMG}" > {/if}
-  {if isset($next.U_IMG)    } <link rel="next" title="{'Next'|@translate}" href="{$next.U_IMG}" > {/if}
-  {if isset($last.U_IMG)    } <link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}" > {/if}
-  {if isset($U_UP)}          <link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}" > {/if}
+  <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}">
+  <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php">
 
-  <link href='http://fonts.googleapis.com/css?family=Neuton:400,700|PT+Sans:400,700,400italic' rel='stylesheet' type='text/css'>
+  {if isset($first.U_IMG)}<link rel="first" title="{'First'|@translate}" href="{$first.U_IMG}">{/if}
+  {if isset($previous.U_IMG)}<link rel="prev" title="{'Previous'|@translate}" href="{$previous.U_IMG}">{/if}
+  {if isset($next.U_IMG)}<link rel="next" title="{'Next'|@translate}" href="{$next.U_IMG}">{/if}
+  {if isset($last.U_IMG)}<link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}">{/if}
+  {if isset($U_UP)}<link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}">{/if}
+
+  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton:400,700|PT+Sans:400,700,400italic">
+  <link rel="stylesheet" media="print" href="{$ROOT_URL}themes/simple3/css/print.css">
 
   {get_combined_css}
   {combine_css path="themes/simple3/css/base.css" order="1"}
@@ -47,8 +49,6 @@
   {/if}
   {if !empty($theme.local_head)}{include file=$theme.local_head load_css=$theme.load_css}{/if}
   {/foreach}
-
-  <link rel="stylesheet" media="print" href="{$ROOT_URL}themes/simple3/css/print.css">
 
   {if isset($U_PREFETCH)}<link rel="prefetch" href="{$U_PREFETCH}">{/if}
   {if not empty($page_refresh)}
