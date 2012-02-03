@@ -3,13 +3,13 @@
   <div class="row thumbnailCategories">
   {/if}
 
-  <div class="five columns">
+  <figure class="five columns">
     <div class="illustration">
       <a href="{$cat.URL}">
         <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" title="{$cat.NAME|@replace:'"':' '} - {'display this album'|@translate}">
       </a>
     </div>
-    <div class="description">
+    <figcaption class="description">
       <h3>
         <a href="{$cat.URL}">{$cat.NAME}</a>
         {if !empty($cat.icon_ts)}
@@ -25,8 +25,8 @@
       <p class="thumbCatDesc">{$cat.DESCRIPTION}</p>
       {/if}
 *}
-    </div>
-  </div>
+    </figcaption>
+  </figure>
 
   {if $smarty.foreach.catloop.index % 3 == 2 || $smarty.foreach.catloop.last}
   </div>

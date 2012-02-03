@@ -203,7 +203,7 @@ form li { margin: 0.2em 0; }
   display: inline-block;
   vertical-align: middle;
 }
-#thumbnails p {
+#thumbnails figcaption {
   max-width: 12em;
   margin: 0 auto;
 }
@@ -294,7 +294,7 @@ form li { margin: 0.2em 0; }
 }
 #theImage .imgNext { padding-right: 0.1em; }
 #theImage .imgPrev { padding-left: 0.1em; }
-#theImage p {
+#theImage figcaption {
   margin: 1em;
 }
 

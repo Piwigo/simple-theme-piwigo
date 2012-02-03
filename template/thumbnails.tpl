@@ -2,11 +2,12 @@
 <ul>
   {foreach from=$thumbnails item=thumbnail}
   <li>
+    <figure>
     <a href="{$thumbnail.URL}">
       <img class="thumbnail" src="{$thumbnail.TN_SRC}" alt="{$thumbnail.TN_ALT}" title="{$thumbnail.TN_TITLE}" />
     </a>
     {if $SHOW_THUMBNAIL_CAPTION }
-    <p>
+    <figcaption>
       {if isset($thumbnail.NAME)}{$thumbnail.NAME}{/if}
   	  {if !empty($thumbnail.icon_ts)}
 	  <img title="{$thumbnail.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent.png" class="icon" alt="(!)">
@@ -23,8 +24,9 @@
       </span>
       {/if}
       *}
-    </p>
+    </figcaption>
     {/if}
+    </figure>
   </li>
   {/foreach}
 </ul>

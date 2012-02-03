@@ -24,7 +24,7 @@
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 
-<div id="theImage">
+<figure id="theImage">
   {if isset($previous)}
   <a href="{$previous.U_IMG}" class="imgPrev" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
   {/if}
@@ -36,9 +36,9 @@
   {/if}
 
   {if isset($COMMENT_IMG)}
-  <p>{$COMMENT_IMG}</p>
+  <figcaption>{$COMMENT_IMG}</figcaption>
   {/if}
-</div>
+</figure>
 
 <div id="rating">
   {if isset($rating)}
