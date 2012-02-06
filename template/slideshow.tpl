@@ -1,16 +1,9 @@
-{html_head}
-{literal}
-<style>
-  #copyright { display: none; }
-</style>
-{/literal}
-{/html_head}
 <div id="slideshow">
   <header class="titrePage">
-    <div class="imageNumber">{$PHOTO}</div>
+    <span class="imageNumber headerActions">{$PHOTO}</span>
 
     {if $DISPLAY_NAV_BUTTONS}
-    <div class="navButtons">
+    <div class="headerActions">
     {if isset($U_SLIDESHOW_STOP)}
       <a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}">{'Stop'|@translate}</a>
     {/if}
