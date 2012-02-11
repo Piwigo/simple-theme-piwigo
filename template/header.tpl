@@ -97,7 +97,7 @@
   <article id="content">
 
     {if isset($errors) and count($errors)}
-    <div class="errors">
+    <div class="alert alert-error">
       <ul>
         {foreach from=$errors item=error}
         <li>{$error}</li>
@@ -107,7 +107,7 @@
     {/if}
 
     {if isset($infos) and count($infos)}
-    <div class="infos">
+    <div class="alert alert-info">
       <ul>
         {foreach from=$infos item=info}
         <li>{$info}</li>

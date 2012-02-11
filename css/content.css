@@ -115,27 +115,6 @@ h4 a {
   text-align: right;
   color: #888888;
 }
-/* Messages */
-.errors, .infos {
-  margin: 1em;
-  padding: 1em;
-}
-.errors {
-  border: 2px solid #A04040;
-  color: #A04040;
-}
-.errors a {
-  color: #FF0000;
-  font-weight: bold;
-}
-.infos {
-  border: 2px solid #40A040;
-  color: #40A040;
-}
-.infos a {
-  color: #00FF00;
-  font-weight: bold;
-}
 /* Forms */
 .mandatorystar {
   color: #e04040;
