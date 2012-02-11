@@ -4,16 +4,14 @@
 /* main styles */
 body {
   font-family: 'PT Sans', sans-serif;
-  font-size: 82.5%;
-  line-height: 1.5em;
   background-color: #303030;
   color: #bbbbbb;
 }
-img {
-  max-width: 100%;
-}
 hr {
   border: 1px #bbbbbb solid;
+}
+figure {
+  margin: 0 0 0 20px;
 }
 a {
   color: #bbbbbb;
@@ -29,6 +27,7 @@ h4 {
   font-family: 'Neuton', serif;
   color: #e0e0e0;
   text-shadow: 1px 1px 3px #000000;
+  font-weight: normal;
 }
 h1 a,
 h2 a,
@@ -36,19 +35,8 @@ h3 a,
 h4 a {
   color: #e0e0e0;
 }
-h1 {
-  font-size: 2em;
-  line-height: 1.5;
-}
-h2 {
-  font-size: 1.5em;
-}
-h3 {
-  font-size: 1.3em;
-}
 /* Layout */
 #content {
-  padding: 10px;
   min-height: 25em;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
   -webkit-border-radius: 6px;
@@ -70,7 +58,7 @@ h3 {
   top: 1em;
 }
 .titrePage {
-  margin-bottom: 1em;
+  margin: 0 20px 20px 20px;
 }
 .titrePage h2 {
   display: inline;
@@ -173,11 +161,8 @@ form li {
   position: relative;
   padding: 1em 0;
 }
-#menubar ul {
-  padding: 1em 0;
-}
-#menubar ul ul {
-  padding-left: 1em;
+#menubar h3 {
+  margin-bottom: 1em;
 }
 .menuInfoCat, .menuInfoCatByChild {
   color: #888888;
@@ -208,6 +193,11 @@ form li {
   max-width: 12em;
   margin: 0 auto;
 }
+.thumbnail {
+  border: 0;
+  border-radius: 0;
+  padding: 0;
+}
 .nb-comments, .nb-hits {
   font-weight: normal;
 }
@@ -228,7 +218,6 @@ form li {
 .thumbnailCategories {
   text-align: center;
   overflow: hidden;
-  padding: 0 20px;
 }
 .thumbCatDesc {
   padding-top: 4px;
@@ -241,7 +230,7 @@ form li {
 }
 /* page : title bar */
 #additional_info {
-  margin: 1em 0;
+  margin: 1em;
 }
 .navigationBar {
   text-align: center;

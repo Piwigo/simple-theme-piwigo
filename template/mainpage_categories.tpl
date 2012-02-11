@@ -3,7 +3,7 @@
   <div class="row thumbnailCategories">
   {/if}
 
-  <figure class="five columns">
+  <figure class="span4">
     <div class="illustration">
       <a href="{$cat.URL}">
         <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" title="{$cat.NAME|@replace:'"':' '} - {'display this album'|@translate}">
