@@ -18,6 +18,7 @@ a {
   text-decoration: none;
 }
 a:hover {
+  text-decoration: none;
   color: #f0f0f0;
 }
 h1,
@@ -59,13 +60,17 @@ h4 a {
 }
 .titrePage {
   margin: 0 20px 20px 20px;
+  padding-top: 10px;
 }
-.titrePage h2 {
+.titrePage h2, .titrePage p, .titrePage ul {
   display: inline;
+  line-height: 25px;
 }
 .titrePage .headerActions {
   float: right;
-  margin-left: 1em;
+}
+.titrePage .headerActions li {
+  display: inline-block;
 }
 .titrePage .button {
   float: none;
@@ -156,19 +161,21 @@ form li {
 }
 /* images thumbnails */
 #thumbnails {
-  width: auto;
   text-align: center;
-  font-weight: bold;
 }
 #thumbnails ul {
-  overflow: hidden;
+  margin: 0 20px 9px;
 }
 #thumbnails li {
   margin: 1em;
   display: inline-block;
   vertical-align: middle;
 }
+#thumbnails figure {
+  margin-left: 0;
+}
 #thumbnails figcaption {
+  font-weight: bold;
   max-width: 12em;
   margin: 0 auto;
 }
@@ -214,7 +221,7 @@ form li {
 .navigationBar {
   text-align: center;
   color: #888888;
-  margin: 1em 0;
+  padding: 20px;
 }
 .pageNumberSelected {
   font-weight: bold;
@@ -258,6 +265,7 @@ form li {
 /* rating */
 #rating {
   float: right;
+  margin-right: 20px;
 }
 #rateForm {
   display: inline-block;

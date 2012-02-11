@@ -37,6 +37,7 @@
 
   {get_combined_css}
   {combine_css path="themes/simple3/css/bootstrap.css" order="1"}
+  {combine_css path="themes/simple3/css/bootstrap-responsive.css" order="2"}
   {combine_css path="themes/simple3/css/content.css" order="3"}
 
   {foreach from=$themes item=theme}

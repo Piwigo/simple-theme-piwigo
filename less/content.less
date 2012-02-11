@@ -30,6 +30,7 @@ a {
   text-decoration: none;
 
   &:hover {
+    text-decoration: none;
     color: @hoverColor;
   }
 }
@@ -70,14 +71,17 @@ h1, h2, h3, h4 {
 
 .titrePage {
   margin: 0 20px 20px 20px;
+  padding-top: 10px;
 
-  h2 {
+  h2, p, ul {
     display: inline;
+    line-height: 25px;
   }
 
   .headerActions {
     float: right;
-    margin-left: 1em;
+
+    li {display: inline-block;}
   }
 
   .button {
@@ -166,19 +170,21 @@ form li { margin: 0.2em 0; }
 /* images thumbnails */
 
 #thumbnails {
-  width: auto;
   text-align: center;
-  font-weight: bold;
 
   ul {
-    overflow: hidden;
+    margin: 0 20px 9px;
   }
   li {
     margin: 1em;
     display: inline-block;
     vertical-align: middle;
   }
+  figure {
+    margin-left: 0;
+  }
   figcaption {
+    font-weight: bold;
     max-width: 12em;
     margin: 0 auto;
   }
@@ -232,7 +238,7 @@ form li { margin: 0.2em 0; }
 .navigationBar {
   text-align: center;
   color: @secondaryColor;
-  margin: 1em 0;
+  padding: 20px;
 }
 
 .pageNumberSelected { font-weight: bold; }
@@ -280,6 +286,7 @@ form li { margin: 0.2em 0; }
 /* rating */
 #rating {
   float: right;
+  margin-right: 20px;
 }
 
 #rateForm {

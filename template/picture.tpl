@@ -1,24 +1,26 @@
 <header class="titrePage">
-  <span class="imageNumber headerActions">{$PHOTO}</span>
-  {if isset($U_SLIDESHOW_START)}
-  <span class="headerActions"><a href="{$U_SLIDESHOW_START}" rel="nofollow">{'slideshow'|@translate}</a></span>
-  {/if}
-  {if isset($current.U_DOWNLOAD)}
-  <span class="headerActions"><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}">{'download'|@translate}</a></span>
-  {/if}
-  {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
-  {if isset($favorite)}
-  <span class="headerActions"><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}
-    {else}{'add this photo to your favorites'|@translate}{/if}</a></span>
-  {/if}
-  {if !empty($U_SET_AS_REPRESENTATIVE)}
-  <span class="headerActions"><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></span>
-  {/if}
-  {if isset($U_ADMIN)}
-  <span class="headerActions"><a href="{$U_ADMIN}">{'Modify information'|@translate}</a></span>
-  {/if}
+  <ul class="headerActions">
+    {if isset($U_SLIDESHOW_START)}
+    <li><a href="{$U_SLIDESHOW_START}" rel="nofollow">{'slideshow'|@translate}</a></li>
+    {/if}
+    {if isset($current.U_DOWNLOAD)}
+    <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}">{'download'|@translate}</a></li>
+    {/if}
+    {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
+    {if isset($favorite)}
+    <li><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}
+        {else}{'add this photo to your favorites'|@translate}{/if}</a></li>
+    {/if}
+    {if !empty($U_SET_AS_REPRESENTATIVE)}
+    <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></li>
+    {/if}
+    {if isset($U_ADMIN)}
+    <li><a href="{$U_ADMIN}">{'Modify information'|@translate}</a></li>
+    {/if}
+    <li class="imageNumber">{$PHOTO}</li>
+  </ul>
 
-  {$SECTION_TITLE} {$LEVEL_SEPARATOR}
+  <p>{$SECTION_TITLE} {$LEVEL_SEPARATOR}</p>
   <h2>{$current.TITLE}</h2>
 </header>
 
