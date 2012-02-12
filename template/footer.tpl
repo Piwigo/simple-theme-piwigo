@@ -1,7 +1,5 @@
   </article>  <!-- content -->
 
-  {if isset($MENUBAR)}{$MENUBAR}{/if}
-
   <footer id="copyright">
     {if isset($debug.TIME)}
     {'Page generated in'|@translate} {$debug.TIME}

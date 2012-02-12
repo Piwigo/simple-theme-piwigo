@@ -1,5 +1,5 @@
-<h3>{'Related tags'|@translate}</h3>
-<ul id="menuTagCloud">
+<a class="dropdown-toggle" data-toggle="dropdown" href="#">{'Related tags'|@translate}</a>
+<ul class="dropdown-menu" id="menuTagCloud">
   {foreach from=$block->data item=tag}
   <li>
     <a class="tagLevel{$tag.level}"
