@@ -132,14 +132,32 @@ h1, h2, h3, h4 {
 
 /* Forms */
 
-.mandatorystar { color: #e04040; }
-fieldset li { margin: 0.5em 0; }
-form li { margin: 0.2em 0; }
-
-.property {
-  display: inline-block;
-  width: 180px;
+form.filter {
+  margin: 0 20px 18px;
+  padding-bottom: 20px;
 }
+legend {
+  color: @mainColor;
+  border-color: @mainColor;
+}
+label {
+  color: @mainColor;
+}
+input, textarea, select {
+  background-color: @bckgdColor;
+  border: 1px solid @secondaryColor;
+  color: @mainColor;
+}
+.tagSelection li {
+  display: inline-block;
+  margin-left: 1em;
+}
+.mandatorystar { color: #e04040; }
+
+/* .property { */
+/*   display: inline-block; */
+/*   width: 180px; */
+/* } */
 
 /* Menubar */
 

@@ -119,19 +119,33 @@ h4 a {
   color: #888888;
 }
 /* Forms */
+form.filter {
+  margin: 0 20px 18px;
+  padding-bottom: 20px;
+}
+legend {
+  color: #bbbbbb;
+  border-color: #bbbbbb;
+}
+label {
+  color: #bbbbbb;
+}
+input, textarea, select {
+  background-color: #303030;
+  border: 1px solid #888888;
+  color: #bbbbbb;
+}
+.tagSelection li {
+  display: inline-block;
+  margin-left: 1em;
+}
 .mandatorystar {
   color: #e04040;
 }
-fieldset li {
-  margin: 0.5em 0;
-}
-form li {
-  margin: 0.2em 0;
-}
-.property {
-  display: inline-block;
-  width: 180px;
-}
+/* .property { */
+/*   display: inline-block; */
+/*   width: 180px; */
+/* } */
 /* Menubar */
 .menuInfoCat, .menuInfoCatByChild {
   color: #888888;
