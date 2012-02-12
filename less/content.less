@@ -37,10 +37,10 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-family: 'Neuton', serif;
+  /* font-family: 'Neuton', serif; */
   color: @titleColor;
   text-shadow: 1px 1px 3px #000000;
-  font-weight: normal;
+  /* font-weight: normal; */
 
   a {color: @titleColor;}
 }
@@ -203,16 +203,6 @@ form li { margin: 0.2em 0; }
   overflow: hidden;
 }
 
-.thumbCatDesc {
-  padding-top: 4px;
-  word-wrap: break-word;
-  border-top: 1px #606060 solid;
-  text-align: justify;
-}
-.thumbCatDescNfoDate, .thumbCatDescNbImg {
-  font-size: 80%;
-}
-
 /* page : title bar */
 
 #additional_info {
@@ -234,16 +224,6 @@ form li { margin: 0.2em 0; }
 .navButtons {
   font-size: 1.5em;
   text-align: center;
-}
-
-#imageInfos, #imageMeta {
-  dt {
-    font-weight: bold;
-  }
-  dd {
-    margin-left: 1em;
-    overflow: hidden;
-  }
 }
 
 #theImage {
@@ -290,6 +270,9 @@ form li { margin: 0.2em 0; }
 
 /* Tabs */
 
+.tab-pane {
+  padding: 0 20px 10px;
+}
 .nav > li > a:hover {
   background-color: #333;
 }
@@ -344,7 +327,7 @@ ul.actions {float: right;}
   display: none;
 }
 
-/**/
+/* dropdown */
 
 .navbar .dropdown-menu {
   background-color: #2C2C2C;

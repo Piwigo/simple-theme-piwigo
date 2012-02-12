@@ -26,10 +26,12 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'Neuton', serif;
+  /* font-family: 'Neuton', serif; */
+
   color: #e0e0e0;
   text-shadow: 1px 1px 3px #000000;
-  font-weight: normal;
+  /* font-weight: normal; */
+
 }
 h1 a,
 h2 a,
@@ -185,15 +187,6 @@ form li {
   text-align: center;
   overflow: hidden;
 }
-.thumbCatDesc {
-  padding-top: 4px;
-  word-wrap: break-word;
-  border-top: 1px #606060 solid;
-  text-align: justify;
-}
-.thumbCatDescNfoDate, .thumbCatDescNbImg {
-  font-size: 80%;
-}
 /* page : title bar */
 #additional_info {
   margin: 1em;
@@ -210,13 +203,6 @@ form li {
 .navButtons {
   font-size: 1.5em;
   text-align: center;
-}
-#imageInfos dt, #imageMeta dt {
-  font-weight: bold;
-}
-#imageInfos dd, #imageMeta dd {
-  margin-left: 1em;
-  overflow: hidden;
 }
 #theImage {
   text-align: center;
@@ -262,6 +248,9 @@ form li {
   width: 16px;
 }
 /* Tabs */
+.tab-pane {
+  padding: 0 20px 10px;
+}
 .nav > li > a:hover {
   background-color: #333;
 }
@@ -324,7 +313,7 @@ ul.actions {
 .calBackDate, .calForeDate {
   display: none;
 }
-/**/
+/* dropdown */
 .navbar .dropdown-menu {
   background-color: #2C2C2C;
 }
