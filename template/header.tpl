@@ -61,8 +61,7 @@
 
   {get_combined_scripts load='header'}
   {combine_script id='jquery' path='themes/simple3/js/jquery-1.7.1.min.js'}
-  {combine_script id='jquery.hashchange' path='themes/simple3/js/jquery.hashchange.min.js'}
-  {combine_script id='jquery.tabs' path='themes/simple3/js/jquery.easytabs.min.js'}
+  {combine_script id='jquery.tabs' path='themes/simple3/js/bootstrap-tab.js'}
   {combine_script id='jquery.dropdown' path='themes/simple3/js/bootstrap-dropdown.js'}
   {combine_script id='jquery.collapse' path='themes/simple3/js/bootstrap-collapse.js'}
   {combine_script id='simple3.scripts' path='themes/simple3/js/scripts.js'}

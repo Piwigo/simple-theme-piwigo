@@ -74,19 +74,19 @@
   {/if}
 </div>
 
-<div id="tab-container" class="tab-container">
-  <ul class="etabs">
-    {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }
-    <li class="tab"><a href="#theComments" title="{'Add a comment'|@translate}">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</a></li>
-    {/if}
-    <li class="tab"><a href="#imageInfos">Informations</a></li>
-    {if isset($metadata)}
-    <li class="tab"><a href="#imageMeta">EXIF</a></li>
-    {/if}
-  </ul>
-
+<ul class="nav nav-pills tabs">
   {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }
-  <div id="theComments" class="clearfix">
+  <li><a href="#theComments" title="{'Add a comment'|@translate}" data-toggle="tab">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</a></li>
+  {/if}
+  <li><a href="#imageInfos" data-toggle="tab">Informations</a></li>
+  {if isset($metadata)}
+  <li><a href="#imageMeta" data-toggle="tab">EXIF</a></li>
+  {/if}
+</ul>
+
+<div class="tab-content">
+  {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add)}
+  <div id="theComments" class="clearfix tab-pane fade">
     {if !empty($COMMENT_NAV_BAR)}
     <div class="navigationBar">{$COMMENT_NAV_BAR}</div>
     {/if}
@@ -114,7 +114,7 @@
   </div>
   {/if} {*comments*}
 
-  <div id="imageInfos">
+  <div id="imageInfos" class="tab-pane fade">
     <dl>
       {if $display_info.author and isset($INFO_AUTHOR)}
       <dt>{'Author'|@translate}</dt>
@@ -165,7 +165,7 @@
   </div> <!-- imageInfos -->
 
   {if isset($metadata)}
-  <div id="imageMeta">
+  <div id="imageMeta" class="tab-pane fade">
     {foreach from=$metadata item=meta}
     <h3>{$meta.TITLE}</h3>
     <dl>
@@ -183,10 +183,3 @@
 
 {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
 
-{footer_script}
-{literal}
-  jQuery(document).ready(function($){
-    $('#tab-container').easytabs({collapsible: true});
-  });
-{/literal}
-{/footer_script}
