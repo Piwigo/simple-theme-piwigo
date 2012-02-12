@@ -51,6 +51,10 @@ h1, h2, h3, h4 {
   min-height: 25em;
   background: none repeat scroll 0 0 rgba(0, 0, 0, 0.15);
   .rounded-corners(6px);
+
+  .subcontent {
+    margin: 0 20px;
+  }
 }
 
 #theHeader {
@@ -65,8 +69,8 @@ h1, h2, h3, h4 {
 }
 
 .titrePage {
-  margin: 0 20px 20px 20px;
-  padding-top: 10px;
+  margin: 20px;
+  padding-top: 20px;
 
   h2, p, ul {
     display: inline;
@@ -100,20 +104,19 @@ h1, h2, h3, h4 {
 
 /* tags */
 
-.tagLevel5 { font-size: 130%; }
-.tagLevel4 { font-size: 120%; }
-.tagLevel3 { font-size: 110%; }
-.tagLevel2 { font-size: 100%; }
-.tagLevel1 { font-size: 90%; }
-
 #fullTagCloud {
   text-align: center;
-  margin: 1em 2em;
 
   span {
     white-space: nowrap;
     margin: 0 0.5em;
   }
+
+  .tagLevel5 { font-size: 130%; }
+  .tagLevel4 { font-size: 120%; }
+  .tagLevel3 { font-size: 110%; }
+  .tagLevel2 { font-size: 100%; }
+  .tagLevel1 { font-size: 90%; }
 }
 
 .tagLetter {
@@ -133,7 +136,6 @@ h1, h2, h3, h4 {
 /* Forms */
 
 form.filter {
-  margin: 0 20px 18px;
   padding-bottom: 20px;
 }
 legend {
@@ -223,8 +225,8 @@ input, textarea, select {
 
 /* page : title bar */
 
-#additional_info {
-  margin: 1em;
+#content #additional_info {
+  margin-bottom: 20px;
 }
 
 .navigationBar {

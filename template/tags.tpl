@@ -12,7 +12,7 @@
 
 {if isset($tags)}
   {if $display_mode == 'cloud'}
-  <div id="fullTagCloud">
+  <div id="fullTagCloud" class="subcontent">
     {foreach from=$tags item=tag}
     <span><a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}">{$tag.name}</a></span>
     {/foreach}
@@ -20,7 +20,7 @@
   {/if}
 
   {if $display_mode == 'letters'}
-  <table>
+  <table class="subcontent">
     <tr>
       {foreach from=$letters item=letter}
       <td>

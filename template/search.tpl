@@ -2,7 +2,7 @@
   <h2>{'Search'|@translate}</h2>
 </header>
 
-<form class="filter form-horizontal" method="post" name="search" action="{$F_SEARCH_ACTION}">
+<form class="filter subcontent form-horizontal" method="post" name="search" action="{$F_SEARCH_ACTION}">
 <fieldset>
   <legend>{'Filter'|@translate}</legend>
   <div class="control-group">

@@ -47,6 +47,9 @@ h4 a {
   -moz-border-radius: 6px;
   border-radius: 6px;
 }
+#content .subcontent {
+  margin: 0 20px;
+}
 #theHeader {
   margin: 1em 0;
   position: relative;
@@ -57,8 +60,8 @@ h4 a {
   text-transform: lowercase;
 }
 .titrePage {
-  margin: 0 20px 20px 20px;
-  padding-top: 10px;
+  margin: 20px;
+  padding-top: 20px;
 }
 .titrePage h2, .titrePage p, .titrePage ul {
   display: inline;
@@ -85,28 +88,27 @@ h4 a {
   display: inline;
 }
 /* tags */
-.tagLevel5 {
-  font-size: 130%;
-}
-.tagLevel4 {
-  font-size: 120%;
-}
-.tagLevel3 {
-  font-size: 110%;
-}
-.tagLevel2 {
-  font-size: 100%;
-}
-.tagLevel1 {
-  font-size: 90%;
-}
 #fullTagCloud {
   text-align: center;
-  margin: 1em 2em;
 }
 #fullTagCloud span {
   white-space: nowrap;
   margin: 0 0.5em;
+}
+#fullTagCloud .tagLevel5 {
+  font-size: 130%;
+}
+#fullTagCloud .tagLevel4 {
+  font-size: 120%;
+}
+#fullTagCloud .tagLevel3 {
+  font-size: 110%;
+}
+#fullTagCloud .tagLevel2 {
+  font-size: 100%;
+}
+#fullTagCloud .tagLevel1 {
+  font-size: 90%;
 }
 .tagLetter table {
   width: 100%;
@@ -120,7 +122,6 @@ h4 a {
 }
 /* Forms */
 form.filter {
-  margin: 0 20px 18px;
   padding-bottom: 20px;
 }
 legend {
@@ -202,8 +203,8 @@ input, textarea, select {
   overflow: hidden;
 }
 /* page : title bar */
-#additional_info {
-  margin: 1em;
+#content #additional_info {
+  margin-bottom: 20px;
 }
 .navigationBar {
   text-align: center;

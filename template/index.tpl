@@ -55,7 +55,7 @@
 {/if}
 
 {if !empty($CONTENT_DESCRIPTION) }
-<p id="additional_info">
+<p id="additional_info" class="subcontent">
   {$CONTENT_DESCRIPTION}
 </p>
 {/if}
