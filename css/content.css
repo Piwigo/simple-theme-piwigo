@@ -5,30 +5,30 @@
 body {
   font-family: 'PT Sans', sans-serif;
   background-color: #303030;
-  color: #bbbbbb;
+  color: #eeeeee;
   padding-top: 40px;
 }
 hr {
-  border: 1px #bbbbbb solid;
+  border: 1px #eeeeee solid;
 }
 figure {
   margin: 0 0 0 20px;
 }
 a {
-  color: #bbbbbb;
+  color: #eeeeee;
   text-decoration: none;
 }
 a:hover {
   text-decoration: none;
-  color: #f0f0f0;
+  color: #ffffff;
+  text-shadow: 0 0 6px #999999;
 }
 h1,
 h2,
 h3,
 h4 {
-  /* font-family: 'Neuton', serif; */
-
-  color: #e0e0e0;
+  font-family: 'Neuton', serif;
+  color: #eeeeee;
   text-shadow: 1px 1px 3px #000000;
   /* font-weight: normal; */
 
@@ -37,7 +37,10 @@ h1 a,
 h2 a,
 h3 a,
 h4 a {
-  color: #e0e0e0;
+  color: #eeeeee;
+}
+p {
+  font-family: 'PT Sans', sans-serif;
 }
 /* Layout */
 #content {
@@ -125,16 +128,16 @@ form.filter {
   padding-bottom: 20px;
 }
 legend {
-  color: #bbbbbb;
-  border-color: #bbbbbb;
+  color: #eeeeee;
+  border-color: #eeeeee;
 }
 label {
-  color: #bbbbbb;
+  color: #eeeeee;
 }
 input, textarea, select {
   background-color: #303030;
   border: 1px solid #888888;
-  color: #bbbbbb;
+  color: #eeeeee;
 }
 .tagSelection li {
   display: inline-block;

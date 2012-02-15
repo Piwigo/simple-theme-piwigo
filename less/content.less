@@ -2,11 +2,14 @@
  Simple Grey theme for Piwigo
 */
 
-@mainColor: #bbb;
+@mainColor: #eee;
 @secondaryColor: #888;
-@titleColor: #e0e0e0;
+@titleColor: #eee;
 @bckgdColor: #303030;
-@hoverColor: #f0f0f0;
+@hoverColor: #fff;
+
+@sansFont: 'PT Sans', sans-serif;
+@serifFont: 'Neuton', serif;
 
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
@@ -17,7 +20,7 @@
 /* main styles */
 
 body {
-  font-family: 'PT Sans', sans-serif;
+  font-family: @sansFont;
   background-color: @bckgdColor;
   color: @mainColor;
   padding-top: 40px;
@@ -33,16 +36,21 @@ a {
   &:hover {
     text-decoration: none;
     color: @hoverColor;
+    text-shadow: 0 0 6px #999999;
   }
 }
 
 h1, h2, h3, h4 {
-  /* font-family: 'Neuton', serif; */
+  font-family: @serifFont;
   color: @titleColor;
   text-shadow: 1px 1px 3px #000000;
   /* font-weight: normal; */
 
   a {color: @titleColor;}
+}
+
+p {
+  font-family: @sansFont;
 }
 
 /* Layout */
