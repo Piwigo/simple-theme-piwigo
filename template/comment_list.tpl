@@ -1,12 +1,12 @@
 <ul class="unstyled">
   {foreach from=$comments item=comment name=comment_loop}
-  <li>
+  <li class="row">
     {if isset($comment.TN_SRC)}
-    <div class="illustration six columns">
+    <div class="illustration span3 offset1">
       <a href="{$comment.U_PICTURE}"><img src="{$comment.TN_SRC}" alt="{$comment.ALT}" /></a>
     </div>
     {/if}
-    <div class="description eight columns offset-by-one">
+    <div class="description span6">
       {if isset($comment.U_DELETE) or isset($comment.U_VALIDATE) or isset($comment.U_EDIT) }
       <ul class="actions">
 	{if isset($comment.U_DELETE)}

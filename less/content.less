@@ -52,6 +52,9 @@ h1, h2, h3, h4 {
 p {
   font-family: @sansFont;
 }
+blockquote {
+  border-left: 5px solid @secondaryColor;
+}
 
 /* Layout */
 
@@ -338,9 +341,6 @@ ul.actions {
   li {
     padding: 0 0 1em;
   }
-  blockquote {
-    border-left: 5px solid @secondaryColor;
-  }
 }
 
 .author {
@@ -355,6 +355,8 @@ ul.actions {
 }
 
 #comments {
+  ul {padding-bottom: 10px;}
+  li {margin-bottom: 20px;}
   .description {}
   .illustration {text-align: right;}
 }

@@ -2,7 +2,7 @@
   <h2>{'User comments'|@translate}</h2>
 </header>
 
-<form class="filter" action="{$F_ACTION}" method="get">
+<form class="subcontent" action="{$F_ACTION}" method="get">
   <fieldset>
     <legend>{'Filter'|@translate}</legend>
     <label>{'Keyword'|@translate} : <input type="text" name="keyword" value="{$F_KEYWORD}"></label>
@@ -37,9 +37,10 @@
     </select>
     </label>
   </fieldset>
-  <p><input type="submit" value="{'Filter and display'|@translate}"></p>
+  <input type="submit" value="{'Filter and display'|@translate}" class="btn">
 </form>
 {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
+
 {if isset($comments)}
 <div id="comments">
   {include file='comment_list.tpl'}

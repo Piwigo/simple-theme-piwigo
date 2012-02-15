@@ -42,6 +42,9 @@ h4 a {
 p {
   font-family: 'PT Sans', sans-serif;
 }
+blockquote {
+  border-left: 5px solid #888888;
+}
 /* Layout */
 #content {
   min-height: 25em;
@@ -299,9 +302,6 @@ ul.actions li {
 #commentList li {
   padding: 0 0 1em;
 }
-#commentList blockquote {
-  border-left: 5px solid #888888;
-}
 .author {
   font-weight: bold;
   font-variant: small-caps;
@@ -312,6 +312,12 @@ ul.actions li {
 }
 #theCommentsPage form.filter label {
   display: inline-block;
+}
+#comments ul {
+  padding-bottom: 10px;
+}
+#comments li {
+  margin-bottom: 20px;
 }
 #comments .illustration {
   text-align: right;
