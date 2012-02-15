@@ -298,31 +298,56 @@ input, textarea, select {
 
 /* Tabs */
 
-.tab-pane {
+#imageInfos, #imageMeta {
   padding: 0 20px 10px;
 }
 .nav > li > a:hover {
   background-color: #333;
 }
-.nav-pills .active > a, .nav-pills .active > a:hover {
-  background-color: #0088CC;
-  color: #FFFFFF;
+.nav-pills {
+  margin: 0 20px;
+
+  .active > a, .active > a:hover {
+    background-color: #0088CC;
+    color: #FFFFFF;
+  }
 }
 
 /* comments */
 
-#commentAdd input[type="text"], #commentAdd textarea {
-  width: 95%;
+#commentAdd {
+  h3, form {
+    margin: 0 20px;
+  }
+  input[type="text"], textarea {
+    width: 95%;
+  }
 }
 
-ul.actions {float: right;}
+ul.actions {
+  float: right;
+  list-style: none;
+
+  li {display: inline;}
+}
 
 #commentList {
-  li {padding: 0 0 1em;}
-  li ul {padding: 4px;}
+  ul {
+    margin: 0 20px 20px 0;
+  }
+  li {
+    padding: 0 0 1em;
+  }
+  blockquote {
+    border-left: 5px solid @secondaryColor;
+  }
 }
 
-.author {font-weight: bold; font-variant: small-caps;}
+.author {
+  font-weight: bold;
+  font-variant: small-caps;
+  font-size: 1.2em;
+}
 .date {font-style: italic;}
 
 #theCommentsPage form.filter label {

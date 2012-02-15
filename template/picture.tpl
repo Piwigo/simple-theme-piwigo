@@ -86,28 +86,28 @@
 
 <div class="tab-content">
   {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add)}
-  <div id="theComments" class="clearfix tab-pane fade">
+  <div id="theComments" class="row tab-pane fade">
     {if !empty($COMMENT_NAV_BAR)}
     <div class="navigationBar">{$COMMENT_NAV_BAR}</div>
     {/if}
     {if isset($comment_add)}
-    <div id="commentAdd" class="seven columns">
+    <div id="commentAdd" class="span6">
       <h3>{'Add a comment'|@translate}</h3>
       <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
 	{if $comment_add.SHOW_AUTHOR}
-	<label>{'Author'|@translate}&nbsp;:</label>
-	<input type="text" name="author" />
+	<label>{'Author'|@translate}</label>
+	<input type="text" name="author">
 	{/if}
-	<label>{'Comment'|@translate}&nbsp;:</label>
+	<label>{'Comment'|@translate}</label>
 	<textarea name="content" id="contentid">{$comment_add.CONTENT}</textarea>
-	<input type="hidden" name="key" value="{$comment_add.KEY}" />
-	<input type="submit" value="{'Submit'|@translate}">
+	<input type="hidden" name="key" value="{$comment_add.KEY}">
+	<input type="submit" value="{'Submit'|@translate}" class="btn">
       </form>
     </div>
     {/if}
     {if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
     {if isset($comments)}
-    <div id="commentList" class="seven columns offset-by-one">
+    <div id="commentList" class="span6">
       {include file='comment_list.tpl'}
     </div>
     {/if}

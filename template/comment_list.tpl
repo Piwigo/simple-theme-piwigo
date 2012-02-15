@@ -1,6 +1,6 @@
-<ul>
+<ul class="unstyled">
   {foreach from=$comments item=comment name=comment_loop}
-  <li class="row">
+  <li>
     {if isset($comment.TN_SRC)}
     <div class="illustration six columns">
       <a href="{$comment.U_PICTURE}"><img src="{$comment.TN_SRC}" alt="{$comment.ALT}" /></a>

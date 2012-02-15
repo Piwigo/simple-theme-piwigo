@@ -266,32 +266,46 @@ input, textarea, select {
   width: 16px;
 }
 /* Tabs */
-.tab-pane {
+#imageInfos, #imageMeta {
   padding: 0 20px 10px;
 }
 .nav > li > a:hover {
   background-color: #333;
+}
+.nav-pills {
+  margin: 0 20px;
 }
 .nav-pills .active > a, .nav-pills .active > a:hover {
   background-color: #0088CC;
   color: #FFFFFF;
 }
 /* comments */
+#commentAdd h3, #commentAdd form {
+  margin: 0 20px;
+}
 #commentAdd input[type="text"], #commentAdd textarea {
   width: 95%;
 }
 ul.actions {
   float: right;
+  list-style: none;
+}
+ul.actions li {
+  display: inline;
+}
+#commentList ul {
+  margin: 0 20px 20px 0;
 }
 #commentList li {
   padding: 0 0 1em;
 }
-#commentList li ul {
-  padding: 4px;
+#commentList blockquote {
+  border-left: 5px solid #888888;
 }
 .author {
   font-weight: bold;
   font-variant: small-caps;
+  font-size: 1.2em;
 }
 .date {
   font-style: italic;
