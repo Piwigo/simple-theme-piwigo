@@ -78,6 +78,7 @@ blockquote {
 }
 .titrePage .headerActions {
   float: right;
+  margin-bottom: 0;
 }
 .titrePage .headerActions li {
   display: inline-block;
@@ -389,49 +390,30 @@ ul.actions li {
 }
 /* #Media Queries
 ================================================== */
-/* Smaller than standard 960 (devices and browsers) */
-@media only screen and (max-width: 959px) {
-  #thePicturePage #content {
-    position: relative;
-  }
-  .thumbnailCategories {
-    padding: 0 14px;
-  }
-  #theImage {
-    width: 100%;
-    float: none;
-  }
-}
-/* Tablet Portrait size to standard 960 (devices and browsers) */
-@media only screen and (min-width: 768px) and (max-width: 959px) {
-  .container {
-    width: 95%;
-    margin: 0 auto;
-  }
-}
-/* All Mobile Sizes (devices and browser) */
-@media only screen and (max-width: 767px) {
-  img {
-    max-width: 100%;
-    height: auto !important;
-  }
-  .container {
-    width: 95%;
-    margin: 0 auto;
-  }
-  .container .column, .container .columns {
-    float: left;
-    display: inline;
-    margin-left: 10px;
-    margin-right: 10px;
-    width: 300px;
-  }
-}
-/* Mobile Landscape Size to Tablet Portrait (devices and browsers) */
-@media only screen and (min-width: 480px) and (max-width: 767px) {
+/* Landscape phones and down */
+@media (max-width: 480px) {
   
 }
-/* Mobile Portrait Size to Mobile Landscape Size (devices and browsers) */
-@media only screen and (max-width: 479px) {
+/* Landscape phone to portrait tablet */
+@media (max-width: 768px) {
+  body {
+    padding-top: 0;
+  }
+  #rating {
+    float: none;
+    margin-left: 20px;
+  }
+  #theImage, #theHeader {
+    margin: 0;
+  }
+}
+/* Portrait tablet to landscape and desktop */
+@media (min-width: 768px) and (max-width: 980px) {
+  body {
+    padding-top: 0;
+  }
+}
+/* Large desktop */
+@media (min-width: 1200px) {
   
 }
