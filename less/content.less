@@ -139,17 +139,20 @@ blockquote {
 }
 
 .tagLetter {
-  table {
-    width: 100%;
-  }
-  td {
-    padding: 0.1em 1em 0.1em 0;
-  }
-}
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1em;
 
-.nbEntries {
-  text-align: right;
-  color: @secondaryColor;
+  h3 {
+    border-bottom: 1px solid @titleColor;
+    margin-bottom: 10px;
+    padding-bottom: 2px;
+  }
+  .nbEntries {
+    float: right;
+    margin-left: 1em;
+    color: @secondaryColor;
+  }
 }
 
 /* Forms */

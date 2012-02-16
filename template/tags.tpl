@@ -20,24 +20,18 @@
   {/if}
 
   {if $display_mode == 'letters'}
-  <table class="subcontent">
-    <tr>
-      {foreach from=$letters item=letter}
-      <td>
-      <fieldset class="tagLetter">
-	<legend class="tagLetterLegend">{$letter.TITLE}</legend>
-	<table class="tagLetterContent">
-	  {foreach from=$letter.tags item=tag}
-	  <tr class="tagLine">
-	    <td><a href="{$tag.URL}">{$tag.name}</a></td>
-	    <td class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</td>
-	  </tr>
-	  {/foreach}
-	</table>
-      </fieldset>
-      </td>
+  <div class="subcontent">
+    {foreach from=$letters item=letter}
+    <div class="tagLetter">
+      <h3>{$letter.TITLE}</h3>
+      {foreach from=$letter.tags item=tag}
+      <div>
+        <a href="{$tag.URL}">{$tag.name}</a>
+        <span class="nbEntries">{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}</span>
+      </div>
       {/foreach}
-    </tr>
-  </table>
+    </div>
+    {/foreach}
+  </div>
   {/if}
 {/if}

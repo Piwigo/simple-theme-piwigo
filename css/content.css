@@ -122,14 +122,19 @@ blockquote {
 #fullTagCloud .tagLevel1 {
   font-size: 90%;
 }
-.tagLetter table {
-  width: 100%;
+.tagLetter {
+  display: inline-block;
+  vertical-align: top;
+  margin-right: 1em;
 }
-.tagLetter td {
-  padding: 0.1em 1em 0.1em 0;
+.tagLetter h3 {
+  border-bottom: 1px solid #eeeeee;
+  margin-bottom: 10px;
+  padding-bottom: 2px;
 }
-.nbEntries {
-  text-align: right;
+.tagLetter .nbEntries {
+  float: right;
+  margin-left: 1em;
   color: #888888;
 }
 /* Forms */
