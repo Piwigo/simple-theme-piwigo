@@ -289,13 +289,20 @@ input, textarea, select {
     padding: 0;
     margin: 0;
   }
+  input.rateButtonStarFull, input.rateButtonStarEmpty {
+    background-image: url("../img/glyphicons-halflings-white.png");
+    background-position: 14px 14px;
+    background-repeat: no-repeat;
+    display: inline-block;
+    height: 14px;
+    vertical-align: text-top;
+    width: 14px;
+  }
   input.rateButtonStarFull  {
-    background:  url('../icon/rating-stars.png') no-repeat scroll -16px center;
-    width: 16px;
+    background-position: -120px 0;
   }
   input.rateButtonStarEmpty {
-    background:  url('../icon/rating-stars.png') no-repeat scroll 0 center;
-    width: 16px;
+    background-position: -144px 0;
   }
 }
 
