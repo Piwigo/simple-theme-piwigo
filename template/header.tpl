@@ -34,11 +34,7 @@
 
   <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton:400,700|PT+Sans:400,700,400italic">
   <link rel="stylesheet" media="print" href="{$ROOT_URL}themes/simple3/css/print.css">
-
-  {get_combined_css}
-  {combine_css path="themes/simple3/css/bootstrap.min.css" order="1"}
-  {combine_css path="themes/simple3/css/bootstrap-responsive.min.css" order="2"}
-  {combine_css path="themes/simple3/css/content.css" order="3"}
+  <link rel="stylesheet" href="{$ROOT_URL}themes/simple3/css/style.min.css">
 
   {foreach from=$themes item=theme}
   {if $theme.load_css}
