@@ -73,6 +73,9 @@ blockquote {
   display: inline;
   line-height: 25px;
 }
+.titrePage h2 a + a {
+  margin-left: 8px;
+}
 .titrePage .headerActions {
   float: right;
 }
