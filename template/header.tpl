@@ -32,7 +32,6 @@
   {if isset($last.U_IMG)}<link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}">{/if}
   {if isset($U_UP)}<link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}">{/if}
 
-  <link rel="stylesheet" href="http://fonts.googleapis.com/css?family=Neuton:400,700|PT+Sans:400,700,400italic">
   <link rel="stylesheet" media="print" href="{$ROOT_URL}themes/simple3/css/print.css">
   <link rel="stylesheet" href="{$ROOT_URL}themes/simple3/css/style.min.css">
 
