@@ -3,10 +3,10 @@
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
     {if isset($U_EDIT)}
-    <li><a href="{$U_EDIT}" title="{'edit album informations'|@translate}">{'edit'|@translate}</a></li>
+    <li><a href="{$U_EDIT}" title="{'edit album informations'|@translate}"><i class="icon-edit icon-white"></i></a></li>
     {/if}
     {if isset($U_SLIDESHOW)}
-    <li><a href="{$U_SLIDESHOW}" title="{'slideshow'|@translate}" rel="nofollow">{'slideshow'|@translate}</a></li>
+    <li><a href="{$U_SLIDESHOW}" title="{'slideshow'|@translate}" rel="nofollow"><i class="icon-play icon-white"></i></a></li>
     {/if}
     {if !empty($PLUGIN_INDEX_ACTIONS)}{$PLUGIN_INDEX_ACTIONS}{/if}
   </ul>

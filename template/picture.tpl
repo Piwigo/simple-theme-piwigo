@@ -1,21 +1,20 @@
 <header class="titrePage">
   <ul class="headerActions">
     {if isset($U_SLIDESHOW_START)}
-    <li><a href="{$U_SLIDESHOW_START}" rel="nofollow">{'slideshow'|@translate}</a></li>
+    <li><a href="{$U_SLIDESHOW_START}" rel="nofollow"><i class="icon-play icon-white"></i></a></li>
     {/if}
     {if isset($current.U_DOWNLOAD)}
-    <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}">{'download'|@translate}</a></li>
+    <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}"><i class="icon-download icon-white"></i></a></li>
     {/if}
     {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
     {if isset($favorite)}
-    <li><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}{'delete this photo from your favorites'|@translate}
-        {else}{'add this photo to your favorites'|@translate}{/if}</a></li>
+    <li><a href="{$favorite.U_FAVORITE}">{if $favorite.IS_FAVORITE}<i class="icon-star icon-white"></i>{else}<i class="icon-star-empty icon-white"></i>{/if}</a></li>
     {/if}
     {if !empty($U_SET_AS_REPRESENTATIVE)}
-    <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}">{'representative'|@translate}</a></li>
+    <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}"><i class="icon-picture icon-white"></i></a></li>
     {/if}
     {if isset($U_ADMIN)}
-    <li><a href="{$U_ADMIN}">{'Modify information'|@translate}</a></li>
+    <li><a href="{$U_ADMIN}"><i class="icon-edit icon-white"></i></a></li>
     {/if}
     <li class="imageNumber">{$PHOTO}</li>
   </ul>
@@ -48,9 +47,9 @@
   <form action="{$rating.F_ACTION}" method="post" id="rateForm">
     {foreach from=$rating.marks item=mark name=rate_loop}
     {if isset($rating.USER_RATE) && $mark==$rating.USER_RATE}
-    <input type="button" name="rate" value="{$mark}" class="rateButtonSelected" title="{$mark}" />
+    <input type="button" name="rate" value="{$mark}" class="rateButtonSelected" title="{$mark}">
     {else}
-    <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}" />
+    <input type="submit" name="rate" value="{$mark}" class="rateButton" title="{$mark}">
     {/if}
     {/foreach}
     {combine_script id='core.scripts' load='async' path='themes/default/js/scripts.js'}
@@ -76,11 +75,11 @@
 
 <ul class="nav nav-pills tabs">
   {if (isset($COMMENT_COUNT) and ($COMMENT_COUNT>0)) or isset($comment_add) }
-  <li><a href="#theComments" title="{'Add a comment'|@translate}" data-toggle="tab">{$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</a></li>
+  <li><a href="#theComments" title="{'Add a comment'|@translate}" data-toggle="tab"><i class="icon-comment icon-white"></i> {$pwg->l10n_dec('%d comment', '%d comments',$COMMENT_COUNT)}</a></li>
   {/if}
-  <li><a href="#imageInfos" data-toggle="tab">Informations</a></li>
+  <li><a href="#imageInfos" data-toggle="tab"><i class="icon-file icon-white"></i> Informations</a></li>
   {if isset($metadata)}
-  <li><a href="#imageMeta" data-toggle="tab">EXIF</a></li>
+  <li><a href="#imageMeta" data-toggle="tab"><i class="icon-camera icon-white"></i> EXIF</a></li>
   {/if}
 </ul>
 
