@@ -3,4 +3,6 @@
 
 jQuery(document).ready(function($){
     jQuery('.dropdown-toggle').dropdown();
+    jQuery('.description').tooltip();
+    jQuery('img.thumbnail').tooltip({placement: 'bottom'});
 });

@@ -4,9 +4,10 @@
   <li>
     <figure>
     <a href="{$thumbnail.URL}">
-      <img class="thumbnail" src="{$thumbnail.TN_SRC}" alt="{$thumbnail.TN_ALT}" title="{$thumbnail.TN_TITLE}" />
+      <img class="thumbnail" src="{$thumbnail.TN_SRC}" alt="{$thumbnail.TN_ALT}" data-original-title="{$thumbnail.TN_TITLE}" />
     </a>
-    {if $SHOW_THUMBNAIL_CAPTION }
+      {*
+    {if $SHOW_THUMBNAIL_CAPTION}
     <figcaption>
       {if isset($thumbnail.NAME)}{$thumbnail.NAME}{/if}
   	  {if !empty($thumbnail.icon_ts)}
@@ -17,15 +18,14 @@
         ({$pwg->l10n_dec('%d comment', '%d comments',$thumbnail.NB_COMMENTS)})
       </span>
       {/if}
-      {*
       {if isset($thumbnail.NB_HITS)}
       <span class="{if 0==$thumbnail.NB_HITS}zero {/if}nb-hits">
         {$pwg->l10n_dec('%d hit', '%d hits',$thumbnail.NB_HITS)}
       </span>
       {/if}
-      *}
     </figcaption>
     {/if}
+      *}
     </figure>
   </li>
   {/foreach}

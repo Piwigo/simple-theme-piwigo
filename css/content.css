@@ -12,7 +12,7 @@ hr {
   border: 1px #eeeeee solid;
 }
 figure {
-  margin: 0 0 0 20px;
+  margin: 0 0 20px 20px;
 }
 a {
   color: #eeeeee;
@@ -383,6 +383,10 @@ ul.actions li {
 .navbar .dropdown-menu .divider {
   background-color: #333;
   border-bottom: 1px solid #333;
+}
+/* tooltips */
+.tooltip {
+  font-size: 13px;
 }
 /* PWG stuff */
 .personal_block {
