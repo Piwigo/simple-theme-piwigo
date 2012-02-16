@@ -19,8 +19,7 @@
     <li class="imageNumber">{$PHOTO}</li>
   </ul>
 
-  <p>{$SECTION_TITLE} {$LEVEL_SEPARATOR}</p>
-  <h2>{$current.TITLE}</h2>
+  <h2>{$SECTION_TITLE} {$LEVEL_SEPARATOR} {$current.TITLE}</h2>
 </header>
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
