@@ -14,7 +14,7 @@ $themeconf = array(
   'load_parent_local_head' => false,
   'name' => 'simple3',
   'theme_dir' => 'simple3',
-  'icon_dir' => 'themes/simple3/icon',
+  'icon_dir' => 'themes/simple3/img',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
@@ -28,9 +28,9 @@ $themeconf = array(
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple3/');
 pwg_set_session_var('show_metadata', true);
 
-$conf['level_separator'] = ' » ';
+$conf['level_separator'] = '&nbsp;»&nbsp;';
 
 // debug - do not combine files
-// $conf['template_combine_files'] = false;
+$conf['template_combine_files'] = false;
 
 ?>
