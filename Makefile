@@ -1,4 +1,4 @@
-.PHONY: less archive
+.PHONY: less archive js
 
 less:
 	lessc css/style.less > css/style.css
@@ -7,6 +7,9 @@ less:
 	mv tmp.css css/style.css
 	cat css/{bootstrap.min.css,bootstrap-responsive.min.css,style.min.css} > tmp.css
 	mv tmp.css css/style.min.css
+
+js:
+	cat js/bootstrap-* > js/bootstrap.js
 
 archive:
 	sed -i "s/Version: .*/Version: $VERSION/" themeconf.inc.php
