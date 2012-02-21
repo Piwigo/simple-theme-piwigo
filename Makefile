@@ -3,6 +3,10 @@
 less:
 	lessc css/style.less > css/style.css
 	lessc -x css/style.less > css/style.min.css
+	cat css/{bootstrap.min.css,bootstrap.min.responsive,style.css} > tmp.css
+	mv tmp.css css/style.css
+	cat css/{bootstrap.min.css,bootstrap.min.responsive,style.min.css} > tmp.css
+	mv tmp.css css/style.min.css
 
 archive:
 	sed -i "s/Version: .*/Version: $VERSION/" themeconf.inc.php
