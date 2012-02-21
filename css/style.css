@@ -583,6 +583,7 @@ blockquote {
 }
 #content .subcontent {
   margin: 0 20px;
+  padding-bottom: 10px;
 }
 #theHeader {
   margin: 1em 0;

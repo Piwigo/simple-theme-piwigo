@@ -1,4 +1,5 @@
 {if !empty($PLUGIN_INDEX_CONTENT_BEFORE)}{$PLUGIN_INDEX_CONTENT_BEFORE}{/if}
+
 <header class="titrePage">
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
@@ -14,15 +15,16 @@
   <h2>{$TITLE}</h2>
 </header>
 
-{if isset($chronology.TITLE) }
-<h2>{$chronology.TITLE}</h2>
+{if isset($chronology.TITLE)}
+<div class="subcontent">
+<h3>{$chronology.TITLE}</h3>
 {/if}
 
-{if isset($chronology_views) }
-{if isset($U_MODE_POSTED) }
+{if isset($chronology_views)}
+{if isset($U_MODE_POSTED)}
 <a href="{$U_MODE_POSTED}" rel="nofollow">{'display a calendar by posted date'|@translate}</a>
 {/if}
-{if isset($U_MODE_CREATED) }
+{if isset($U_MODE_CREATED)}
 <a href="{$U_MODE_CREATED}" rel="nofollow">{'display a calendar by creation date'|@translate}</a>
 {/if}
 <div class="calendarViews">{'View'|@translate}:
@@ -36,7 +38,7 @@
 
 {if !empty($PLUGIN_INDEX_CONTENT_BEGIN)}{$PLUGIN_INDEX_CONTENT_BEGIN}{/if}
 
-{if !empty($category_search_results) }
+{if !empty($category_search_results)}
 <div>{'Album results for'|@translate} <strong>{$QUERY_SEARCH}</strong> :
   {foreach from=$category_search_results item=res name=res_loop}
   {if !$smarty.foreach.res_loop.first} &mdash; {/if}
@@ -45,7 +47,7 @@
 </div>
 {/if}
 
-{if !empty($tag_search_results) }
+{if !empty($tag_search_results)}
 <div>{'Tag results for'|@translate} <strong>{$QUERY_SEARCH}</strong> :
   {foreach from=$tag_search_results item=res name=res_loop}
   {if !$smarty.foreach.res_loop.first} &mdash; {/if}
@@ -54,19 +56,23 @@
 </div>
 {/if}
 
-{if !empty($CONTENT_DESCRIPTION) }
+{if !empty($CONTENT_DESCRIPTION)}
 <p id="additional_info" class="subcontent">
   {$CONTENT_DESCRIPTION}
 </p>
 {/if}
 
-{if isset($FILE_CHRONOLOGY_VIEW) }
+{if isset($FILE_CHRONOLOGY_VIEW)}
   {include file=$FILE_CHRONOLOGY_VIEW}
 {/if}
 
-{if !empty($CATEGORIES) }{$CATEGORIES}{/if}
-{if !empty($THUMBNAILS) }<div id="thumbnails">{$THUMBNAILS}</div>{/if}
-{if !empty($navbar) }{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
+{if isset($chronology.TITLE)}
+</div>
+{/if}
 
-{if !empty($PLUGIN_INDEX_CONTENT_END) }{$PLUGIN_INDEX_CONTENT_END}{/if}
-{if !empty($PLUGIN_INDEX_CONTENT_AFTER) }{$PLUGIN_INDEX_CONTENT_AFTER}{/if}
+{if !empty($CATEGORIES)}{$CATEGORIES}{/if}
+{if !empty($THUMBNAILS)}<div id="thumbnails">{$THUMBNAILS}</div>{/if}
+{if !empty($navbar)}{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
+
+{if !empty($PLUGIN_INDEX_CONTENT_END)}{$PLUGIN_INDEX_CONTENT_END}{/if}
+{if !empty($PLUGIN_INDEX_CONTENT_AFTER)}{$PLUGIN_INDEX_CONTENT_AFTER}{/if}
