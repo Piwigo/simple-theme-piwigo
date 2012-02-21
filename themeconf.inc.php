@@ -28,9 +28,9 @@ $themeconf = array(
 load_language('theme.lang', PHPWG_THEMES_PATH.'simple3/');
 pwg_set_session_var('show_metadata', true);
 
-$conf['level_separator'] = '&nbsp;»&nbsp;';
+$conf['level_separator'] = '/';
 
 // debug - do not combine files
-// $conf['template_combine_files'] = false;
+$conf['template_combine_files'] = false;
 
 ?>
