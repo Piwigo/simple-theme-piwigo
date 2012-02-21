@@ -504,11 +504,12 @@ blockquote{border-left:5px solid #888888;}
 #content{min-height:25em;background:none repeat scroll 0 0 rgba(0, 0, 0, 0.15);-webkit-border-radius:6px;-moz-border-radius:6px;border-radius:6px;}#content .subcontent{margin:0 20px;}
 #theHeader{margin:1em 0;position:relative;}
 #copyright{margin:1em 0;font-variant:small-caps;text-transform:lowercase;}
-.titrePage{margin:20px;padding-top:20px;}.titrePage h2,.titrePage ul{display:inline;line-height:25px;}
+.titrePage{margin:20px;padding-top:20px;}.titrePage h2,.titrePage ul{line-height:20px;}
 .titrePage h2{color:#888888;}.titrePage h2 a{margin:0 1ex;}
 .titrePage h2 a:first-child{margin-left:0;}
 .titrePage h2 a:last-child{margin-right:0;}
-.titrePage .headerActions{float:right;margin-bottom:0;}.titrePage .headerActions li{display:inline-block;}
+.titrePage ul.headerActions{float:right;margin-bottom:0;}.titrePage ul.headerActions li{display:inline-block;margin:0 5px;}
+.titrePage ul.headerActions li.imageNumber{font-weight:bold;font-size:16px;margin-right:0;color:#888888;border:2px solid #888888;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:2px;}
 .titrePage .button{float:none;}
 .titrePage img{max-height:16px;margin:0 5px;}
 .titrePage .categoryActions{float:right;width:auto;}

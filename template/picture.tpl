@@ -19,7 +19,7 @@
     <li class="imageNumber">{$PHOTO}</li>
   </ul>
 
-  <h2>{$SECTION_TITLE} {$LEVEL_SEPARATOR} {$current.TITLE}</h2>
+  <h2>{$SECTION_TITLE} {$LEVEL_SEPARATOR} <a href="{$current.URL}">{$current.TITLE}</a></h2>
 </header>
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}

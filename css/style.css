@@ -598,8 +598,7 @@ blockquote {
   padding-top: 20px;
 }
 .titrePage h2, .titrePage ul {
-  display: inline;
-  line-height: 25px;
+  line-height: 20px;
 }
 .titrePage h2 {
   color: #888888;
@@ -613,12 +612,24 @@ blockquote {
 .titrePage h2 a:last-child {
   margin-right: 0;
 }
-.titrePage .headerActions {
+.titrePage ul.headerActions {
   float: right;
   margin-bottom: 0;
 }
-.titrePage .headerActions li {
+.titrePage ul.headerActions li {
   display: inline-block;
+  margin: 0 5px;
+}
+.titrePage ul.headerActions li.imageNumber {
+  font-weight: bold;
+  font-size: 16px;
+  margin-right: 0;
+  color: #888888;
+  border: 2px solid #888888;
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+  padding: 2px;
 }
 .titrePage .button {
   float: none;

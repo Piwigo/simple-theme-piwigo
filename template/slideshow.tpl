@@ -1,31 +1,30 @@
 <div id="slideshow">
   <header class="titrePage">
-    <span class="imageNumber headerActions">{$PHOTO}</span>
-
+    <ul class="headerActions">
     {if $DISPLAY_NAV_BUTTONS}
-    <div class="headerActions">
     {if isset($U_SLIDESHOW_STOP)}
-      <a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}">{'Stop'|@translate}</a>
+      <li><a href="{$U_SLIDESHOW_STOP}" title="{'stop the slideshow'|@translate}"><i class="icon-white icon-stop"></i></a></li>
     {/if}
     {if isset($slideshow.U_START_PLAY)}
-      <a href="{$slideshow.U_START_PLAY}" title="{'Play of slideshow'|@translate}">Play</a>
+      <li><a href="{$slideshow.U_START_PLAY}" title="{'Play of slideshow'|@translate}"><i class="icon-play icon-white"></i></a></li>
     {/if}
     {if isset($slideshow)}
       {if isset($slideshow.U_STOP_PLAY)}
-        <a href="{$slideshow.U_STOP_PLAY}" title="{'Pause of slideshow'|@translate}">Pause</a>
+        <li><a href="{$slideshow.U_STOP_PLAY}" title="{'Pause of slideshow'|@translate}"><i class="icon-pause icon-white"></i></a></li>
       {/if}
       {if isset($slideshow.U_DEC_PERIOD)}
-        <a href="{$slideshow.U_DEC_PERIOD}" title="{'Accelerate diaporama speed'|@translate}">&nbsp;+&nbsp;</a>
+        <li><a href="{$slideshow.U_DEC_PERIOD}" title="{'Accelerate diaporama speed'|@translate}"><i class="icon-plus icon-white"></i></a></li>
       {/if}
       {if isset($slideshow.U_INC_PERIOD)}
-        <a href="{$slideshow.U_INC_PERIOD}" title="{'Reduce diaporama speed'|@translate}">&nbsp;-&nbsp;</a>
+        <li><a href="{$slideshow.U_INC_PERIOD}" title="{'Reduce diaporama speed'|@translate}"><i class="icon-minus icon-white"></i></a></li>
       {/if}
     {/if}
-    </div>
     {/if}
+    <li class="imageNumber headerActions">{$PHOTO}</li>
+    </ul>
 
     {if $SHOW_PICTURE_NAME_ON_TITLE }
-    <h2>{$current.TITLE}</h2>
+    <h2><a href="{$current.URL}">{$current.TITLE}</a></h2>
     {/if}
   </header>
   <div id="theImage">

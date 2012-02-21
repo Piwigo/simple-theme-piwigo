@@ -119,8 +119,7 @@ blockquote {
   padding-top: 20px;
 
   h2, ul {
-    display: inline;
-    line-height: 25px;
+    line-height: 20px;
   }
 
   h2 {
@@ -131,11 +130,24 @@ blockquote {
     a:last-child {margin-right: 0;}
   }
 
-  .headerActions {
+  ul.headerActions {
     float: right;
     margin-bottom: 0;
 
-    li {display: inline-block;}
+    li {
+      display: inline-block;
+      margin: 0 5px;
+    }
+
+    li.imageNumber {
+      font-weight: bold;
+      font-size: 16px;
+      margin-right: 0;
+      color: @secondaryColor;
+      border: 2px solid @secondaryColor;
+      .rounded-corners(8px);
+      padding: 2px;
+    }
   }
 
   .button {
