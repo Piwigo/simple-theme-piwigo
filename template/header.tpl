@@ -32,7 +32,8 @@
   {if isset($last.U_IMG)}<link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}">{/if}
   {if isset($U_UP)}<link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}">{/if}
 
-  <link rel="stylesheet" href="{$ROOT_URL}themes/simple3/css/style.min.css">
+  {combine_css path="themes/simple3/css/style.min.css" order="1"}
+  {get_combined_css}
 
   {foreach from=$themes item=theme}
   {if $theme.load_css}

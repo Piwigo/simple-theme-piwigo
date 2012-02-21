@@ -509,7 +509,7 @@ blockquote{border-left:5px solid #888888;}
 .titrePage h2 a:first-child{margin-left:0;}
 .titrePage h2 a:last-child{margin-right:0;}
 .titrePage ul.headerActions{float:right;margin-bottom:0;}.titrePage ul.headerActions li{display:inline-block;margin:0 5px;}
-.titrePage ul.headerActions li.imageNumber{font-weight:bold;font-size:16px;margin-right:0;color:#888888;border:2px solid #888888;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:2px;}
+.titrePage ul.headerActions li.imageNumber{font-weight:bold;font-size:14px;margin-right:0;color:#888888;border:2px solid #888888;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:2px;}
 .titrePage .button{float:none;}
 .titrePage img{max-height:16px;margin:0 5px;}
 .titrePage .categoryActions{float:right;width:auto;}
@@ -545,7 +545,7 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .navigationBar{text-align:center;color:#888888;padding:20px;}
 .pageNumberSelected{font-weight:bold;}
 .navButtons{font-size:1.5em;text-align:center;}
-#theImage{text-align:center;margin:2em 0;}#theImage a,#theImage img{display:inline-block;font-size:3em;vertical-align:middle;}
+#theImage{text-align:center;margin:2em 0;}#theImage a,#theImage img{display:inline-block;font-size:5em;vertical-align:middle;}
 #theImage .imgNext,#theImage .imgPrev{padding:0.5em;}
 #theImage .imgNext{padding-right:0.1em;}
 #theImage .imgPrev{padding-left:0.1em;}
@@ -583,5 +583,8 @@ ul.actions{float:right;list-style:none;}ul.actions li{display:inline;}
 .navbar .dropdown-menu .divider{background-color:#333;border-bottom:1px solid #333;}
 #slideshow{padding-bottom:10px;}
 .tooltip{font-size:13px;}
-.personal_block{padding:0 !important;}
+.menuf .flags{border:0 !important;}
+.flag-pan{border:2px solid #888888;background-color:#303030;}
+.menuf li a:hover{border:0;}
+.languageSwitchBoxTitle{color:#eeeeee;}
 @media (max-width:480px){}@media (max-width:768px){body{padding-top:0;} #rating{float:none;margin-left:20px;} #theImage,#theHeader{margin:0;}}@media (min-width:768px) and (max-width:980px){body{padding-top:0;}}@media (min-width:1200px){}

@@ -622,7 +622,7 @@ blockquote {
 }
 .titrePage ul.headerActions li.imageNumber {
   font-weight: bold;
-  font-size: 16px;
+  font-size: 14px;
   margin-right: 0;
   color: #888888;
   border: 2px solid #888888;
@@ -791,7 +791,7 @@ input, textarea, select {
 }
 #theImage a, #theImage img {
   display: inline-block;
-  font-size: 3em;
+  font-size: 5em;
   vertical-align: middle;
 }
 #theImage .imgNext, #theImage .imgPrev {
@@ -940,9 +940,19 @@ ul.actions li {
 .tooltip {
   font-size: 13px;
 }
-/* PWG stuff */
-.personal_block {
-  padding: 0 !important;
+/* Plugins */
+.menuf .flags {
+  border: 0 !important;
+}
+.flag-pan {
+  border: 2px solid #888888;
+  background-color: #303030;
+}
+.menuf li a:hover {
+  border: 0;
+}
+.languageSwitchBoxTitle {
+  color: #eeeeee;
 }
 /* #Media Queries
 ================================================== */

@@ -6,7 +6,7 @@
     <header class="titrePage">
       {if !empty($block.U_EDIT)}
         <ul class="categoryActions">
-          <li><a href="{$block.U_EDIT}">{'edit'|@translate}</a></li>
+          <li><a href="{$block.U_EDIT}"><i class="icon-edit icon-white"></i></a></li>
         </ul>
       {/if}
       {if isset($block.TITLE_URL)}
