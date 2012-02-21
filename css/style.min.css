@@ -505,7 +505,9 @@ blockquote{border-left:5px solid #888888;}
 #theHeader{margin:1em 0;position:relative;}
 #copyright{margin:1em 0;font-variant:small-caps;text-transform:lowercase;}
 .titrePage{margin:20px;padding-top:20px;}.titrePage h2,.titrePage ul{display:inline;line-height:25px;}
-.titrePage h2 a+a{margin-left:8px;}
+.titrePage h2{color:#888888;}.titrePage h2 a{margin:0 1ex;}
+.titrePage h2 a:first-child{margin-left:0;}
+.titrePage h2 a:last-child{margin-right:0;}
 .titrePage .headerActions{float:right;margin-bottom:0;}.titrePage .headerActions li{display:inline-block;}
 .titrePage .button{float:none;}
 .titrePage img{max-height:16px;margin:0 5px;}
@@ -578,6 +580,7 @@ ul.actions{float:right;list-style:none;}ul.actions li{display:inline;}
 .navbar .dropdown-menu{background-color:#2C2C2C;}.navbar .dropdown-menu:after{border-bottom:6px solid #2C2C2C;}
 .navbar .dropdown-menu a{color:#999;}
 .navbar .dropdown-menu .divider{background-color:#333;border-bottom:1px solid #333;}
+#slideshow{padding-bottom:10px;}
 .tooltip{font-size:13px;}
 .personal_block{padding:0 !important;}
 @media (max-width:480px){}@media (max-width:768px){body{padding-top:0;} #rating{float:none;margin-left:20px;} #theImage,#theHeader{margin:0;}}@media (min-width:768px) and (max-width:980px){body{padding-top:0;}}@media (min-width:1200px){}

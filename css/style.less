@@ -123,8 +123,12 @@ blockquote {
     line-height: 25px;
   }
 
-  h2 a + a {
-    margin-left: 8px;
+  h2 {
+    color: @secondaryColor;
+
+    a {margin: 0 1ex;}
+    a:first-child {margin-left: 0;}
+    a:last-child {margin-right: 0;}
   }
 
   .headerActions {
@@ -452,8 +456,12 @@ ul.actions {
   }
 }
 
-/* tooltips */
+/* slideshow */
+#slideshow {
+  padding-bottom: 10px;
+}
 
+/* tooltips */
 .tooltip {
   font-size: 13px;
 }

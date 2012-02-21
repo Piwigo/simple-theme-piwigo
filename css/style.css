@@ -601,8 +601,17 @@ blockquote {
   display: inline;
   line-height: 25px;
 }
-.titrePage h2 a + a {
-  margin-left: 8px;
+.titrePage h2 {
+  color: #888888;
+}
+.titrePage h2 a {
+  margin: 0 1ex;
+}
+.titrePage h2 a:first-child {
+  margin-left: 0;
+}
+.titrePage h2 a:last-child {
+  margin-right: 0;
 }
 .titrePage .headerActions {
   float: right;
@@ -911,6 +920,10 @@ ul.actions li {
 .navbar .dropdown-menu .divider {
   background-color: #333;
   border-bottom: 1px solid #333;
+}
+/* slideshow */
+#slideshow {
+  padding-bottom: 10px;
 }
 /* tooltips */
 .tooltip {
