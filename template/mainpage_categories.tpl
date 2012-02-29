@@ -5,9 +5,7 @@
 
   <figure class="span4">
     <div class="illustration">
-      <a href="{$cat.URL}">
-        <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" title="{$cat.NAME|@replace:'"':' '} - {'display this album'|@translate}">
-      </a>
+      <a href="{$cat.URL}"><img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" /></a>
     </div>
     <figcaption class="description" data-original-title="{$cat.CAPTION_NB_IMAGES}">
       <h3>
