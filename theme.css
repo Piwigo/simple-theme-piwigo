@@ -129,6 +129,8 @@ fieldset li {
 
 #theImage img {
   border: 8px #fff solid;
+  margin: 0 20px;
+  max-width: 90%;
 }
 #theImage p {
   margin: 1em;
