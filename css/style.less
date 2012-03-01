@@ -4,36 +4,6 @@
 
 /* fonts */
 
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: normal;
-  src: local('PT Sans'), local('PTSans-Regular'), url('http://themes.googleusercontent.com/static/fonts/ptsans/v3/LKf8nhXsWg5ybwEGXk8UBQ.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: italic;
-  font-weight: normal;
-  src: local('PT Sans Italic'), local('PTSans-Italic'), url('http://themes.googleusercontent.com/static/fonts/ptsans/v3/PIPMHY90P7jtyjpXuZ2cLD8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-}
-@font-face {
-  font-family: 'PT Sans';
-  font-style: normal;
-  font-weight: bold;
-  src: local('PT Sans Bold'), local('PTSans-Bold'), url('http://themes.googleusercontent.com/static/fonts/ptsans/v3/0XxGQsSc1g4rdRdjJKZrNBsxEYwM7FgeyaSgU71cLG0.woff') format('woff');
-}
-@font-face {
-  font-family: 'Neuton';
-  font-style: normal;
-  font-weight: normal;
-  src: local('Neuton Regular'), local('Neuton-Regular'), url('http://themes.googleusercontent.com/static/fonts/neuton/v5/FWmpGWvJ4R8gbr0i3io5KQ.woff') format('woff');
-}
-@font-face {
-  font-family: 'Neuton';
-  font-style: normal;
-  font-weight: 700;
-  src: local('Neuton Bold'), local('Neuton-Bold'), url('http://themes.googleusercontent.com/static/fonts/neuton/v5/MK-qWv3o5LiGs6rxlk2euz8E0i7KZn-EPnyo3HZu7kw.woff') format('woff');
-}
 
 /* ========================================== */
 
@@ -43,8 +13,7 @@
 @bckgdColor: #303030;
 @hoverColor: #fff;
 
-@sansFont: 'PT Sans', sans-serif;
-@serifFont: 'Neuton', serif;
+@sansFont: 'Open Sans', sans-serif;
 
 .rounded-corners (@radius: 5px) {
   -webkit-border-radius: @radius;
@@ -76,7 +45,6 @@ a {
 }
 
 h1, h2, h3, h4 {
-  font-family: @serifFont;
   color: @titleColor;
   text-shadow: 1px 1px 3px #000000;
   /* font-weight: normal; */
@@ -119,10 +87,6 @@ blockquote {
   margin: 20px;
   padding-top: 20px;
 
-  h2, ul {
-    line-height: 20px;
-  }
-
   h2 {
     color: @secondaryColor;
 
@@ -131,13 +95,14 @@ blockquote {
     a:last-child {margin-right: 0;}
   }
 
-  ul.headerActions {
+  ul {
+    line-height: 36px;
     float: right;
-    margin-bottom: 0;
+    margin: 4px 0 0 10px;
 
     li {
       display: inline-block;
-      margin: 0 5px;
+      margin-left: 10px;
     }
 
     li.imageNumber {
@@ -159,19 +124,10 @@ blockquote {
     max-height: 16px;
     margin: 0 5px;
   }
-
-  .categoryActions {
-    float: right;
-    width: auto;
-  }
 }
 
 #thePicturePage h2 {
   font-size: 20px;
-}
-
-.categoryActions li {
-  display: inline;
 }
 
 /* tags */
@@ -374,6 +330,9 @@ input, textarea, select {
 
 #imageInfos, #imageMeta {
   padding: 0 20px 10px;
+}
+.navbar .nav > li > a {
+  font-size: 14px;
 }
 .nav > li > a:hover {
   background-color: #333;
