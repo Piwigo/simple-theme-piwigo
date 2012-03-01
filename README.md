@@ -42,6 +42,10 @@ Install
 Changelog
 ---------
 
+### version 2.5.5 (01/03/2012)
+
+* fix the adaptation of the main image with the resolution
+
 ### version 2.5.4 (23/01/2012)
 
 * improve media-queries for small resolutions
