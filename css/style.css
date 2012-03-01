@@ -560,7 +560,6 @@ blockquote {
 }
 #copyright {
   margin: 1em 0;
-  font-variant: small-caps;
   text-transform: lowercase;
 }
 .titrePage {
@@ -917,6 +916,9 @@ ul.actions li {
 }
 .languageSwitchBoxTitle {
   color: #eeeeee;
+}
+.personal_block {
+  padding: 0;
 }
 /* #Media Queries
 ================================================== */

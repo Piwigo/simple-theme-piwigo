@@ -16,7 +16,7 @@
       {/if}
     </header>
     {/if}
-    <div id="stuffs_block_{$block.ID}">
+    <div id="stuffs_block_{$block.ID}" class="subcontent">
       {include file=$block.TEMPLATE}
     </div>
   </div>
