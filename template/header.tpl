@@ -2,6 +2,7 @@
 <html lang="{$lang_info.code}">
 <head>
   <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
   <title>{$PAGE_TITLE} - {$GALLERY_TITLE}</title>
   <meta name="generator" content="Piwigo (aka PWG), see piwigo.org">
 {if isset($meta_ref) }
@@ -18,10 +19,7 @@
   {/if}
 {/if}
 
-  <!--[if lt IE 9]>
-      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
-  <![endif]-->
-  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="viewport" content="width=device-width">
   <link rel="shortcut icon" type="image/x-icon" href="{$ROOT_URL}{$themeconf.icon_dir}/favicon.ico">
   <link rel="start" title="{'Home'|@translate}" href="{$U_HOME}">
   <link rel="search" title="{'Search'|@translate}" href="{$ROOT_URL}search.php">
@@ -56,16 +54,19 @@
   <link rel="alternate" type="application/rss+xml" title="{'Complete RSS feed (images, comments)'|@translate}" href="{$U_FEED}">
   {/if}
 
+  <!--[if lt IE 9]>
+      <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
+  <![endif]-->
   {get_combined_scripts load='header'}
   {combine_script id='jquery' path='themes/simple3/js/jquery-1.7.1.min.js'}
-  {combine_script id='bootstrap' require='jquery' path='themes/simple3/js/bootstrap.js'}
-  {combine_script id='simple3.scripts' path='themes/simple3/js/scripts.js'}
+  {combine_script id='simple3.scripts' require='jquery' path='themes/simple3/js/scripts.js'}
+  <script src="themes/simple3/js/bootstrap.js"></script>
 
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}
     {/foreach}
   {/if}
-  <script type="text/javascript">
+  <script>
     document.documentElement.className = 'js';
   </script>
 </head>

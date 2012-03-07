@@ -30,6 +30,6 @@ pwg_set_session_var('show_metadata', true);
 $conf['level_separator'] = '/';
 
 // debug - do not combine files
-$conf['template_combine_files'] = false;
+//$conf['template_combine_files'] = false;
 
 ?>
