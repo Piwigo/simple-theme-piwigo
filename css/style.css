@@ -587,16 +587,9 @@ blockquote {
   display: inline-block;
   margin-left: 10px;
 }
-.titrePage ul li.imageNumber {
-  font-weight: bold;
-  font-size: 14px;
-  margin-right: 0;
+.titrePage ul .imageNumber {
+  font-size: 24px;
   color: #888888;
-  border: 2px solid #888888;
-  -webkit-border-radius: 8px;
-  -moz-border-radius: 8px;
-  border-radius: 8px;
-  padding: 2px;
 }
 .titrePage .button {
   float: none;
@@ -727,6 +720,9 @@ input, textarea, select {
 .thumbnailCategories {
   text-align: center;
   overflow: hidden;
+}
+.thumbnailCategories h3 {
+  font-weight: normal;
 }
 /* page : title bar */
 #content #additional_info {
@@ -919,6 +915,9 @@ ul.actions li {
 }
 .personal_block {
   padding: 0;
+}
+.stuffs_block .titrePage h2 {
+  color: #eeeeee;
 }
 /* #Media Queries
 ================================================== */

@@ -1,7 +1,7 @@
 <header class="titrePage">
   <ul class="headerActions">
     {if isset($U_SLIDESHOW_START)}
-    <li><a href="{$U_SLIDESHOW_START}" rel="nofollow"><i class="icon-play icon-white"></i></a></li>
+    <li><a href="{$U_SLIDESHOW_START}" title="{'slideshow'|@translate}" rel="nofollow"><i class="icon-play icon-white"></i></a></li>
     {/if}
     {if isset($current.U_DOWNLOAD)}
     <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}"><i class="icon-download icon-white"></i></a></li>

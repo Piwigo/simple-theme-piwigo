@@ -508,7 +508,7 @@ blockquote{border-left:5px solid #888888;}
 .titrePage h2 a:first-child{margin-left:0;}
 .titrePage h2 a:last-child{margin-right:0;}
 .titrePage ul{line-height:36px;float:right;margin:4px 0 0 10px;}.titrePage ul li{display:inline-block;margin-left:10px;}
-.titrePage ul li.imageNumber{font-weight:bold;font-size:14px;margin-right:0;color:#888888;border:2px solid #888888;-webkit-border-radius:8px;-moz-border-radius:8px;border-radius:8px;padding:2px;}
+.titrePage ul .imageNumber{font-size:24px;color:#888888;}
 .titrePage .button{float:none;}
 .titrePage img{max-height:16px;margin:0 5px;}
 #thePicturePage h2{font-size:20px;}
@@ -537,7 +537,7 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .zero{display:none;}
 #theImage img,.illustration img,.thumbnail{-moz-transition-duration:0.2s;-moz-transition-property:opacity;box-shadow:0 1px 6px rgba(0, 0, 0, 0.6);opacity:1;}
 .illustration a:hover img,.thumbnail:hover{opacity:0.5;}
-.thumbnailCategories{text-align:center;overflow:hidden;}
+.thumbnailCategories{text-align:center;overflow:hidden;}.thumbnailCategories h3{font-weight:normal;}
 #content #additional_info{margin-bottom:20px;}
 .navigationBar{text-align:center;color:#888888;padding:20px;}
 .pageNumberSelected{font-weight:bold;}
@@ -586,4 +586,5 @@ ul.actions{float:right;list-style:none;}ul.actions li{display:inline;}
 .menuf li a:hover{border:0;}
 .languageSwitchBoxTitle{color:#eeeeee;}
 .personal_block{padding:0;}
+.stuffs_block .titrePage h2{color:#eeeeee;}
 @media (max-width:480px){}@media (max-width:768px){body{padding-top:0;} #rating{float:none;margin-left:20px;} #theImage,#theHeader{margin:0;}}@media (min-width:768px) and (max-width:980px){body{padding-top:0;}}@media (min-width:1200px){}
