@@ -276,6 +276,7 @@ input, textarea, select {
 #theImage {
   text-align: center;
   margin: 2em 0;
+  position: relative;
 
   a, img {
     display: inline-block;
@@ -455,9 +456,6 @@ ul.actions {
 
 /* Landscape phone to portrait tablet */
 @media (max-width: 768px) {
-  body {
-    padding-top: 0;
-  }
   #rating {
     float: none;
     margin-left: 20px;
@@ -468,10 +466,19 @@ ul.actions {
 }
 
 /* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 980px) {
+@media (max-width: 980px) {
   body {
     padding-top: 0;
   }
+  #theHeader {margin-top: 0;}
+  #theImage {padding-top: 4em;}
+  #theImage .imgNext, #theImage .imgPrev {
+    padding: 0;
+    position: absolute;
+    top: 0;
+  }
+  #theImage .imgNext {right: 25%;}
+  #theImage .imgPrev {left: 25%;}
 }
 
 /* Large desktop */
