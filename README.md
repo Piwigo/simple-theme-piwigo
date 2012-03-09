@@ -1,14 +1,16 @@
-Simple3 theme for Piwigo
-========================
+Simple theme for Piwigo
+=======================
 
-The *Simple3* theme is the third version of the theme *Simple Grey* for
-[Piwigo](http://piwigo.org/). It was renamed to avoid forcing users to upgrade
-to the new version which is a complete redesign, taking advantage of the new
-features of the web: HTML5, CSS3, ...
+*Simple* is a theme for [Piwigo](http://piwigo.org/). The version 3.0 is a
+complete redesign, taking advantage of the new features of the web: HTML5,
+CSS3, ...
 
-The *Simple Grey* theme was inspired by *gally / Graphite* theme for Piwigo,
-and *Carbon* theme for Gallery, with the goal to simplify the design up to go
-to basics: the photos !
+**The version 3.0 is currently a beta version, there may be compatibility
+  issues with plugins.**
+
+Originally, the *Simple Grey* theme was inspired by *gally / Graphite* theme
+for Piwigo, and *Carbon* theme for Gallery, with the goal to simplify the
+design up to go to basics: the photos !
 
 [![screenshot][2]][1]
 
@@ -19,16 +21,16 @@ Download
 --------
 
 * [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308)
-* [Source code (github)](http://github.com/saimn/simple-grey)
+* [Source code (github)](http://github.com/saimn/simple-theme-piwigo)
 
 * use the builtin theme manager in Piwigo's admin interface,
-* or download the archive and extract it in ``your-gallery/theme/``.
+* or download the archive and extract it in ``your-gallery/theme/simple/``.
 
 Variants
 --------
 
 You can also find some variants (Sunset, Black, White) in Piwigo extensions,
-currently compatible only with *Simple Grey 2.5.x*.
+currently **compatible only with Simple Grey 2.5.x**.
 
 * [Simple White](http://piwigo.org/ext/extension_view.php?eid=346)
 * [Simple Black](http://piwigo.org/ext/extension_view.php?eid=347)
@@ -39,7 +41,7 @@ Licence
 
 Copyright(C) 2009-2012 Simon C. <contact at saimon dot org>
 
-The "Simple3" theme for Piwigo is free software: you can redistribute it
+The "Simple" theme for Piwigo is free software: you can redistribute it
 and/or modify it under the terms of the GNU General Public License as
 published by the Free Software Foundation.
 
@@ -52,6 +54,14 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 
 Changelog
 ---------
+
+### version 3.0-beta1 (09/03/2012)
+
+Complete redesign:
+* switch to HTML5
+* responsive design
+* based on [Bootstrap](http://twitter.github.com/bootstrap/)
+* use [Open Sans](http://en.wikipedia.org/wiki/Open_Sans) font
 
 ### version 2.5.5 (01/03/2012)
 

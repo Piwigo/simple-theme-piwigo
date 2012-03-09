@@ -1,6 +1,6 @@
 <?php
 /*
-Theme Name: Simple3
+Theme Name: Simple
 Version: 3.0-dev
 Description: Simple theme for Piwigo
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
@@ -12,8 +12,8 @@ $themeconf = array(
   'parent' => 'default',
   'load_parent_css' => false,
   'load_parent_local_head' => false,
-  'name' => 'simple3',
-  'theme_dir' => 'simple3',
+  'name' => 'simple',
+  'theme_dir' => 'simple',
   'icon_dir' => 'themes/default/img',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
