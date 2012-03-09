@@ -58,6 +58,7 @@ Changelog
 ### version 3.0-beta1 (09/03/2012)
 
 Complete redesign:
+
 * switch to HTML5
 * responsive design
 * based on [Bootstrap](http://twitter.github.com/bootstrap/)
