@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: Simple
-Version: 3.0-dev
+Version: 3.0-beta1
 Description: Simple theme for Piwigo
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon
