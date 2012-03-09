@@ -12,15 +12,15 @@ js:
 	cat js/bootstrap-* > js/bootstrap.js
 
 archive:
-	sed -i "s/Version: .*/Version: $VERSION/" themeconf.inc.php
-	git ci -m "new version $VERSION" themeconf.inc.php
+	sed -i "s/Version: .*/Version: $(VERSION)/" themeconf.inc.php
+	git ci -m "new version $(VERSION)" themeconf.inc.php
 
-	@echo "New tag for version $VERSION"
-	git tag $VERSION
+	@echo "New tag for version $(VERSION)"
+	git tag $(VERSION)
 
 	@echo "Pushing to github"
 	git push
 	git push --tags
 
-	git archive --format=zip --prefix=simple/ HEAD > ../simple-$VERSION.zip
-	@echo "zip archive available: ../simple-$VERSION.zip"
+	git archive --format=zip --prefix=simple/ HEAD > ../simple-$(VERSION).zip
+	@echo "zip archive available: ../simple-$(VERSION).zip"
