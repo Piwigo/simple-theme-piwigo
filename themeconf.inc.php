@@ -3,7 +3,7 @@
 Theme Name: SimpleNG
 Version: 3.0-beta2
 Description: SimpleNG theme for Piwigo
-Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
+Theme URI: http://piwigo.org/ext/extension_view.php?eid=602
 Author: Saïmon
 Author URI: http://saimon.org/
 */
