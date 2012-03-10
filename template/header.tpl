@@ -32,7 +32,7 @@
 
   <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 
-  {combine_css path="themes/simple/css/style.min.css" order="1"}
+  {combine_css path="themes/simpleng/css/style.min.css" order="1"}
   {get_combined_css}
 
   {foreach from=$themes item=theme}
@@ -58,9 +58,9 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   {get_combined_scripts load='header'}
-  {combine_script id='jquery' path='themes/simple/js/jquery-1.7.1.min.js'}
-  {combine_script id='simple.scripts' require='jquery' path='themes/simple/js/scripts.js'}
-  <script src="themes/simple/js/bootstrap.js"></script>
+  {combine_script id='jquery' path='themes/simpleng/js/jquery-1.7.1.min.js'}
+  {combine_script id='simpleng.scripts' require='jquery' path='themes/simpleng/js/scripts.js'}
+  <script src="themes/simpleng/js/bootstrap.js"></script>
 
   {if not empty($head_elements)}
     {foreach from=$head_elements item=elt}{$elt}

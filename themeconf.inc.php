@@ -1,8 +1,8 @@
 <?php
 /*
-Theme Name: Simple
+Theme Name: SimpleNG
 Version: 3.0-beta1
-Description: Simple theme for Piwigo
+Description: SimpleNG theme for Piwigo
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=308
 Author: Saïmon
 Author URI: http://saimon.org/
@@ -12,8 +12,8 @@ $themeconf = array(
   'parent' => 'default',
   'load_parent_css' => false,
   'load_parent_local_head' => false,
-  'name' => 'simple',
-  'theme_dir' => 'simple',
+  'name' => 'simpleng',
+  'theme_dir' => 'simpleng',
   'icon_dir' => 'themes/default/img',
   'admin_icon_dir' => 'themes/default/icon/admin',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',

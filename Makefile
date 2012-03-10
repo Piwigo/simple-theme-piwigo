@@ -22,5 +22,5 @@ archive:
 	git push
 	git push --tags
 
-	git archive --format=zip --prefix=simple/ HEAD > ../simple-$(VERSION).zip
-	@echo "zip archive available: ../simple-$(VERSION).zip"
+	git archive --format=zip --prefix=simpleng/ HEAD > ../simpleng-$(VERSION).zip
+	@echo "zip archive available: ../simpleng-$(VERSION).zip"
