@@ -681,6 +681,7 @@ input, textarea, select {
 }
 #thumbnails ul {
   margin: 0 20px 9px;
+  padding-bottom: 10px;
 }
 #thumbnails li {
   margin: 1em;

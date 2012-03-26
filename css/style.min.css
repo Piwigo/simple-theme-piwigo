@@ -528,7 +528,7 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .mandatorystar{color:#e04040;}
 .menuInfoCat,.menuInfoCatByChild{color:#888888;float:right;font-style:italic;}
 .selected{font-weight:bold;}
-#thumbnails{text-align:center;}#thumbnails ul{margin:0 20px 9px;}
+#thumbnails{text-align:center;}#thumbnails ul{margin:0 20px 9px;padding-bottom:10px;}
 #thumbnails li{margin:1em;display:inline-block;vertical-align:middle;}
 #thumbnails figure{margin-left:0;}
 #thumbnails figcaption{font-weight:bold;max-width:12em;margin:0 auto;}
