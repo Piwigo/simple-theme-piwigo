@@ -41,6 +41,14 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 Changelog
 ---------
 
+### version 3.0-beta3 (27/03/2012)
+
+* update screenshots
+* use infinitescroll plugin to avoid pagination
+* change tooltip position for category thumbnails
+* font-size for imgNext/imgPrev
+* fix icon dir
+
 ### version 3.0-beta2 (10/03/2012)
 
 * rename theme
