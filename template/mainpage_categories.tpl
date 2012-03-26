@@ -5,9 +5,10 @@
 
   <figure class="span4">
     <div class="illustration">
-      <a href="{$cat.URL}"><img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" /></a>
+      <a href="{$cat.URL}" data-original-title="{$cat.CAPTION_NB_IMAGES}">
+        <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" /></a>
     </div>
-    <figcaption class="description" data-original-title="{$cat.CAPTION_NB_IMAGES}">
+    <figcaption class="description">
       <h3>
         <a href="{$cat.URL}">{$cat.NAME}</a>
         {if !empty($cat.icon_ts)}
