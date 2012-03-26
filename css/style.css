@@ -748,11 +748,11 @@ input, textarea, select {
 }
 #theImage a, #theImage img {
   display: inline-block;
-  font-size: 5em;
   vertical-align: middle;
 }
 #theImage .imgNext, #theImage .imgPrev {
   padding: 0.5em;
+  font-size: 5em;
 }
 #theImage .imgNext {
   padding-right: 0.1em;

@@ -542,8 +542,8 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .navigationBar{text-align:center;color:#888888;padding:20px;}
 .pageNumberSelected{font-weight:bold;}
 .navButtons{font-size:1.5em;text-align:center;}
-#theImage{text-align:center;margin:2em 0;position:relative;}#theImage a,#theImage img{display:inline-block;font-size:5em;vertical-align:middle;}
-#theImage .imgNext,#theImage .imgPrev{padding:0.5em;}
+#theImage{text-align:center;margin:2em 0;position:relative;}#theImage a,#theImage img{display:inline-block;vertical-align:middle;}
+#theImage .imgNext,#theImage .imgPrev{padding:0.5em;font-size:5em;}
 #theImage .imgNext{padding-right:0.1em;}
 #theImage .imgPrev{padding-left:0.1em;}
 #theImage figcaption{margin:1em;}
