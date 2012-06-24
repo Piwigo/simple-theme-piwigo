@@ -10,7 +10,7 @@
       <input class="login" type="password" name="password" id="password">
 
       {if $authorize_remembering}
-      <label for="remember_me" class="checkbox">{'Auto login'|@translate}
+      <label for="remember_me">{'Auto login'|@translate}
       <input type="checkbox" name="remember_me" id="remember_me" value="1"></label>
       {/if}
 
