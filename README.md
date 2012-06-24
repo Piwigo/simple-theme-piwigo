@@ -6,21 +6,34 @@ the version 3.0), taking advantage of the new features of the web: HTML5,
 CSS3, ...
 
 **The version 3.0 is currently a beta version, there may be compatibility
-  issues with plugins.**
+  issues with plugins. The 3.0-beta4 version should be ready for piwigo 2.4,
+  tests needed !**
+
+The old version (*Simple Grey*) is still available on [piwigo
+extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308) and is
+maintained by the Piwigo team.
 
 [![screenshot][2]][1]
 
 [1]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
 [2]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
 
+Features
+--------
+
+* responsive !
+* HTML5 and CSS3,
+* use [bootstrap](http://twitter.github.com/bootstrap/),
+* use the *Open Sans* font.
+
 Download
 --------
 
-* [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308)
-* [Source code (github)](http://github.com/saimn/simple-theme-piwigo)
-
 * use the builtin theme manager in Piwigo's admin interface,
 * or download the archive and extract it in ``your-gallery/theme/simpleng/``.
+
+* [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308)
+* [Source code (github)](http://github.com/saimn/simple-theme-piwigo)
 
 Licence
 -------
@@ -40,6 +53,15 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 
 Changelog
 ---------
+
+### version 3.0-beta4 (25/06/2012)
+
+Compatibility with piwigo 2.4:
+
+* update bootstrap to 2.0.4
+* minor template changes
+* adapt templates to use derivatives
+* header - add canonical url
 
 ### version 3.0-beta3 (27/03/2012)
 
