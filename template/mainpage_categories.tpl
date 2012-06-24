@@ -1,3 +1,4 @@
+{define_derivative name='derivative_params' width=250 height=200 crop=true}
 {foreach from=$category_thumbnails item=cat name=catloop}
   {if $smarty.foreach.catloop.index % 3 == 0}
   <div class="row thumbnailCategories">
@@ -6,7 +7,7 @@
   <figure class="span4">
     <div class="illustration">
       <a href="{$cat.URL}" data-original-title="{$cat.CAPTION_NB_IMAGES}">
-        <img src="{$cat.TN_SRC}" alt="{$cat.TN_ALT}" /></a>
+        <img src="{$pwg->derivative_url($derivative_params, $cat.representative.src_image)}" alt="{$cat.TN_ALT}" /></a>
     </div>
     <figcaption class="description">
       <h3>

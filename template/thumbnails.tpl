@@ -1,10 +1,12 @@
 {if !empty($thumbnails)}
+{define_derivative name='derivative_params' width=250 height=200 crop=true}
 <ul>
   {foreach from=$thumbnails item=thumbnail}
+  {assign var=derivative value=$pwg->derivative($derivative_params, $thumbnail.src_image)}
   <li>
     <figure>
     <a href="{$thumbnail.URL}">
-      <img class="thumbnail" src="{$thumbnail.TN_SRC}" alt="{$thumbnail.TN_ALT}" data-original-title="{$thumbnail.TN_TITLE}" />
+      <img class="thumbnail" src="{$derivative->get_url()}" alt="{$thumbnail.TN_ALT}" data-original-title="{$thumbnail.TN_TITLE}" />
     </a>
       {*
     {if $SHOW_THUMBNAIL_CAPTION}
