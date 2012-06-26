@@ -10,6 +10,7 @@ less:
 
 js:
 	cat js/bootstrap-* > js/bootstrap.js
+	uglifyjs js/bootstrap.js > js/bootstrap.min.js
 
 archive:
 	sed -i "s/Version: .*/Version: $(VERSION)/" themeconf.inc.php
