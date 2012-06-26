@@ -6,6 +6,10 @@ jQuery(document).ready(function($){
   jQuery('.illustration a').tooltip({placement: 'bottom'});
   jQuery('img.thumbnail').tooltip({placement: 'bottom'});
 
+  // put the title in the navbar
+  jQuery('.navbar .brand').html(jQuery('#theHeader h1').html());
+  jQuery('#theHeader').hide();
+
   $('#thumbnails ul').infinitescroll({
     navSelector  : "div.navigationBar",
     // selector for the paged navigation (it will be hidden)

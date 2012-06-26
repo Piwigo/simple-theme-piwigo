@@ -9,7 +9,7 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </a>
-      {* <a class="brand" href="{$U_HOME}">{$PAGE_BANNER}</a> *}
+      <a class="brand" href="#"></a>
 
       <div class="nav-collapse">
         <ul class="nav">
