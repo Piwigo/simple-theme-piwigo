@@ -1,4 +1,4 @@
-{define_derivative name='derivative_params' width=250 height=200 crop=true}
+{define_derivative name='derivative_params' width=260 height=180 crop=true}
 {foreach from=$category_thumbnails item=cat name=catloop}
   {if $smarty.foreach.catloop.index % 3 == 0}
   <div class="row thumbnailCategories">

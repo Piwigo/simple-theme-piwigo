@@ -24,7 +24,7 @@
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 
-<figure id="theImage">
+<figure id="theImage" class="subcontent">
   {if isset($previous)}
   <a href="{$previous.U_IMG}" class="imgPrev" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
   {/if}
@@ -180,4 +180,3 @@
 {if !empty($PLUGIN_PICTURE_AFTER)}{$PLUGIN_PICTURE_AFTER}{/if}
 
 {include file='picture_nav_buttons.tpl'|@get_extent:'picture_nav_buttons'}
-
