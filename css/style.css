@@ -31,7 +31,7 @@ hr {
   border: 1px #eeeeee solid;
 }
 figure {
-  margin: 0 0 20px 20px;
+  margin: 0;
 }
 img {
   border: 0 none;
@@ -187,6 +187,10 @@ select {
   border: 0;
   border-radius: 0;
   padding: 0;
+  overflow: hidden;
+}
+.thumbnail h3 {
+  font-weight: normal;
 }
 .nb-comments,
 .nb-hits {
@@ -197,27 +201,17 @@ select {
 }
 /* image styles */
 #theImage img,
-.illustration img,
-.thumbnail {
+.thumbnail img {
   -moz-transition-duration: 0.2s;
   -moz-transition-property: opacity;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
-.illustration a:hover img,
-.thumbnail:hover {
+.thumbnail:hover img {
   opacity: 0.5;
 }
-.illustration a {
+.thumbnail a {
   display: block;
-}
-/* categories thumbnails */
-.thumbnailCategories {
-  text-align: center;
-  overflow: hidden;
-}
-.thumbnailCategories h3 {
-  font-weight: normal;
 }
 /* page : title bar */
 .navigationBar {

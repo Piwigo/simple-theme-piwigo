@@ -3,7 +3,7 @@
 
 jQuery(document).ready(function($){
   jQuery('.dropdown-toggle').dropdown();
-  jQuery('.illustration a').tooltip({placement: 'bottom'});
+  jQuery('.thumbnail a').tooltip({placement: 'bottom'});
   jQuery('.thumbnail img').tooltip({placement: 'bottom'});
 
   // put the title in the navbar

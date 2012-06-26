@@ -1,15 +1,12 @@
 {define_derivative name='derivative_params' width=260 height=180 crop=true}
-{foreach from=$category_thumbnails item=cat name=catloop}
-  {if $smarty.foreach.catloop.index % 3 == 0}
-  <div class="row thumbnailCategories">
-  {/if}
 
-  <figure class="span4">
-    <div class="illustration">
-      <a href="{$cat.URL}" data-original-title="{$cat.CAPTION_NB_IMAGES}">
-        <img src="{$pwg->derivative_url($derivative_params, $cat.representative.src_image)}" alt="{$cat.TN_ALT}" /></a>
-    </div>
-    <figcaption class="description">
+<ul class="thumbnails">
+{foreach from=$category_thumbnails item=cat name=catloop}
+  <li class="span3">
+  <figure class="thumbnail">
+    <a href="{$cat.URL}" data-original-title="{$cat.CAPTION_NB_IMAGES}">
+      <img src="{$pwg->derivative_url($derivative_params, $cat.representative.src_image)}" alt="{$cat.TN_ALT}" /></a>
+    <figcaption class="caption">
       <h3>
         <a href="{$cat.URL}">{$cat.NAME}</a>
         {if !empty($cat.icon_ts)}
@@ -26,8 +23,6 @@
 *}
     </figcaption>
   </figure>
-
-  {if $smarty.foreach.catloop.index % 3 == 2 || $smarty.foreach.catloop.last}
-  </div>
-  {/if}
+  </li>
 {/foreach}
+</ul>

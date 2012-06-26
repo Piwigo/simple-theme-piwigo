@@ -30,7 +30,7 @@ body {
 }
 
 hr { border: 1px @mainColor solid; }
-figure { margin: 0 0 20px 20px; }
+figure { margin: 0; }
 img {
   border: 0 none;
   height: auto;
@@ -187,6 +187,9 @@ input, textarea, select {
   border: 0;
   border-radius: 0;
   padding: 0;
+  overflow: hidden;
+
+  h3 {font-weight: normal;}
 }
 
 .nb-comments, .nb-hits { font-weight: normal; }
@@ -194,26 +197,17 @@ input, textarea, select {
 
 /* image styles */
 
-#theImage img, .illustration img, .thumbnail {
+#theImage img, .thumbnail img {
   -moz-transition-duration: 0.2s;
   -moz-transition-property: opacity;
   box-shadow: 0 1px 6px rgba(0, 0, 0, 0.6);
   opacity: 1;
 }
-.illustration a:hover img, .thumbnail:hover {
+.thumbnail:hover img {
   opacity: 0.5;
 }
-.illustration a {
+.thumbnail a {
   display: block;
-}
-
-/* categories thumbnails */
-
-.thumbnailCategories {
-  text-align: center;
-  overflow: hidden;
-
-  h3 {font-weight: normal;}
 }
 
 /* page : title bar */
@@ -346,7 +340,6 @@ ul.actions {
 #comments {
   ul {padding-bottom: 10px;}
   li {margin-bottom: 20px;}
-  .description {}
   .illustration {text-align: right;}
 }
 
