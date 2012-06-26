@@ -4,7 +4,7 @@
 jQuery(document).ready(function($){
   jQuery('.dropdown-toggle').dropdown();
   jQuery('.illustration a').tooltip({placement: 'bottom'});
-  jQuery('img.thumbnail').tooltip({placement: 'bottom'});
+  jQuery('.thumbnail img').tooltip({placement: 'bottom'});
 
   // put the title in the navbar
   jQuery('.navbar .brand').html(jQuery('#theHeader h1').html());

@@ -48,10 +48,6 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .mandatorystar{color:#e04040;}
 .menuInfoCat,.menuInfoCatByChild{color:#888888;float:right;font-style:italic;}
 .selected{font-weight:bold;}
-#thumbnails{text-align:center;}#thumbnails ul{margin:0 20px 9px;padding-bottom:10px;}
-#thumbnails li{margin:1em;display:inline-block;vertical-align:middle;}
-#thumbnails figure{margin-left:0;}
-#thumbnails figcaption{font-weight:bold;max-width:12em;margin:0 auto;}
 .thumbnail{border:0;border-radius:0;padding:0;}
 .nb-comments,.nb-hits{font-weight:normal;}
 .zero{display:none;}
@@ -59,7 +55,6 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .illustration a:hover img,.thumbnail:hover{opacity:0.5;}
 .illustration a{display:block;}
 .thumbnailCategories{text-align:center;overflow:hidden;}.thumbnailCategories h3{font-weight:normal;}
-#content #additional_info{margin-bottom:20px;}
 .navigationBar{text-align:center;color:#888888;padding:20px;}
 .pageNumberSelected{font-weight:bold;}
 .navButtons{font-size:1.5em;text-align:center;}

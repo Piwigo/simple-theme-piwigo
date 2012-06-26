@@ -71,7 +71,7 @@
 {/if}
 
 {if !empty($CATEGORIES)}{$CATEGORIES}{/if}
-{if !empty($THUMBNAILS)}<div id="thumbnails">{$THUMBNAILS}</div>{/if}
+{if !empty($THUMBNAILS)}{$THUMBNAILS}{/if}
 {if !empty($navbar)}{include file='navigation_bar.tpl'|@get_extent:'navbar'}{/if}
 
 {if !empty($PLUGIN_INDEX_CONTENT_END)}{$PLUGIN_INDEX_CONTENT_END}{/if}

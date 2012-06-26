@@ -166,10 +166,6 @@ select {
 .mandatorystar {
   color: #e04040;
 }
-/* .property { */
-/*   display: inline-block; */
-/*   width: 180px; */
-/* } */
 /* Menubar */
 .menuInfoCat,
 .menuInfoCatByChild {
@@ -181,26 +177,6 @@ select {
   font-weight: bold;
 }
 /* images thumbnails */
-#thumbnails {
-  text-align: center;
-}
-#thumbnails ul {
-  margin: 0 20px 9px;
-  padding-bottom: 10px;
-}
-#thumbnails li {
-  margin: 1em;
-  display: inline-block;
-  vertical-align: middle;
-}
-#thumbnails figure {
-  margin-left: 0;
-}
-#thumbnails figcaption {
-  font-weight: bold;
-  max-width: 12em;
-  margin: 0 auto;
-}
 .thumbnail {
   border: 0;
   border-radius: 0;
@@ -238,9 +214,6 @@ select {
   font-weight: normal;
 }
 /* page : title bar */
-#content #additional_info {
-  margin-bottom: 20px;
-}
 .navigationBar {
   text-align: center;
   color: #888888;
