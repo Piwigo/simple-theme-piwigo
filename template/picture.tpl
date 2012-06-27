@@ -24,21 +24,26 @@
 
 {if !empty($PLUGIN_PICTURE_BEFORE)}{$PLUGIN_PICTURE_BEFORE}{/if}
 
-<figure id="theImage" class="subcontent">
-  {if isset($previous)}
-  <a href="{$previous.U_IMG}" class="imgPrev" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
-  {/if}
+<div class="subcontent">
+  <nav class="picture_nav">
+    {if isset($previous)}
+    <a href="{$previous.U_IMG}" class="imgPrev" title="{'Previous'|@translate} : {$previous.TITLE}" rel="prev">&lsaquo;</a>
+    {/if}
+    {if isset($previous) and isset($next)}
+    <span class="spacing"></span>
+    {/if}
+    {if isset($next)}
+    <a href="{$next.U_IMG}" class="imgNext" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
+    {/if}
+  </nav>
+  <figure id="theImage">
+    {$ELEMENT_CONTENT}
 
-  {$ELEMENT_CONTENT}
-
-  {if isset($next)}
-  <a href="{$next.U_IMG}" class="imgNext" title="{'Next'|@translate} : {$next.TITLE}" rel="next">&rsaquo;</a>
-  {/if}
-
-  {if isset($COMMENT_IMG)}
-  <figcaption>{$COMMENT_IMG}</figcaption>
-  {/if}
-</figure>
+    {if isset($COMMENT_IMG)}
+    <figcaption>{$COMMENT_IMG}</figcaption>
+    {/if}
+  </figure>
+</div>
 
 <div id="rating">
   {if isset($rating)}
