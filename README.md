@@ -54,6 +54,17 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 Changelog
 ---------
 
+### version 3.0-beta5 (28/06/2012)
+
+* image nav bar
+* use the same style for category thumbnails and other thumbnails
+* apply the transparent background to the subcontent
+* thumbnails - use bootstrap
+* put the title in the navbar using javascript
+* css - change responsive styles
+* don't use pwg's combine as it breaks with plugins
+* minify bootstrap.js
+
 ### version 3.0-beta4 (25/06/2012)
 
 Compatibility with piwigo 2.4:
