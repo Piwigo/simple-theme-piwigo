@@ -1,7 +1,7 @@
 {define_derivative name='derivative_params' width=260 height=180 crop=true}
 
 <ul class="thumbnails">
-{foreach from=$category_thumbnails item=cat name=catloop}
+{foreach from=$category_thumbnails item=cat name=cat_loop}
   <li class="span3">
   <figure class="thumbnail">
     <a href="{$cat.URL}" data-original-title="{$cat.CAPTION_NB_IMAGES}">
@@ -14,7 +14,7 @@
         {/if}
       </h3>
       {if isset($cat.INFO_DATES) }
-      <p class="thumbCatDescNfoDate">{$cat.INFO_DATES}</p>
+      <p class="dates">{$cat.INFO_DATES}</p>
       {/if}
 {*
       {if not empty($cat.DESCRIPTION)}
