@@ -15,7 +15,7 @@
     <input type="email" name="mail_address" id="mail_address" value="{$F_EMAIL}" required>
     <br />
     <input type="hidden" name="key" value="{$F_KEY}" >
-    <input type="submit" name="submit" value="{'Register'|@translate}" class="btn">
+    <input type="submit" name="submit" value="{'Register'|@translate}" class="btn btn-primary">
     <input type="reset" value="{'Reset'|@translate}" class="btn">
   </form>
 </div>
