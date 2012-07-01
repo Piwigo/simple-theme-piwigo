@@ -1,4 +1,6 @@
 {if !empty($thumbnails)}
+{combine_script id='jquery.ajaxmanager' path='themes/default/js/plugins/jquery.ajaxmanager.js' load='footer'}
+{combine_script id='thumbnails.loader' path='themes/default/js/thumbnails.loader.js' require='jquery.ajaxmanager' load='footer'}
 {define_derivative name='derivative_params' width=260 height=180 crop=true}
 <ul class="thumbnails">
   {foreach from=$thumbnails item=thumbnail}
