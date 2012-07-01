@@ -73,7 +73,7 @@ input,textarea,select{background-color:#303030;border:1px solid #888888;color:#e
 .nav-pills{margin:0 20px;}.nav-pills .active>a,.nav-pills .active>a:hover{background-color:#0088CC;color:#FFFFFF;}
 #commentAdd h3,#commentAdd form{margin:0 20px;}
 #commentAdd input[type="text"],#commentAdd textarea{width:95%;}
-ul.actions{float:right;list-style:none;}ul.actions li{display:inline;}
+.actions{float:right;list-style:none;}
 #commentList ul{margin:0 20px 20px 0;}
 #commentList li{padding:0 0 1em;}
 .author{font-weight:bold;font-variant:small-caps;font-size:1.2em;}
