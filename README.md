@@ -5,10 +5,6 @@ SimpleNG theme for Piwigo
 the version 3.0), taking advantage of the new features of the web: HTML5,
 CSS3, ...
 
-**The version 3.0 is currently a beta version, there may be compatibility
-  issues with plugins. The 3.0-beta4 version should be ready for piwigo 2.4,
-  tests needed !**
-
 The old version (*Simple Grey*) is still available on [piwigo
 extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308) and is
 maintained by the Piwigo team.
@@ -53,6 +49,13 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 
 Changelog
 ---------
+
+### version 3.0 (28/08/2012)
+
+* forms - fix the search page button
+* include the ajax queue to load thumbnails
+* minor fixes
+* comment list - fix thumbnails
 
 ### version 3.0-beta5 (28/06/2012)
 
