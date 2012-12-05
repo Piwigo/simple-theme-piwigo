@@ -1,8 +1,8 @@
 .PHONY: less archive js
 
 less:
-	lessc css/style.less > css/style.css
-	lessc -x css/style.less > css/style.min.css
+	recess --compile css/style.less > css/style.css
+	recess --compress css/style.less > css/style.min.css
 	cat css/{bootstrap.min.css,bootstrap-responsive.min.css,style.css} > tmp.css
 	mv tmp.css css/style.css
 	cat css/{bootstrap.min.css,bootstrap-responsive.min.css,style.min.css} > tmp.css
