@@ -50,6 +50,12 @@ this program. If not, see <http://www.gnu.org/licenses/>.
 Changelog
 ---------
 
+### version 3.0.1 (05/12/2012)
+
+* Switch to recess.
+* Bugfix for voids in the thumbnails page.
+* Fix the height of thumbnail captions for better alignement.
+
 ### version 3.0 (28/08/2012)
 
 * forms - fix the search page button
