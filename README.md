@@ -25,10 +25,9 @@ Features
 Download
 --------
 
-* use the builtin theme manager in Piwigo's admin interface,
-* or download the archive and extract it in ``your-gallery/theme/simpleng/``.
-
-* [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308)
+* Use the builtin theme manager in Piwigo's admin interface,
+* Or download the archive and extract it in ``your-gallery/theme/simpleng/``.
+* [Piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=602)
 * [Source code (github)](http://github.com/saimn/simple-theme-piwigo)
 
 Licence
