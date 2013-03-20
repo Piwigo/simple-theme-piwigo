@@ -87,6 +87,7 @@ blockquote {
 #copyright {
   margin: 1em 0;
   font-size: 11px;
+  text-align: center;
   text-transform: uppercase;
 }
 
