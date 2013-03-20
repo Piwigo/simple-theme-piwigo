@@ -60,7 +60,7 @@
       <script src="http://html5shim.googlecode.com/svn/trunk/html5.js"></script>
   <![endif]-->
   {get_combined_scripts load='header'}
-  {combine_script id='jquery' path='themes/simpleng/js/jquery-1.7.1.min.js'}
+  {combine_script id='jquery' path='themes/simpleng/js/jquery-1.9.1.min.js'}
   {combine_script id='jquery.infinitescroll' path='themes/simpleng/js/jquery.infinitescroll.min.js'}
   {combine_script id='bootstrap' require='jquery' path='themes/simpleng/js/bootstrap.min.js'}
   {combine_script id='simpleng.scripts' require='jquery' path='themes/simpleng/js/scripts.js'}
