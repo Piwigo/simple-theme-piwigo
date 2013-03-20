@@ -11,8 +11,8 @@ maintained by the Piwigo team.
 
 [![screenshot][2]][1]
 
-[1]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
-[2]: https://github.com/saimn/simple-theme-piwigo/raw/master/screenshot.large.jpg
+[1]: https://raw.github.com/saimn/simple-theme-piwigo/master/screenshot.large.jpg
+[2]: https://raw.github.com/saimn/simple-theme-piwigo/master/screenshot.jpg
 
 Features
 --------

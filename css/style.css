@@ -503,6 +503,11 @@ select {
   padding-bottom: 10px;
 }
 
+#slideshow .titrePage ul {
+  float: none;
+  text-align: center;
+}
+
 /* tooltips */
 
 .tooltip {
