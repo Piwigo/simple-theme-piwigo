@@ -1,16 +1,20 @@
-.PHONY: less archive js
+.PHONY: archive css js
 
-less:
-	recess --compile css/style.less > css/style.css
+css:
+	@echo "Build css with boostrap and recess"
 	recess --compress css/style.less > css/style.min.css
-	cat css/{bootstrap.min.css,bootstrap-responsive.min.css,style.css} > tmp.css
-	mv tmp.css css/style.css
-	cat css/{bootstrap.min.css,bootstrap-responsive.min.css,style.min.css} > tmp.css
-	mv tmp.css css/style.min.css
+	recess --compress bootstrap/less/responsive.less > css/bootstrap-responsive.min.css
+
+# Watch less files
+watch:
+	@echo "Watching less files..."
+	recess css/style.less:css/style.min.css --watch .
 
 js:
-	cat js/bootstrap-* > js/bootstrap.js
-	uglifyjs js/bootstrap.js > js/bootstrap.min.js
+	cat bootstrap/js/{bootstrap-transition.js,bootstrap-tooltip.js,bootstrap-tab.js,bootstrap-collapse.js,bootstrap-dropdown.js} > js/bootstrap.js
+	uglifyjs js/bootstrap.js -nc > js/bootstrap.min.js
+	rm js/bootstrap.js
+
 
 archive:
 	sed -i "s/Version: .*/Version: $(VERSION)/" themeconf.inc.php
