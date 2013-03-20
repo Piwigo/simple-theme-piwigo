@@ -1,6 +1,6 @@
 {if !empty($blocks)}
 
-<div class="navbar navbar-fixed-top">
+<div class="navbar navbar-inverse navbar-fixed-top">
   <div class="navbar-inner">
     <div class="container">
       <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
@@ -24,11 +24,11 @@
           {/foreach}
         </ul>
 
-        {*if isset($block->data.qsearch) and  $block->data.qsearch==true*}
+        {if isset($block->data.qsearch) and  $block->data.qsearch==true}
         <form action="{$ROOT_URL}qsearch.php" method="get" class="navbar-search pull-right">
           <input class="search-query" type="text" name="q" placeholder="{'Search'|@translate}">
         </form>
-        {*/if*}
+        {/if}
       </div>
     </div>
   </div>
