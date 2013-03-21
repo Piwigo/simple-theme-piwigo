@@ -10,7 +10,7 @@
       <h3>
         <a href="{$cat.URL}">{$cat.NAME}</a>
         {if !empty($cat.icon_ts)}
-        <img title="{$cat.icon_ts.TITLE}" src="{$ROOT_URL}{$themeconf.icon_dir}/recent{if $cat.icon_ts.IS_CHILD_DATE}_by_child{/if}.png" class="icon" alt="(!)">
+        <i class="icon-exclamation-sign icon-white"></i>
         {/if}
       </h3>
       {if isset($cat.INFO_DATES) }
