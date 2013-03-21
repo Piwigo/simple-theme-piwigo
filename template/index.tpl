@@ -56,14 +56,14 @@
 </div>
 {/if}
 
+{if isset($FILE_CHRONOLOGY_VIEW)}
+  {include file=$FILE_CHRONOLOGY_VIEW}
+{/if}
+
 {if !empty($CONTENT_DESCRIPTION)}
 <p id="additional_info" class="subcontent">
   {$CONTENT_DESCRIPTION}
 </p>
-{/if}
-
-{if isset($FILE_CHRONOLOGY_VIEW)}
-  {include file=$FILE_CHRONOLOGY_VIEW}
 {/if}
 
 {if isset($chronology.TITLE)}
