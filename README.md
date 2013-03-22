@@ -17,7 +17,7 @@ maintained by the Piwigo team.
 Features
 --------
 
-* responsive !
+* responsive,
 * HTML5 and CSS3,
 * use [bootstrap](http://twitter.github.com/bootstrap/),
 * use the *Open Sans* font.
@@ -33,21 +33,26 @@ Download
 Licence
 -------
 
-Copyright(C) 2009-2012 Simon C. <contact at saimon dot org>
-
-The "SimpleNG" theme for Piwigo is free software: you can redistribute it
-and/or modify it under the terms of the GNU General Public License as
-published by the Free Software Foundation.
-
-This program is distributed in the hope that it will be useful, but WITHOUT
-ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS
-FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License along with
-this program. If not, see <http://www.gnu.org/licenses/>.
+This theme is licensed under the GNU General Public License. See LICENSE for
+details.
 
 Changelog
 ---------
+
+### version 3.1.0 (23/03/2013)
+
+* Remove infinitescroll as it doesn't work.
+* Better use of `GALLERY_TITLE` and `PAGE_BANNER`: Use `GALLERY_TITLE` for the
+  navbar, where the title must be short and without html tags, and let users
+  use `PAGE_BANNER` for what they want.
+* Minor fixes: mobile url, ...
+* Template fixes for piwigo 2.5: comments, navbar.
+* Icon for categories with new images.
+* Update bootstrap to v2.3.1
+* Update jquery to 1.9.1
+* Add bootstrap as a submodule.
+* Center the footer text.
+* Fix slideshow buttons that were not clickable.
 
 ### version 3.0.1 (05/12/2012)
 
