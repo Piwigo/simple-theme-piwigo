@@ -7,8 +7,8 @@ jQuery(document).ready(function($){
   jQuery('.thumbnail img').tooltip({placement: 'bottom'});
 
   // put the title in the navbar
-  jQuery('.navbar .brand').html(jQuery('#theHeader h1').html());
-  jQuery('#theHeader').hide();
+  jQuery('.navbar .brand').html(jQuery('#gallery_title').html());
+  jQuery('#gallery_title').hide();
 
   $('ul.thumbnails').infinitescroll({
     // debug        : true,

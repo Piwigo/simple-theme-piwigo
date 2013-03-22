@@ -77,6 +77,8 @@
 {if isset($MENUBAR)}{$MENUBAR}{/if}
 
 <div id="the_page" class="container">
+  <h1 id="gallery_title"><a href="{$U_HOME}">{$GALLERY_TITLE}</a></h1>
+
   {if not empty($header_msgs)}
   <div class="header_msgs">
     {foreach from=$header_msgs item=elt}
@@ -85,8 +87,9 @@
   </div>
   {/if}
 
+  {if not empty($PAGE_BANNER) or not empty($header_notes) or isset($theSwiftHeader)}
   <header id="theHeader">
-    <h1><a href="{$U_HOME}">{$PAGE_BANNER}</a></h1>
+    {$PAGE_BANNER}
     {if isset($theSwiftHeader)}{$theSwiftHeader}{/if}
     {if not empty($header_notes)}
     <div class="header_notes">
@@ -96,6 +99,7 @@
     </div>
     {/if}
   </header>
+  {/if}
 
   <article id="content">
 
