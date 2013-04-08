@@ -1,13 +1,11 @@
 SimpleNG theme for Piwigo
 =========================
 
-*SimpleNG* is a complete redesign of the *Simple Grey* theme (should have been
-the version 3.0), taking advantage of the new features of the web: HTML5,
-CSS3, ...
-
-The old version (*Simple Grey*) is still available on [piwigo
-extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308) and is
-maintained by the Piwigo team.
+*SimpleNG* is a complete redesign of the *Simple Grey* theme, taking advantage
+of the new features of the web, HTML5 and CSS3. The old version (*Simple
+Grey*) is still available on
+[piwigo extensions](http://fr.piwigo.org/ext/extension_view.php?eid=308) and
+is maintained by the Piwigo team.
 
 [![screenshot][2]][1]
 
@@ -35,6 +33,34 @@ Licence
 
 This theme is licensed under the GNU General Public License. See LICENSE for
 details.
+
+Customize
+---------
+
+This theme is based on the [less](http://lesscss.org/) sources of bootstrap.
+To customize it, you must install some
+[dependencies](https://github.com/twitter/bootstrap#compiling-css-and-javascript).
+In short, install nodejs, then `npm install recess uglify-js`.
+
+Then, you will need to get the sources with git. You can fork on github (if
+you want to publish your theme later or submit a pull request) or get the
+sources directly with git:
+
+    git clone https://github.com/saimn/simple-theme-piwigo.git
+
+Get the latest release (3.1.0 here):
+
+    git checkout 3.1.O
+
+Then get the bootstrap submodule:
+
+    git submodule update --init
+
+To compile simpleng's css and javascript sources, you can then use `make css`
+and `make js`. `make watch` will watch the files to automatically compile the
+css. The main file to edit is `css/styles.less`. You can also override
+bootstrap variables (see `bootstrap/less/variables.less`).
+
 
 Changelog
 ---------
