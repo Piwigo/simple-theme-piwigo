@@ -65,6 +65,12 @@ bootstrap variables (see `bootstrap/less/variables.less`).
 Changelog
 ---------
 
+### version 3.1.1 (18/04/2013)
+
+* Another bugfix for voids in the thumbnails page.
+* Reuse bootstrap variables when possible.
+* Add some doc on how to customize the theme.
+
 ### version 3.1.0 (23/03/2013)
 
 * Remove infinitescroll as it doesn't work.
