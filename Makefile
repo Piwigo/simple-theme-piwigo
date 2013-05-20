@@ -1,5 +1,7 @@
 .PHONY: archive css js
 
+all: css js
+
 css:
 	@echo "Build css with boostrap and recess"
 	recess --compress css/style.less > css/style.min.css
