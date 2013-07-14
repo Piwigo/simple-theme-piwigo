@@ -66,7 +66,12 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
-### version 3.1.2 (xx/xx/2013)
+### version 3.1.3 (14/07/2013)
+
+- Remove extra get_combined_scripts that was breaking the rating.
+- css fix for Language Switch.
+
+### version 3.1.2 (20/05/2013)
 
 * Update Bootstrap to v2.3.2
 * Add the #thumbnails id
