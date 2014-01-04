@@ -39,7 +39,7 @@
   {foreach from=$themes item=theme}
   {if $theme.load_css}
     {assign var="csstheme" value="themes/`$theme.id`/theme.css"}
-    { if file_exists($csstheme) }
+    {if file_exists($csstheme)}
       {combine_css path="themes/`$theme.id`/theme.css" order=10}
     {/if}
   {/if}
