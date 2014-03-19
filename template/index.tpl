@@ -70,6 +70,8 @@
 </div>
 {/if}
 
+{if !empty($CONTENT)}{$CONTENT}{/if}
+
 {if !empty($CATEGORIES)}{$CATEGORIES}{/if}
 {if !empty($cats_navbar)}
   {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$cats_navbar}
