@@ -13,8 +13,8 @@
     {if !empty($U_SET_AS_REPRESENTATIVE)}
     <li><a href="{$U_SET_AS_REPRESENTATIVE}" title="{'set as album representative'|@translate}"><i class="icon-picture icon-white"></i></a></li>
     {/if}
-    {if isset($U_ADMIN)}
-    <li><a href="{$U_ADMIN}"><i class="icon-edit icon-white"></i></a></li>
+    {if isset($U_PHOTO_ADMIN)}
+    <li><a href="{$U_PHOTO_ADMIN}"><i class="icon-edit icon-white"></i></a></li>
     {/if}
     <li class="imageNumber">{$PHOTO}</li>
   </ul>
