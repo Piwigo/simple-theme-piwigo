@@ -66,6 +66,14 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
+### version 3.2.1 (04/08/2014)
+
+- Fix photo admin link.
+
+### version 3.2.0 (19/03/2014)
+
+- piwigo 2.6 compatibility
+
 ### version 3.1.3 (14/07/2013)
 
 - Remove extra get_combined_scripts that was breaking the rating.
