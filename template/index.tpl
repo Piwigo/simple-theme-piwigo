@@ -77,7 +77,11 @@
   {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$cats_navbar}
 {/if}
 
-{if !empty($THUMBNAILS)}{$THUMBNAILS}{/if}
+{if !empty($THUMBNAILS)}
+<ul id="thumbnails" class="thumbnails">
+  {$THUMBNAILS}
+</ul>
+{/if}
 {if !empty($thumb_navbar)}
   {include file='navigation_bar.tpl'|@get_extent:'navbar' navbar=$thumb_navbar}
 {/if}
