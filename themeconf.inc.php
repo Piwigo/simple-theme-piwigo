@@ -18,7 +18,8 @@ $themeconf = array(
   'img_dir'      => 'themes/default/images',
   'mime_icon_dir' => 'themes/default/icon/mimetypes/',
   'local_head' => 'local_head.tpl',
-  'url' => 'http://saimon.org/simple-theme-piwigo/'
+  'url' => 'http://saimon.org/simple-theme-piwigo/',
+  'colorscheme' => 'dark'
 );
 
 // set this if you want to restrict the width of pictures to a specifc width

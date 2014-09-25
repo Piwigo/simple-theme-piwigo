@@ -97,23 +97,25 @@
     <div id="commentAdd" class="span6">
       <h3>{'Add a comment'|@translate}</h3>
       <form  method="post" action="{$comment_add.F_ACTION}" class="filter">
-	{if $comment_add.SHOW_AUTHOR}
+        {if $comment_add.SHOW_AUTHOR}
         <label for="author">{'Author'|@translate}{if $comment_add.AUTHOR_MANDATORY} ({'mandatory'|@translate}){/if} :</label>
         <input type="text" name="author" id="author" value="{$comment_add.AUTHOR}">
-	{/if}
+        {/if}
 
         {if $comment_add.SHOW_EMAIL}
         <label for="email">{'Email'|@translate}{if $comment_add.EMAIL_MANDATORY} ({'mandatory'|@translate}){/if} :</label>
         <input type="text" name="email" id="email" value="{$comment_add.EMAIL}">
         {/if}
 
+        {if $comment_add.SHOW_WEBSITE}
         <label for="website_url">{'Website'|@translate} :</label>
         <input type="text" name="website_url" id="website_url" value="{$comment_add.WEBSITE_URL}">
+        {/if}
 
-	<label for="contentid">{'Comment'|@translate} ({'mandatory'|@translate}) :</label>
-	<textarea name="content" id="contentid">{$comment_add.CONTENT}</textarea>
-	<input type="hidden" name="key" value="{$comment_add.KEY}">
-	<input type="submit" value="{'Submit'|@translate}" class="btn">
+        <label for="contentid">{'Comment'|@translate} ({'mandatory'|@translate}) :</label>
+        <textarea name="content" id="contentid">{$comment_add.CONTENT}</textarea>
+        <input type="hidden" name="key" value="{$comment_add.KEY}">
+        <input type="submit" value="{'Submit'|@translate}" class="btn">
       </form>
     </div>
     {/if}
