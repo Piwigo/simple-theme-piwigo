@@ -3,7 +3,6 @@
 {combine_script id='thumbnails.loader' path='themes/default/js/thumbnails.loader.js' require='jquery.ajaxmanager' load='footer'}
 {define_derivative name='derivative_params' width=260 height=180 crop=true}
 
-<ul id="thumbnails" class="thumbnails">
   {foreach from=$thumbnails item=thumbnail}
   {assign var=derivative value=$pwg->derivative($derivative_params, $thumbnail.src_image)}
   <li class="span3">
@@ -12,5 +11,4 @@
     </a>
   </li>
   {/foreach}
-</ul>
 {/if}
