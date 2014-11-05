@@ -1,5 +1,3 @@
-{php}remove_event_handler('loc_end_index', 'hide_main_block');{/php}
-
 {foreach from=$blocks item=block key=key}
   <div class="stuffs_block">
     {if isset($block.TITLE)}
