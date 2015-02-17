@@ -10,16 +10,15 @@
   <h2>{'Tags'|@translate}</h2>
 </header>
 
-{if isset($tags)}
-  {if $display_mode == 'cloud'}
+{if $display_mode == 'cloud' and isset($tags)}
   <div id="fullTagCloud" class="subcontent">
     {foreach from=$tags item=tag}
     <span><a href="{$tag.URL}" class="tagLevel{$tag.level}" title="{$pwg->l10n_dec('%d photo', '%d photos', $tag.counter)}">{$tag.name}</a></span>
     {/foreach}
   </div>
-  {/if}
+{/if}
 
-  {if $display_mode == 'letters'}
+{if $display_mode == 'letters' and isset($letters)}
   <div class="subcontent">
     {foreach from=$letters item=letter}
     <div class="tagLetter">
@@ -33,5 +32,4 @@
     </div>
     {/foreach}
   </div>
-  {/if}
 {/if}
