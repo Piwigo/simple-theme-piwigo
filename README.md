@@ -66,6 +66,18 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
+### version 3.2.3-dev (xx/xx/2015)
+
+- `{php}` tag forbidden in Smarty 3 + Piwigo 2.7
+- Fix #16: tags by letter doesn't work.
+- Ability to add buttons on index.php for plugins.
+
+### version 3.2.2 (16/10/2014)
+
+- Solves `<br>` code in categories title
+- Correct GThumb+ support
+- Small changes for Piwigo 2.7
+
 ### version 3.2.1 (04/08/2014)
 
 - Fix photo admin link.
@@ -76,7 +88,7 @@ Changelog
 
 ### version 3.1.3 (14/07/2013)
 
-- Remove extra get_combined_scripts that was breaking the rating.
+- Remove extra `get_combined_scripts` that was breaking the rating.
 - css fix for Language Switch.
 
 ### version 3.1.2 (20/05/2013)
