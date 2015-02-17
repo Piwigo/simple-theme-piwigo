@@ -66,7 +66,7 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
-### version 3.2.3-dev (xx/xx/2015)
+### version 3.2.3 (17/02/2015)
 
 - `{php}` tag forbidden in Smarty 3 + Piwigo 2.7
 - Fix #16: tags by letter doesn't work.
