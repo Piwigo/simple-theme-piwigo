@@ -66,6 +66,15 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
+### version 3.2.5 (02/03/2016)
+
+- compatibility with formats for Piwigo 2.8
+- compatibility with new search form and search options of Piwigo 2.8
+
+### version 3.2.4 (22/02/2015)
+
+- new release to fix a packaging error (wrong directory name)
+
 ### version 3.2.3 (17/02/2015)
 
 - `{php}` tag forbidden in Smarty 3 + Piwigo 2.7
