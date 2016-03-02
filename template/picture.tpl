@@ -1,10 +1,50 @@
+{combine_script id='jquery.colorbox' load='footer' require='jquery' path='themes/default/js/plugins/jquery.colorbox.min.js'}
+{combine_css id='colorbox' path='themes/default/js/plugins/colorbox/style2/colorbox.css'}
+
+{if !empty($current.formats)}
+{footer_script require='jquery'}{literal}
+jQuery().ready(function() {
+  jQuery("#downloadSwitchLink").colorbox({
+    inline:true,
+    href:"#downloadSwitchBox"
+  });
+});
+{/literal}{/footer_script}
+
+{html_style}
+#downloadSwitchBox {
+  color:black;
+  padding:15px;
+}
+
+#downloadSwitchBox a {
+  color:black;
+}
+
+.switchBoxTitle {
+  margin-bottom:5px;
+}
+{/html_style}
+
+<div style="display:none">
+<div id="downloadSwitchBox">
+  <div class="switchBoxTitle">{'Download'|translate} - {'Formats'|translate}</div>
+  <ul>
+  {foreach from=$current.formats item=format}
+    <li><a href="{$format.download_url}" rel="nofollow">{$format.label}<span class="downloadformatDetails"> ({$format.filesize})</span></a></li>
+  {/foreach}
+  </ul>
+</div>
+</div>
+{/if} {* has formats *}
+
 <header class="titrePage">
   <ul class="headerActions">
     {if isset($U_SLIDESHOW_START)}
     <li><a href="{$U_SLIDESHOW_START}" title="{'slideshow'|@translate}" rel="nofollow"><i class="icon-play icon-white"></i></a></li>
     {/if}
     {if isset($current.U_DOWNLOAD)}
-    <li><a href="{$current.U_DOWNLOAD}" title="{'download this file'|@translate}"><i class="icon-download icon-white"></i></a></li>
+    <li><a id="downloadSwitchLink" href="{$current.U_DOWNLOAD}" title="{'Download this file'|@translate}"><i class="icon-download icon-white"></i></a></li>
     {/if}
     {if isset($PLUGIN_PICTURE_ACTIONS)}{$PLUGIN_PICTURE_ACTIONS}{/if}
     {if isset($favorite)}
