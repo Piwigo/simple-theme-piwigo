@@ -66,6 +66,10 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
+### version 3.2.6 (27/09/2019)
+
+- compatibility with Piwigo 2.10
+
 ### version 3.2.5 (02/03/2016)
 
 - compatibility with formats for Piwigo 2.8
