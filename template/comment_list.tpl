@@ -4,7 +4,12 @@
     {if isset($comment.src_image)}
     <div class="illustration span4">
       <a href="{$comment.U_PICTURE}">
-		<img src="{$pwg->derivative_url($derivative_params, $comment.src_image)}" alt="{$comment.ALT}">
+      {if isset($comment_derivative_params)}
+        {assign var=derivative_url value=$pwg->derivative_url($comment_derivative_params, $comment.src_image)}
+      {else}
+        {assign var=derivative_url value=$pwg->derivative_url($derivative_params, $comment.src_image)}
+      {/if}
+      <img src="{$derivative_url}" alt="{$comment.ALT}">
 	  </a>
     </div>
     {/if}
