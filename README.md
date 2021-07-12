@@ -66,6 +66,10 @@ bootstrap variables (see `bootstrap/less/variables.less` for a complete list).
 Changelog
 ---------
 
+### version 3.2.8 (17/04/2021)
+
+- compatibility with plugins Additional Pages and Advanced Menu Manager
+
 ### version 3.2.7 (09/04/2021)
 
 - compatibility with Piwigo 11
