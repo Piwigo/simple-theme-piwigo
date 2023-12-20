@@ -23,7 +23,7 @@
     <li class="imageNumber headerActions">{$PHOTO}</li>
     </ul>
 
-    {if $SHOW_PICTURE_NAME_ON_TITLE }
+    {if isset($SHOW_PICTURE_NAME_ON_TITLE) }
     <h2><a href="{$current.URL}">{$current.TITLE}</a></h2>
     {/if}
   </header>
