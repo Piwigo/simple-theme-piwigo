@@ -110,4 +110,14 @@
     margin-top:0;
   }
 
-  /*# sourceMappingURL=theme.css.map */
+  #TagsGroupRemoveTag {
+    margin: 0;
+    position: relative;
+    bottom: 10px;
+    right: 15px;
+  }
+
+  #TagsGroupRemoveTag .pwg-icon {
+    height: 0;
+    width: 0;
+  }
