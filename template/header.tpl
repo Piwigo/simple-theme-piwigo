@@ -30,7 +30,7 @@
   {if isset($last.U_IMG)}<link rel="last" title="{'Last'|@translate}" href="{$last.U_IMG}">{/if}
   {if isset($U_UP)}<link rel="up" title="{'Thumbnails'|@translate}" href="{$U_UP}">{/if}
 
-  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
+  <link href='//fonts.googleapis.com/css?family=Open+Sans:400,400italic,700' rel='stylesheet' type='text/css'>
 
   {combine_css path="themes/simpleng/css/style.min.css" order="1"}
   {combine_css path="themes/simpleng/css/bootstrap-responsive.min.css" order="2"}
