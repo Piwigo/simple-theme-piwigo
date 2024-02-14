@@ -4,9 +4,9 @@
   {if isset($U_EDIT) or isset($U_SLIDESHOW) or !empty($PLUGIN_INDEX_ACTIONS)}
   <ul class="categoryActions">
     {if isset($SEARCH_IN_SET_ACTION) and $SEARCH_IN_SET_ACTION}
-      {combine_css path="themes/default/vendor/fontello/css/fontello.css" order=-10}
+      {combine_css path="themes/default/vendor/fontello/css/gallery-icon.css" order=-10}
       <li id="cmdSearchInSet"><a href="{$SEARCH_IN_SET_URL}" title="{'Search in this set'|translate}" class="pwg-state-default pwg-button">
-      <i class="pwg-icon-search-folder icon-white"></i>
+      <i class="gallery-icon-search-folder icon-white"></i>
       </a></li>
     {/if}
     {if isset($U_EDIT)}
@@ -70,7 +70,7 @@
 {if isset($SEARCH_IN_SET_BUTTON) and $SEARCH_IN_SET_BUTTON}
 <div class="mcs-side-results search-in-set-button">
   <div>
-  <p><a href="{$SEARCH_IN_SET_URL}" class="pwg-icon-search-folder">{'Search in this set'|translate}</a></p>
+  <p><a href="{$SEARCH_IN_SET_URL}" class="gallery-icon-search-folder">{'Search in this set'|translate}</a></p>
   </div>
 </div>
 {/if}
