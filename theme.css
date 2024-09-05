@@ -121,3 +121,17 @@
     height: 0;
     width: 0;
   }
+
+  .search-result-item {
+    background-color: #333333;
+    color: #bbbbbb;
+  }
+
+  .head-button-2.icon-add-album {
+    background-image: none;
+  }
+
+  #linkedAlbumSearch .search-icon {
+    transform: translate(200px, 8px);
+  }
+  
