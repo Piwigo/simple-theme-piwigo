@@ -1,7 +1,7 @@
 <?php
 /*
 Theme Name: SimpleNG
-Version: 3.2.7
+Version: auto
 Description: SimpleNG theme for Piwigo
 Theme URI: http://piwigo.org/ext/extension_view.php?eid=602
 Author: Saïmon
