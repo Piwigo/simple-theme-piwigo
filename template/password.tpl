@@ -14,7 +14,21 @@
     <input type="hidden" name="pwg_token" value="{$PWG_TOKEN}">
     <input type="submit" name="submit" value="{'Change my password'|@translate}" class="btn">
   </form>
+  {elseif $action eq 'lost_code'}
+    <form action="{$form_action}?action={$action}{if isset($key)}&amp;key={$key}{/if}" method="post">
+      <div class="message">{"If you do not receive the email, please contact your webmaster."|translate}</div>
+      <label>
+        {'Verification code'|@translate}
+        <br>
+        <input type="text" id="user_code" name="user_code" size="100" />
+        <input type="hidden" name="pwg_token" value="{$PWG_TOKEN}">
+      </label>
 
+    <input type="submit" name="submit" value="{'Verify'|@translate}" class="btn">
+    {if isset($errors['password_form_error'])}
+      <p class="error-message" style="color: red;"><i class="gallery-icon-attention-circled"></i> {$errors['password_form_error']}</p>
+    {/if}
+    </form>
   {elseif $action eq 'reset'}
 
   <div class="message">{'Hello'|@translate} <em>{$username}</em>.
